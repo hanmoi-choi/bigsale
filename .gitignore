@@ -16,6 +16,8 @@ ompiled source #
 *.gz
 *.iso
 *.jar
+*.war
+*.ear
 *.rar
 *.tar
 *.zip
