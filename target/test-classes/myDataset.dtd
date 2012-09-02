@@ -1,0 +1,10 @@
+<!ELEMENT dataset (
+    user*)>
+<!ELEMENT user EMPTY>
+<!ATTLIST user
+    user_id  CDATA #REQUIRED
+    name  CDATA #REQUIRED
+    password  CDATA #REQUIRED
+    e-mail  CDATA #REQUIRED
+>
+

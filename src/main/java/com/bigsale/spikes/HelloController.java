@@ -16,6 +16,7 @@ import java.util.Map;
  * Time: 10:25 PM
  * To change this template use File | Settings | File Templates.
  */
+
 public class HelloController implements Controller {
     @Autowired HelloSpring helloSpring;
 

@@ -8,7 +8,7 @@
 
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:prefix="/WEB-INF/view/" p:suffix=".jsp" />
-    <import resource="resources/hibernate-cfg/hibernate.xml"/>
+    <import resource="resources/hibernate.xml"/>
 
     <context:annotation-config/>
 

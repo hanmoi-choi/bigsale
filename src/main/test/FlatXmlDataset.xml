@@ -1,0 +1,8 @@
+        <!DOCTYPE dataset SYSTEM "/Users/hanmoi/git/bigsale/src/main/test/myDataset.dtd">
+<dataset>
+    <user user_id="1" name="name1" password="password1" e-mail="email1@gmail.com"/>
+    <user user_id="2" name="name2" password="password2" e-mail="email2@gmail.com"/>
+    <user user_id="3" name="name3" password="password3" e-mail="email3@gmail.com"/>
+    <user user_id="4" name="name4" password="password4" e-mail="email4@gmail.com"/>
+    <user user_id="5" name="name5" password="password5" e-mail="email5@gmail.com"/>
+</dataset>
