@@ -1,6 +1,5 @@
 package com.bigsale.spikes;
 
-import com.bigsale.SimpleGetServlet;
 import org.junit.Test;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;

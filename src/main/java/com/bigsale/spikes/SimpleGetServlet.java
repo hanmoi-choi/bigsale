@@ -1,4 +1,4 @@
-package com.bigsale;
+package com.bigsale.spikes;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

@@ -36,4 +36,11 @@ public class HelloSpringAnnotation {
 
         return "hello";
     }
+
+    @RequestMapping("/")
+    public String index(){
+
+        logger.warn("Succeed");
+        return "index";
+    }
 }
