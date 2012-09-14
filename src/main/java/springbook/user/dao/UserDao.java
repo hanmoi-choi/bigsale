@@ -1,8 +1,8 @@
 package springbook.user.dao;
 
-import java.util.List;
-
 import springbook.user.domain.User;
+
+import java.util.List;
 
 public interface UserDao {
 

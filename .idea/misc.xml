@@ -370,8 +370,8 @@
     </option>
   </component>
   <component name="Monitor.Log4jWindowPlugin">
-    <option name="table.default.font.family" value="Terminus" />
     <option name="tree.default.font.size" value="14" />
+    <option name="table.default.font.family" value="Terminus" />
     <option name="tree.default.font.family" value="Terminus" />
     <option name="table.default.font.size" value="14" />
   </component>

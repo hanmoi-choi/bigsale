@@ -1,12 +1,12 @@
 package springbook.learningtest.template;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.io.IOException;
 
-import org.junit.Before;
-import org.junit.Test;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
 public class CalcSumTest {
 	Calculator calculator;
@@ -14,7 +14,7 @@ public class CalcSumTest {
 	
 	@Before public void setUp() {
 		this.calculator = new Calculator();
-		this.numFilepath = getClass().getResource("numbers.txt").getPath();
+		this.numFilepath = "/Users/hanmoi/git/bigsale/src/main/java/springbook/learningtest/template/numbers.txt";
 	}
 	
 	@Test public void sumOfNumbers() throws IOException {

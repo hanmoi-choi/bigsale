@@ -1,13 +1,5 @@
 package springbook.user.dao;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
-
-import java.sql.SQLException;
-import java.util.List;
-
-import javax.sql.DataSource;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,12 +11,18 @@ import org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator;
 import org.springframework.jdbc.support.SQLExceptionTranslator;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
 import springbook.user.domain.Level;
 import springbook.user.domain.User;
 
+import javax.sql.DataSource;
+import java.sql.SQLException;
+import java.util.List;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations="/test-applicationContext.xml")
+@ContextConfiguration(locations="classpath:/springbook/test-applicationContext.xml")
 public class UserDaoTest {
 	@Autowired UserDao dao; 
 	@Autowired DataSource dataSource;
@@ -35,12 +33,12 @@ public class UserDaoTest {
 	
 	@Before
 	public void setUp() {
-		this.user1 = new User("gyumee", "¹Ú¼ºÃ¶", "springno1", Level.BASIC, 1, 0);
-		this.user2 = new User("leegw700", "ÀÌ±æ¿ø", "springno2", Level.SILVER, 55, 10);
-		this.user3 = new User("bumjin", "¹Ú¹üÁø", "springno3", Level.GOLD, 100, 40);
+		this.user1 = new User("gyumee", "gyumee", "springno1", Level.BASIC, 1, 0);
+		this.user2 = new User("leegw700", "leegw700", "springno2", Level.SILVER, 55, 10);
+		this.user3 = new User("bumjin", "bumjin", "springno3", Level.GOLD, 100, 40);
 	}
-	
-	@Test 
+
+	@Test
 	public void andAndGet() {		
 		dao.deleteAll();
 		assertThat(dao.getCount(), is(0));
@@ -143,10 +141,10 @@ public class UserDaoTest {
 	public void update() {
 		dao.deleteAll();
 		
-		dao.add(user1);		// ¼öÁ¤ÇÒ »ç¿ëÀÚ
-		dao.add(user2);		// ¼öÁ¤ÇÏÁö ¾ÊÀ» »ç¿ëÀÚ
+		dao.add(user1);
+		dao.add(user2);
 		
-		user1.setName("¿À¹Î±Ô");
+		user1.setName("ï¿½ï¿½ï¿½Î±ï¿½");
 		user1.setPassword("springno6");
 		user1.setLevel(Level.GOLD);
 		user1.setLogin(1000);

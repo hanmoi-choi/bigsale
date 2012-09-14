@@ -24,7 +24,7 @@
         </property>
         <property name="annotatedClasses">
             <list>
-                <value>com.bigsale.datasource.dto.User</value>
+                <value>com.bigsale.model.User</value>
             </list>
         </property>
     </bean>

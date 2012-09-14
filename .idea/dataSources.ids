@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
+  <data-source source="LOCAL" name="HSQL" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="ea3b5119-dd02-4865-87c6-dcaaeb9d6147">
+    <jdbc-driver>org.hsqldb.jdbcDriver</jdbc-driver>
+    <jdbc-url>jdbc:hsqldb:file:/Users/hanmoi/git/bigsale/src/main/java/springbook/user/dao/hsql.db</jdbc-url>
+    <user-name>sa</user-name>
+    <schema-pattern>*</schema-pattern>
+    <default-schemas>*.INFORMATION_SCHEMA *.PUBLIC</default-schemas>
+    <default-dialect>HSQLDB</default-dialect>
+    <driver-properties>
+      <property name="default_schema" value="true" />
+    </driver-properties>
+    <libraries>
+      <library>
+        <url>jar://$USER_HOME$/.m2/repository/hsqldb/hsqldb/1.8.0.10/hsqldb-1.8.0.10.jar!/</url>
+      </library>
+    </libraries>
+  </data-source>
+</component>
