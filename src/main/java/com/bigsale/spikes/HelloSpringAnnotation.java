@@ -22,7 +22,7 @@ public class HelloSpringAnnotation {
 
     static final Logger logger = LoggerFactory.getLogger(HelloSpringAnnotation.class);
 
-    @RequestMapping("/hello")
+    @RequestMapping("/hello1")
     public String hello(@RequestParam("name") String name, ModelMap model){
         model.put("message", helloSpring.sayHello(name));
         logger.debug("Test");

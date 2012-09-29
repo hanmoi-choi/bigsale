@@ -42,7 +42,7 @@
                 <form:options items="${stateOnAustralia}" itemValue="countryId" itemLabel="countryName" />
             </form:select></td>
         </tr>
- 
+
         <tr>
             <td></td>
             <td><form:checkbox path="mailingList"

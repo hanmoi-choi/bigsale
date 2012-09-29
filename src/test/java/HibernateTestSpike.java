@@ -1,10 +1,3 @@
-import org.hibernate.Session;
-import org.junit.Test;
-
-import static org.hamcrest.CoreMatchers.instanceOf;
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
-
 /**
  * Created with IntelliJ IDEA.
  * User: hanmoi
@@ -13,11 +6,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
  * To change this template use File | Settings | File Templates.
  */
 
-public class HibernateTestSpike extends AbstractHibernateTest{
+public class HibernateTestSpike extends SpringNHibernateSettingTest {
 
-    @Test
-    public void shallLoadSessionFactoryBeanFromXml(){
-        Session session = factory.getCurrentSession();
-        assertThat(session,is(instanceOf(Session.class)));
-    }
+
 }

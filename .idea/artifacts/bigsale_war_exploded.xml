@@ -55,7 +55,8 @@
           <element id="library" level="project" name="Maven: javax:javaee-api:6.0" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.9" />
           <element id="library" level="project" name="Maven: hsqldb:hsqldb:1.8.0.7" />
-          <element id="library" level="project" name="Maven: junit:junit:4.8.1" />
+          <element id="library" level="project" name="Maven: org.easytesting:fest-assert:1.4" />
+          <element id="library" level="project" name="Maven: org.easytesting:fest-util:1.1.6" />
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-api:2.2.2" />
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-core:2.2.2" />
           <element id="library" level="project" name="Maven: commons-digester:commons-digester:2.0" />

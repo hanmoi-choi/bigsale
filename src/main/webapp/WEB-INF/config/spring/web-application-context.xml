@@ -7,4 +7,5 @@
     <!-- Imports the configurations of the different infrastructure systems of the application -->
     <import resource="webmvc-context.xml" />
     <import resource="spring-tiles.xml"/>
+    <import resource="../hibernate-cfg/hibernate.xml"/>
 </beans>

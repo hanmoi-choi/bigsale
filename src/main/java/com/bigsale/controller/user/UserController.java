@@ -1,6 +1,6 @@
 package com.bigsale.controller.user;
 
-import com.bigsale.model.User;
+import com.bigsale.orm.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;

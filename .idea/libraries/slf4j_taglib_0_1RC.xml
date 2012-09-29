@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="slf4j-taglib-0.1RC">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/slf4j-taglib-0.1RC.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

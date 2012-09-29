@@ -46,7 +46,8 @@
 
         <property name="annotatedClasses">
             <list>
-                <value>com.bigsale.model.User</value>
+                <value>com.bigsale.orm.model.User</value>
+                <value>com.bigsale.orm.model.Address</value>
             </list>
         </property>
     </bean>

@@ -1,6 +1,6 @@
 package com.bigsale.controller.user;
 
-import com.bigsale.model.User;
+import com.bigsale.orm.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -19,7 +19,7 @@ import java.util.Map;
  * To change this template use File | Settings | File Templates.
  */
 @Controller
-@RequestMapping("/admin/addUser.html")
+@RequestMapping("/admin/addUser")
 public class AdminAddUserFormController {
 
     @RequestMapping(method = RequestMethod.POST)
