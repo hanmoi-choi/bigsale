@@ -7,7 +7,9 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -19,13 +21,16 @@ import java.util.Map;
  * To change this template use File | Settings | File Templates.
  */
 @Controller
-@RequestMapping("/admin/addUser")
+@RequestMapping("/admin")
 public class AdminAddUserFormController {
 
-    @RequestMapping(method = RequestMethod.POST)
-    public String onSubmit(@ModelAttribute("user")User user, BindingResult result){
+    @RequestMapping(value = "addSeller",method = RequestMethod.POST)
+    public ModelAndView onSubmit(@ModelAttribute("user") User user, BindingResult result){
         System.out.println(user);
-        return null;
+
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("name", "hanmoi");
+        return new ModelAndView("/admin/addConfirmed", model);
     }
 
     @RequestMapping(method = RequestMethod.GET)

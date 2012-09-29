@@ -8,5 +8,4 @@
 
 public class HibernateTestSpike extends SpringNHibernateSettingTest {
 
-
 }

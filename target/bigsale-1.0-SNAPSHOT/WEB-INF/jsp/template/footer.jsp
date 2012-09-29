@@ -1,1 +1,0 @@
-<h1 class="footer"> &copy; ViralPatel.net </h1>

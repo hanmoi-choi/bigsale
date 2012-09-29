@@ -18,8 +18,8 @@
 		<put-attribute name="body" value="/WEB-INF/jsp/contact.jsp" />
 	</definition>
 
-    <definition name="addUser" extends="base.definition">
-        <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addUser.jsp"/>
+    <definition name="addSeller" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSeller.jsp"/>
     </definition>
 
 </tiles-definitions>
