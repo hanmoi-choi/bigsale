@@ -41,6 +41,6 @@ public class HelloSpringAnnotation {
     public String index(){
 
         logger.warn("Succeed");
-        return "index";
+        return "/index.jsp";
     }
 }

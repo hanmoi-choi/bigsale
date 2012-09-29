@@ -22,8 +22,8 @@ public class User {
     @Column(name = "USER_TYPE", nullable = false)
     private UserType type;
 
-    @Column(name = "USER_NAME", nullable = false)
-    private String name;
+    @Column(name = "USER_ID", nullable = false)
+    private String id;
 
     @Column(name = "USER_PASSWORD",nullable = false)
     private String password;
@@ -36,12 +36,12 @@ public class User {
         this.type = type;
     }
 
-    public String getName() {
-        return name;
+    public String getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getPassword() {
