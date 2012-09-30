@@ -21,7 +21,12 @@
 		class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
 		<property name="definitions">
 			<list>
-				<value>/WEB-INF/config/tiles/setting.xml</value>
+				<value>/WEB-INF/config/tiles/base.xml</value>
+				<value>/WEB-INF/config/tiles/admin.xml</value>
+
+
+
+				<value>/WEB-INF/config/tiles/spike.xml</value>
 			</list>
 		</property>
 	</bean>

@@ -9,17 +9,17 @@
 <title><tiles:insertAttribute name="title" ignore="true" /></title>
 </head>
 <body>
-<table border="1" cellpadding="2" cellspacing="2" align="center">
+<table border="1" cellpadding="2" cellspacing="2" align="center" width="1280" height="720">
 	<tr>
-		<td height="30" colspan="2"><tiles:insertAttribute name="header" />
+		<td id="header" height="30" colspan="2"><tiles:insertAttribute name="header" />
 		</td>
 	</tr>
 	<tr>
-		<td height="250"><tiles:insertAttribute name="menu" /></td>
-		<td wnameth="350"><tiles:insertAttribute name="body" /></td>
+		<td id="menu" width="200"><tiles:insertAttribute name="menu" /></td>
+		<td id="body"><tiles:insertAttribute name="body" /></td>
 	</tr>
 	<tr>
-		<td height="30" colspan="2"><tiles:insertAttribute name="footer" />
+		<td id="footer" height="30" colspan="2"><tiles:insertAttribute name="footer" />
 		</td>
 	</tr>
 </table>

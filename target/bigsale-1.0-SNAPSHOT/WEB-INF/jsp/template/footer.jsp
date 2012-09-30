@@ -1,1 +1,1 @@
-<h1 class="footer"> &copy; ViralPatel.net </h1>
+<h3 class="footer"> &copy; BigSale.com </h3>
