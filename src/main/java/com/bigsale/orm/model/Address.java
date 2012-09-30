@@ -6,7 +6,8 @@ import lombok.Setter;
 import org.hibernate.annotations.IndexColumn;
 
 import javax.persistence.*;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -18,6 +19,10 @@ import java.util.Set;
 @Entity
 @Table(name = "address")
 public class Address {
+    public Address() {
+        users = new ArrayList<User>();
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ADDR_ID", nullable = false, unique = true)
@@ -51,5 +56,5 @@ public class Address {
     @OneToMany(cascade={CascadeType.ALL})
     @JoinColumn(name="ADDR_ID")
     @IndexColumn(name="USER_IDX")
-    private Set<User> users;
+    private List<User> users;
 }

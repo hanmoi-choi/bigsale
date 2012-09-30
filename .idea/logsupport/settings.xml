@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LogSupport">
+    <option name="logConfigurations">
+      <ProjectLogConfigurations>
+        <option name="defaultLogConfiguration">
+          <DefaultLogConfiguration>
+            <option name="defaultFrameworkName" value="slf4j" />
+            <option name="logIdName" value="Default" />
+          </DefaultLogConfiguration>
+        </option>
+      </ProjectLogConfigurations>
+    </option>
+  </component>
+</project>
+

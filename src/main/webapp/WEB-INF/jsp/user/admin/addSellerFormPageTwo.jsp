@@ -6,83 +6,43 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Registration Page</title>
-    <style>
-        .error {
-            color: #ff0000;
-        }
-
-        .errorblock {
-            color: #000;
-            background-color: #ffEEEE;
-            border: 3px solid #ff0000;
-            padding: 8px;
-            margin: 16px;
-        }
-    </style>
 </head>
 <body>
-
+<h2> Enter Address</h2>
 <form:form method="POST" commandName="user">
     <form:errors path="*" cssClass="errorblock" element="div" />
     <table>
         <tr>
-            <td>ID:</td>
-            <td><form:input path="userId" /></td>
-            <td><form:errors path="userId" cssClass="error" /></td>
+            <td>Street:</td>
+            <td><form:input path="address.street" /></td>
+            <td><form:errors path="address.street" cssClass="error" /></td>
         </tr>
         <tr>
-            <td>First Name:</td>
-            <td><form:input path="firstName" /></td>
-            <td><form:errors path="firstName" cssClass="error" /></td>
+            <td>City:</td>
+            <td><form:input path="address.city" /></td>
+            <td><form:errors path="address.city" cssClass="error" /></td>
         </tr>
         <tr>
-            <td>Last Name:</td>
-            <td><form:input path="lastName" /></td>
-            <td><form:errors path="lastName" cssClass="error" /></td>
+            <td>State:</td>
+            <td><form:input path="address.state" /></td>
+            <td><form:errors path="address.state" cssClass="error" /></td>
         </tr>
         <tr>
-            <td>Password:</td>
-            <td><form:password path="password" /></td>
-            <td><form:errors path="password" cssClass="error" /></td>
+            <td>ZipCode:</td>
+            <td><form:password path="address.zipcode" /></td>
+            <td><form:errors path="address.zipcode" cssClass="error" /></td>
         </tr>
-        <tr>
-            <td>Confirm Password :</td>
-            <td><form:password path="password" /></td>
-            <td><form:errors path="password" cssClass="error" /></td>
-        </tr>
-
-        <tr>
-            <td>E-Mail:</td>
-            <td><form:input path="email" /></td>
-            <td><form:errors path="email" cssClass="error" /></td>
-        </tr>
-
         <tr>
             <td colspan="3">
-                <input type="submit" value="Previous" name="_target1" />
-                <input type="submit" value="Finish" name="_finish" />
                 <input type="submit" value="Cancel" name="_cancel" />
+                <input type="submit" value="Prev" name="_target0" />
+                <input type="submit" value="Next" name="_target2" />
+                <input type="hidden" value="1" name="_page">
             </td>
         </tr>
-        <%--<tr>--%>
-            <%--<td>Gender :</td>--%>
-            <%--<td><form:radiobutton path="gender" value="M" label="M" /> <form:radiobutton--%>
-                    <%--path="gender" value="F" label="F" /></td>--%>
-        <%--</tr>--%>
-
-        <%--<tr>--%>
-            <%--<td>State :</td>--%>
-            <%--<td><form:select path="state">--%>
-                <%--<form:option value="0" label="Select" />--%>
-                <%--<form:options items="${stateOnAustralia}" itemValue="countryId" itemLabel="countryName" />--%>
-            <%--</form:select></td>--%>
-        <%--</tr>--%>
-
-        <%--<tr>--%>
-            <%--<td></td>--%>
-            <%--<td><form:checkbox path="mailingList"--%>
-                               <%--label="Would you like to join our mailinglist?" /></td>--%>
-        <%--</tr>--%>
+        <tr>
+            <td> 2 | 3</td>
+        </tr>
     </table>
 </form:form>
 

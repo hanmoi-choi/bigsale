@@ -6,22 +6,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Registration Page</title>
-    <%--<style>--%>
-        <%--.error {--%>
-            <%--color: #ff0000;--%>
-        <%--}--%>
-
-        <%--.errorblock {--%>
-            <%--color: #000;--%>
-            <%--background-color: #ffEEEE;--%>
-            <%--border: 3px solid #ff0000;--%>
-            <%--padding: 8px;--%>
-            <%--margin: 16px;--%>
-        <%--}--%>
-    <%--</style>--%>
 </head>
 <body>
-${user.firstName}
+<h2> Enter User Information</h2>
 <form:form method="POST" commandName="user">
     <form:errors path="*" cssClass="errorblock" element="div" />
     <table>
@@ -60,29 +47,13 @@ ${user.firstName}
         <tr>
             <td colspan="3">
                 <input type="submit" value="Cancel" name="_cancel" />
-                <div/>
-                <input type="submit" value="Next" name="_finish" />
+                <input type="submit" value="Next" name="_target1"  />
+                <input type="hidden" value="0" name="_page">
             </td>
         </tr>
-        <%--<tr>--%>
-            <%--<td>Gender :</td>--%>
-            <%--<td><form:radiobutton path="gender" value="M" label="M" /> <form:radiobutton--%>
-                    <%--path="gender" value="F" label="F" /></td>--%>
-        <%--</tr>--%>
-
-        <%--<tr>--%>
-            <%--<td>State :</td>--%>
-            <%--<td><form:select path="state">--%>
-                <%--<form:option value="0" label="Select" />--%>
-                <%--<form:options items="${stateOnAustralia}" itemValue="countryId" itemLabel="countryName" />--%>
-            <%--</form:select></td>--%>
-        <%--</tr>--%>
-
-        <%--<tr>--%>
-            <%--<td></td>--%>
-            <%--<td><form:checkbox path="mailingList"--%>
-                               <%--label="Would you like to join our mailinglist?" /></td>--%>
-        <%--</tr>--%>
+        <tr>
+            <td> 1 | 3</td>
+        </tr>
     </table>
 </form:form>
 

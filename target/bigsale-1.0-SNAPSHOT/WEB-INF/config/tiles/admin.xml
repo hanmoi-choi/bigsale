@@ -8,4 +8,11 @@
         <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSellerFormPageOne.jsp"/>
     </definition>
 
+    <definition name="/admin/addSellerFormPageTwo" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSellerFormPageTwo.jsp"/>
+    </definition>
+
+    <definition name="/admin/addSellerFormPageConfirm" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSellerFormPageConfirm.jsp"/>
+    </definition>
 </tiles-definitions>

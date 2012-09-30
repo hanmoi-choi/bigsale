@@ -44,7 +44,6 @@ public class UserServiceImplTest extends AbstractSpringTest{
         address.setState("VIC");
         address.setStreet("Prince St");
         address.setZipcode("3168");
-        address.setUsers(new LinkedHashSet<User>());
 //        address.getUsers().add(user);
 
         addressService.addAddress(address);

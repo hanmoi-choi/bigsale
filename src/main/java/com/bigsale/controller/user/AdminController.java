@@ -22,6 +22,5 @@ public class AdminController{
     public String addSellers() {
         logger.debug("Enter addSellers");
         return "redirect:/admin/addSellerForm.html";
-        //new  ModelAndView("/admin/addSellerForm", "user", new User());
     }
 }
