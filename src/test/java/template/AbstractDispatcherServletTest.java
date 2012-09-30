@@ -1,3 +1,5 @@
+package template;
+
 import org.junit.After;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.mock.web.MockHttpServletRequest;

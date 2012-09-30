@@ -17,8 +17,9 @@
 
     <logger name="org.springframework" level="WARNIG"/>
     <logger name="org.hibernate" level="WARNIG"/>
-    <root level="warning">
-        <appender-ref ref="FILE"/>
+    <logger name="com.bigsale" level="DEBUG" />
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
     </root>
 </configuration>
 

@@ -1,8 +1,7 @@
 package com.bigsale.service;
 
-import com.bigsale.orm.dao.UserRepository;
+import com.bigsale.orm.dao.Repository;
 import com.bigsale.orm.model.User;
-import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,28 +17,30 @@ import java.util.List;
 @Service("userService")
 public class UserServiceImpl implements UserService {
     @Autowired
-    @Setter
-    UserRepository userRepository;
+    Repository userRepository;
 
     @Override
     public void addUser(User user) {
+        userRepository.add(user);
     }
 
     @Override
     public void updateUser(User user) {
+        userRepository.update(user);
     }
 
     @Override
     public void deleteUser(User user) {
+        userRepository.delete(user);
     }
 
     @Override
     public User getUserById(Integer id) {
-        return null;
+        return (User) userRepository.findById(id);
     }
 
     @Override
     public List<User> getAllUsers() {
-        return null;
+        return userRepository.findAll();
     }
 }

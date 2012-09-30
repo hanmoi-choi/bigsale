@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: hanmoi
@@ -14,7 +16,7 @@ import org.springframework.stereotype.Repository;
  * To change this template use File | Settings | File Templates.
  */
 @Repository("userRepository")
-public class UserRepository extends AbstractRepository<User, Integer>{
+public class UserRepository extends AbstractRepository<User, String>{
 
     HibernateTemplate hibernateTemplate;
 
@@ -33,4 +35,23 @@ public class UserRepository extends AbstractRepository<User, Integer>{
         hibernateTemplate.save(instance);
     }
 
+    @Override
+    public void update(User instance) {
+        hibernateTemplate.update(instance);
+    }
+
+    @Override
+    public void delete(User instance) {
+        hibernateTemplate.delete(instance);
+    }
+
+    @Override
+    public User findById(String id) {
+        return (User) hibernateTemplate.get("user_id", id);
+    }
+
+    @Override
+    public List<User> findAll() {
+        return hibernateTemplate.loadAll(User.class);
+    }
 }

@@ -43,7 +43,7 @@ public class Address {
 
     @Getter
     @Setter
-    @Column(name = "ADDR_ZIPCODE", nullable = false)
+    @Column(name = "ADDR_ZIP_CODE", nullable = false)
     public String zipcode;
 
     @Getter

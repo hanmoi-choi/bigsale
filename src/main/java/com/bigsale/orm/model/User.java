@@ -105,9 +105,10 @@ public class User {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "USER_ID", nullable = false, unique = true)
-    private int userId;
+    @Getter
+    @Setter
+    private String userId;
 
     @Enumerated(EnumType.ORDINAL)
     @Column(name= "USER_TYPE", nullable = false)
@@ -121,7 +122,7 @@ public class User {
     @Setter
     private UserLevel userLevel;
 
-    @Column(name = "USER_PASSWORD", nullable = false)
+    @Column(name = "PASSWORD", nullable = false)
     @Getter
     @Setter
     private String password;
@@ -149,8 +150,7 @@ public class User {
     @Getter
     @Setter
     @ManyToOne
-    @JoinColumn(name = "address_id")
+    @JoinColumn(name = "addr_id")
     private Address address;
-
 
 }

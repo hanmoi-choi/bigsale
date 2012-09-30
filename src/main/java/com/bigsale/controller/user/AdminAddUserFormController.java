@@ -21,7 +21,6 @@ import java.util.Map;
  * To change this template use File | Settings | File Templates.
  */
 @Controller
-@RequestMapping("/admin")
 public class AdminAddUserFormController {
 
     @RequestMapping(value = "addSeller",method = RequestMethod.POST)

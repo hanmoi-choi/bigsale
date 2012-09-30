@@ -6,7 +6,7 @@ public interface Repository<INSTANCE_CLASS, PRIMARY_KEY_CLASS> {
 
     void add(INSTANCE_CLASS instance);
     void update(INSTANCE_CLASS instance);
-    void delete(PRIMARY_KEY_CLASS id);
+    void delete(INSTANCE_CLASS instance);
     INSTANCE_CLASS findById(PRIMARY_KEY_CLASS id);
 //    INSTANCE_CLASS findById(PRIMARY_KEY_CLASS id, Class fetchingStrategy, Object... args);
     List<INSTANCE_CLASS> findAll();

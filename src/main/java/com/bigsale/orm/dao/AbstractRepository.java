@@ -13,7 +13,7 @@ public abstract class AbstractRepository<INSTANCE_CLASS, PRIMARY_KEY_CLASS> impl
         throw new UnsupportedOperationException("Not supported yet.");
     }
     @Override
-    public void delete(PRIMARY_KEY_CLASS id) {
+    public void delete(INSTANCE_CLASS instance) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 

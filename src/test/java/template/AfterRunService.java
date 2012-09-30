@@ -1,3 +1,5 @@
+package template;
+
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.servlet.ModelAndView;
 

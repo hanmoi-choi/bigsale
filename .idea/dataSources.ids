@@ -15,7 +15,7 @@
       </library>
     </libraries>
   </data-source>
-  <data-source source="LOCAL" name="Data Source" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="19f5af9e-a4d5-4f7c-b1e1-9d68748237db">
+  <data-source source="LOCAL" name="local-mysql" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="19f5af9e-a4d5-4f7c-b1e1-9d68748237db">
     <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
     <jdbc-url>jdbc:mysql://localhost:3306/bigsale</jdbc-url>
     <user-name>root</user-name>
