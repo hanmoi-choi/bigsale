@@ -12,15 +12,19 @@
         <put-attribute name="body" value="/WEB-INF/jsp/user/buyer/index.jsp"/>
     </definition>
 
-    <definition name="/buyer/index" extends="buyer.base">
+    <definition name="/buyer/placeOrderFormPageOne" extends="buyer.base">
         <put-attribute name="body" value="/WEB-INF/jsp/user/buyer/index.jsp"/>
     </definition>
 
-    <definition name="/buyer/index" extends="buyer.base">
+    <definition name="/buyer/placeOrderFormPageResult" extends="buyer.base">
         <put-attribute name="body" value="/WEB-INF/jsp/user/buyer/index.jsp"/>
     </definition>
 
-    <definition name="/buyer/index" extends="buyer.base">
+    <definition name="/buyer/checkOrderFormPageOne" extends="buyer.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/buyer/index.jsp"/>
+    </definition>
+
+    <definition name="/buyer/checkOrderFormPageResult" extends="buyer.base">
         <put-attribute name="body" value="/WEB-INF/jsp/user/buyer/index.jsp"/>
     </definition>
 </tiles-definitions>

@@ -22,13 +22,15 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 @RequestMapping("/buyer/placeOrderForm")
 public class PlaceOrderFormController {
+    public static final String FORM_PAGE_FOR_QUERY_INPUT = "/buyer/placeOrderFormPageOne";
+    public static final String FORM_PAGE_FOR_QUERY_RESULT = "/buyer/placeOrderFormPageResult";
 
     static final Logger logger = LoggerFactory.getLogger(PlaceOrderFormController.class);
 
     @RequestMapping(method = RequestMethod.GET)
     public String setupForm(Model model)
     {
-        return null;
+        return FORM_PAGE_FOR_QUERY_INPUT;
     }
 
     @RequestMapping(method = RequestMethod.POST)
@@ -37,6 +39,6 @@ public class PlaceOrderFormController {
             BindingResult result, SessionStatus status,
             Model model)
     {
-        return null;
+        return FORM_PAGE_FOR_QUERY_RESULT;
     }
 }

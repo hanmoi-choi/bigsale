@@ -24,11 +24,14 @@ import javax.servlet.http.HttpServletResponse;
 public class QuerySellerFormController {
 
     static final Logger logger = LoggerFactory.getLogger(AddSellerFormController.class);
+    public static final String FORM_PAGE_FOR_QUERY_INPUT = "/admin/querySellerFormPageOne";
+    public static final String FORM_PAGE_FOR_QUERY_RESULT = "/admin/querySellerFormPageResult";
 
     @RequestMapping(method = RequestMethod.GET)
     public String setupForm(Model model)
     {
-        return null;
+        logger.warn("QuerySellerFormController setupForm");
+        return FORM_PAGE_FOR_QUERY_INPUT;
     }
 
     @RequestMapping(method = RequestMethod.POST)
@@ -37,6 +40,6 @@ public class QuerySellerFormController {
             BindingResult result, SessionStatus status,
             Model model)
     {
-        return null;
+        return FORM_PAGE_FOR_QUERY_RESULT;
     }
 }

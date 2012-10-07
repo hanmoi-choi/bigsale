@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
          pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<h2> Admin Menu</h2>
+<h2>Seller Menu</h2>
 
 <form method="POST" action="/bigsale/seller/addItem.html">
     <input type="submit" value="Add Item"/>

@@ -33,7 +33,7 @@ import static com.bigsale.orm.model.User.UserType.SELLER;
  */
 @Controller
 @RequestMapping("/admin/addSellerForm")
-@SessionAttributes({"buyer", "address"})
+@SessionAttributes({"user", "address"})
 public class AddSellerFormController {
     private static final String FORM_PAGE_ONE = "/admin/addSellerFormPageOne";
     private static final String FORM_PAGE_TWO = "/admin/addSellerFormPageTwo";
@@ -63,7 +63,7 @@ public class AddSellerFormController {
         User user = new User();
         Address address = new Address();
 
-        model.addAttribute("buyer", user);
+        model.addAttribute("user", user);
         model.addAttribute("address", address);
 
         initAddSellerFromMap();
@@ -82,7 +82,7 @@ public class AddSellerFormController {
     @RequestMapping(method = RequestMethod.POST)
     public String submitForm(
             HttpServletRequest request, HttpServletResponse response,
-            @ModelAttribute("buyer") User user,
+            @ModelAttribute("user") User user,
             @ModelAttribute("address") Address address,
             BindingResult result, SessionStatus status,
             @RequestParam("_page") int currentPage, Model model)

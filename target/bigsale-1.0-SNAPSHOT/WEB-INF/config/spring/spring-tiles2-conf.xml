@@ -21,7 +21,7 @@
 				<value>/WEB-INF/config/tiles/admin.xml</value>
 				<value>/WEB-INF/config/tiles/seller.xml</value>
 				<value>/WEB-INF/config/tiles/buyer.xml</value>
-				<value>/WEB-INF/config/tiles/spike.xml</value>
+				<value>/WEB-INF/config/tiles/common.xml</value>
 			</list>
 		</property>
 	</bean>

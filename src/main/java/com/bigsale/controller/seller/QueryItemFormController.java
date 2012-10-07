@@ -23,13 +23,15 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 @RequestMapping("/seller/queryItemForm")
 public class QueryItemFormController {
+    public static final String FORM_PAGE_FOR_QUERY_INPUT = "/seller/queryItemFormPageOne";
+    public static final String FORM_PAGE_FOR_QUERY_RESULT = "/seller/queryItemFormPageResult";
 
     static final Logger logger = LoggerFactory.getLogger(AddSellerFormController.class);
 
     @RequestMapping(method = RequestMethod.GET)
     public String setupForm(Model model)
     {
-        return null;
+        return FORM_PAGE_FOR_QUERY_INPUT;
     }
 
     @RequestMapping(method = RequestMethod.POST)
@@ -38,6 +40,6 @@ public class QueryItemFormController {
             BindingResult result, SessionStatus status,
             Model model)
     {
-        return null;
+        return FORM_PAGE_FOR_QUERY_RESULT;
     }
 }

@@ -27,4 +27,21 @@
     <definition name="/admin/registrationSuccess" extends="admin.base">
         <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSellerSuccess.jsp"/>
     </definition>
+
+    <definition name="/admin/querySellerFormPageOne" extends="admin.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSellerSuccess.jsp"/>
+    </definition>
+
+    <definition name="/admin/querySellerFormPageResult" extends="admin.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSellerSuccess.jsp"/>
+    </definition>
+
+    <definition name="/admin/makeReportFormPageOne" extends="admin.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSellerSuccess.jsp"/>
+    </definition>
+
+    <definition name="/admin/makeReportFormPageResult" extends="admin.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSellerSuccess.jsp"/>
+    </definition>
+
 </tiles-definitions>
