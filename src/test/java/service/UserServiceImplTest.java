@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import template.AbstractSpringTest;
 
 import java.util.Date;
-import java.util.LinkedHashSet;
 
 import static org.fest.assertions.Assertions.assertThat;
 
@@ -44,7 +43,7 @@ public class UserServiceImplTest extends AbstractSpringTest{
         address.setState("VIC");
         address.setStreet("Prince St");
         address.setZipcode("3168");
-//        address.getUsers().add(user);
+//        address.getUsers().add(buyer);
 
         addressService.addAddress(address);
 
@@ -54,7 +53,6 @@ public class UserServiceImplTest extends AbstractSpringTest{
         userService.addUser(user);
 
         assertThat(userService.getAllUsers().size()).isPositive();
-
     }
 
 }

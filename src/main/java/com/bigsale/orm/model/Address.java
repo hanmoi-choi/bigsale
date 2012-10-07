@@ -19,7 +19,8 @@ import java.util.List;
 @Entity
 @Table(name = "address")
 public class Address {
-    public Address() {
+    public Address()
+    {
         users = new ArrayList<User>();
     }
 
@@ -53,8 +54,8 @@ public class Address {
 
     @Getter
     @Setter
-    @OneToMany(cascade={CascadeType.ALL})
-    @JoinColumn(name="ADDR_ID")
-    @IndexColumn(name="USER_IDX")
+    @OneToMany(cascade = {CascadeType.ALL})
+    @JoinColumn(name = "ADDR_ID")
+    @IndexColumn(name = "USER_IDX")
     private List<User> users;
 }

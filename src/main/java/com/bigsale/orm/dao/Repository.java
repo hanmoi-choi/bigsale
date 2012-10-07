@@ -5,10 +5,14 @@ import java.util.List;
 public interface Repository<INSTANCE_CLASS, PRIMARY_KEY_CLASS> {
 
     void add(INSTANCE_CLASS instance);
+
     void update(INSTANCE_CLASS instance);
+
     void delete(INSTANCE_CLASS instance);
+
     INSTANCE_CLASS findById(PRIMARY_KEY_CLASS id);
-//    INSTANCE_CLASS findById(PRIMARY_KEY_CLASS id, Class fetchingStrategy, Object... args);
+
+    //    INSTANCE_CLASS findById(PRIMARY_KEY_CLASS id, Class fetchingStrategy, Object... args);
     List<INSTANCE_CLASS> findAll();
 //    List<INSTANCE_CLASS> findAll(Class fetchingStrategy, Object... args);
 //    List<INSTANCE_CLASS> findAll(int pageNumber, int pageSize);

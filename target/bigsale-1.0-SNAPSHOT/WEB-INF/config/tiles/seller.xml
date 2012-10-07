@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+    <definition name="seller.base" extends="base.definition">
+        <put-attribute name="menu" value="/WEB-INF/jsp/user/seller/menu.jsp"/>
+    </definition>
+
+    <definition name="/seller/index" extends="seller.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/seller/index.jsp"/>
+    </definition>
+
+    <definition name="/seller/addItemForm" extends="seller.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/seller/index.jsp"/>
+    </definition>
+
+    <definition name="/seller/queryItemForm" extends="seller.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/seller/index.jsp"/>
+    </definition>
+
+    <definition name="/seller/checkOrderForm" extends="seller.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/seller/index.jsp"/>
+    </definition>
+
+</tiles-definitions>
+
+
+

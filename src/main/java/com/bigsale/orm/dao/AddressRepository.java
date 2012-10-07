@@ -16,37 +16,43 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 @Repository("addressRepository")
-public class AddressRepository extends AbstractRepository<Address, String>{
+public class AddressRepository extends AbstractRepository<Address, String> {
 
     HibernateTemplate hibernateTemplate;
 
     @Autowired
-    public void setSessionFactory(SessionFactory sessionFactory) {
+    public void setSessionFactory(SessionFactory sessionFactory)
+    {
         hibernateTemplate = new HibernateTemplate(sessionFactory);
     }
 
     @Override
-    public void add(Address instance) {
+    public void add(Address instance)
+    {
         hibernateTemplate.save(instance);
     }
 
     @Override
-    public void update(Address instance) {
+    public void update(Address instance)
+    {
         hibernateTemplate.update(instance);
     }
 
     @Override
-    public void delete(Address instance) {
+    public void delete(Address instance)
+    {
         hibernateTemplate.delete(instance);
     }
 
     @Override
-    public Address findById(String id) {
+    public Address findById(String id)
+    {
         return super.findById(id);
     }
 
     @Override
-    public List<Address> findAll() {
+    public List<Address> findAll()
+    {
         return super.findAll();
     }
 }

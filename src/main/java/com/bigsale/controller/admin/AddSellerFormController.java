@@ -1,4 +1,4 @@
-package com.bigsale.controller.user;
+package com.bigsale.controller.admin;
 
 import com.bigsale.orm.model.Address;
 import com.bigsale.orm.model.User;
@@ -17,8 +17,12 @@ import org.springframework.web.util.WebUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+
+import static com.bigsale.orm.model.User.UserLevel.BRONZE;
+import static com.bigsale.orm.model.User.UserType.SELLER;
 
 /**
  * Created with IntelliJ IDEA.
@@ -29,18 +33,17 @@ import java.util.Map;
  */
 @Controller
 @RequestMapping("/admin/addSellerForm")
-@SessionAttributes({"user", "address"})
-public class AdminAddUserFormController {
+@SessionAttributes({"buyer", "address"})
+public class AddSellerFormController {
     private static final String FORM_PAGE_ONE = "/admin/addSellerFormPageOne";
     private static final String FORM_PAGE_TWO = "/admin/addSellerFormPageTwo";
     private static final String FORM_PAGE_CONFIRM = "/admin/addSellerFormPageConfirm";
-    private static final String SUCCESS_PAGE = "registrationSuccess";
-    private static final String REDIRECT_TO_SUCCESS_PAGE = "redirect:/admin/registrationSuccess";
-    private static final String REDIRECT_TO_HOMEPAGE = "redirect:/";
+    private static final String SUCCESS_PAGE = "/admin/registrationSuccess";
+    private static final String REDIRECT_TO_ADMIN_INDEX = "redirect:/bigsale/admin";
 
+    private Map<Integer, String> pageForms;
     private AddUserValidator addUserValidator;
-
-    static final Logger logger = LoggerFactory.getLogger(AdminAddUserFormController.class);
+    static final Logger logger = LoggerFactory.getLogger(AddSellerFormController.class);
 
     @Autowired
     UserService userService;
@@ -49,68 +52,83 @@ public class AdminAddUserFormController {
     AddressService addressService;
 
     @Autowired
-    public AdminAddUserFormController(AddUserValidator addUserValidator) {
+    public AddSellerFormController(AddUserValidator addUserValidator)
+    {
         this.addUserValidator = addUserValidator;
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public String setupForm(Model model) {
+    public String setupForm(Model model)
+    {
         User user = new User();
         Address address = new Address();
-        address.getUsers().add(user);
-        user.setAddress(address);
 
-        model.addAttribute("user", user);
+        model.addAttribute("buyer", user);
         model.addAttribute("address", address);
+
+        initAddSellerFromMap();
+
         return FORM_PAGE_ONE;
+    }
+
+    private void initAddSellerFromMap()
+    {
+        pageForms = new HashMap<Integer, String>();
+        pageForms.put(0, FORM_PAGE_ONE);
+        pageForms.put(1, FORM_PAGE_TWO);
+        pageForms.put(2, FORM_PAGE_CONFIRM);
     }
 
     @RequestMapping(method = RequestMethod.POST)
     public String submitForm(
             HttpServletRequest request, HttpServletResponse response,
-            @ModelAttribute("user") User user,
+            @ModelAttribute("buyer") User user,
+            @ModelAttribute("address") Address address,
             BindingResult result, SessionStatus status,
-            @RequestParam("_page") int currentPage, Model model) {
+            @RequestParam("_page") int currentPage, Model model)
+    {
 
-
-
-        Map<Integer, String> pageForms = new HashMap<Integer, String>();
-        pageForms.put(0, FORM_PAGE_ONE);
-        pageForms.put(1, FORM_PAGE_TWO);
-        pageForms.put(2, FORM_PAGE_CONFIRM);
-
-
-        if (userClickedCancel(request)) {
-            return REDIRECT_TO_HOMEPAGE;
-        } else if (userIsFinished(request)) {
-            //new UserValidator().validate(user, result);
-//            addUserValidator.validate(user, result);
-            if (!result.hasErrors()) {
-                persistUser(user);
+        if (userClickedCancel(request))
+        {
+            return REDIRECT_TO_ADMIN_INDEX;
+        }
+        else if (userIsFinished(request))
+        {
+            //new UserValidator().validate(buyer, result);
+//            addUserValidator.validate(buyer, result);
+            if (!result.hasErrors())
+            {
+                setDefaultValue(user);
+                persistUser(user, address);
                 status.setComplete();
                 return SUCCESS_PAGE;
-            } else {
+            }
+            else
+            {
                 // Errors
                 return pageForms.get(currentPage);
             }
-        } else {
+        }
+        else
+        {
             int targetPage = WebUtils.getTargetPage(request, "_target", currentPage);
             logger.warn("currentPage : {}", currentPage);
             logger.warn("targetPage : {}", targetPage);
-            // If targetPage is lesser than current page, user clicked 'Previous'
-            if (targetPage < currentPage) {
+            // If targetPage is lesser than current page, buyer clicked 'Previous'
+            if (targetPage < currentPage)
+            {
                 return pageForms.get(targetPage);
             }
             // User clicked next
             // Validate data based on page
 //            switch (currentPage) {
 //                case 0:
-//                    //new UserValidator().validatePage1Form(user, result);
-//                    addUserValidator.validatePage1Form(user, result);
+//                    //new UserValidator().validatePage1Form(buyer, result);
+//                    addUserValidator.validatePage1Form(buyer, result);
 //                    break;
 //                case 1:
-//                    //new UserValidator().validatePage2Form(user, result);
-//                    addUserValidator.validatePage2Form(user, result);
+//                    //new UserValidator().validatePage2Form(buyer, result);
+//                    addUserValidator.validatePage2Form(buyer, result);
 //                    break;
 //            }
 //            if (!result.hasErrors()) {
@@ -125,15 +143,27 @@ public class AdminAddUserFormController {
 
     }
 
-    private void persistUser(User user) {
-        userService.addUser(user);
+    private void setDefaultValue(User user)
+    {
+        user.setUserType(SELLER);
+        user.setDateCreated(new Date());
+        user.setUserLevel(BRONZE);
     }
 
-    private boolean userIsFinished(HttpServletRequest request) {
+    private void persistUser(User user, Address address)
+    {
+        user.setAddress(address);
+        address.getUsers().add(user);
+        addressService.addAddress(address);
+    }
+
+    private boolean userIsFinished(HttpServletRequest request)
+    {
         return request.getParameter("_finish") != null;
     }
 
-    private boolean userClickedCancel(HttpServletRequest request) {
+    private boolean userClickedCancel(HttpServletRequest request)
+    {
         return request.getParameter("_cancel") != null;
     }
 

@@ -18,10 +18,12 @@ import java.util.Map;
  */
 
 public class HelloController implements Controller {
-    @Autowired HelloSpring helloSpring;
+    @Autowired
+    HelloSpring helloSpring;
 
     @Override
-    public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
+    public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception
+    {
         String name = request.getParameter("name");
 
         String message = helloSpring.sayHello(name);

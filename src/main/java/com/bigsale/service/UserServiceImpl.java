@@ -20,27 +20,32 @@ public class UserServiceImpl implements UserService {
     Repository userRepository;
 
     @Override
-    public void addUser(User user) {
+    public void addUser(User user)
+    {
         userRepository.add(user);
     }
 
     @Override
-    public void updateUser(User user) {
+    public void updateUser(User user)
+    {
         userRepository.update(user);
     }
 
     @Override
-    public void deleteUser(User user) {
+    public void deleteUser(User user)
+    {
         userRepository.delete(user);
     }
 
     @Override
-    public User getUserById(Integer id) {
+    public User getUserById(Integer id)
+    {
         return (User) userRepository.findById(id);
     }
 
     @Override
-    public List<User> getAllUsers() {
+    public List<User> getAllUsers()
+    {
         return userRepository.findAll();
     }
 }

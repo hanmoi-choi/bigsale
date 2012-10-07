@@ -17,27 +17,30 @@ import org.springframework.validation.Validator;
 public class AddUserValidator implements Validator {
 
     @Override
-    public boolean supports(Class clazz) {
+    public boolean supports(Class clazz)
+    {
         //just validate the User instances
         return User.class.isAssignableFrom(clazz);
     }
 
     //validate page 1, userName
-    public void validatePage1Form(Object target, Errors errors) {
+    public void validatePage1Form(Object target, Errors errors)
+    {
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "userId",
                 "required.userId", "Field name is required.");
     }
 
     //validate page 2, password
-    public void validatePage2Form(Object target, Errors errors) {
+    public void validatePage2Form(Object target, Errors errors)
+    {
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "password",
                 "required.password", "Field name is required.");
     }
 
 
-
     @Override
-    public void validate(Object target, Errors errors) {
+    public void validate(Object target, Errors errors)
+    {
         validatePage1Form(target, errors);
         validatePage2Form(target, errors);
     }

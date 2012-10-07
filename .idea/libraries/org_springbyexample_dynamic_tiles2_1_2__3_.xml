@@ -1,8 +1,6 @@
 <component name="libraryTable">
   <library name="org.springbyexample.dynamic.tiles2-1.2 (3)">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/org.springbyexample.dynamic.tiles2-1.2.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>

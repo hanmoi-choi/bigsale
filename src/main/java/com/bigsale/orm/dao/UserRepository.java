@@ -5,6 +5,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -16,42 +17,51 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 @Repository("userRepository")
-public class UserRepository extends AbstractRepository<User, String>{
+@Transactional
+public class UserRepository extends AbstractRepository<User, String> {
 
     HibernateTemplate hibernateTemplate;
 
     @Autowired
-    public void setSessionFactory(SessionFactory sessionFactory) {
+    public void setSessionFactory(SessionFactory sessionFactory)
+    {
         hibernateTemplate = new HibernateTemplate(sessionFactory);
     }
 
-
-    public void setHibernateTemplate(SessionFactory sessionFactory){
+    public void setHibernateTemplate(SessionFactory sessionFactory)
+    {
         hibernateTemplate = new HibernateTemplate(sessionFactory);
+
     }
 
     @Override
-    public void add(User instance) {
+    public void add(User instance)
+    {
         hibernateTemplate.save(instance);
+
     }
 
     @Override
-    public void update(User instance) {
+    public void update(User instance)
+    {
         hibernateTemplate.update(instance);
     }
 
     @Override
-    public void delete(User instance) {
+    public void delete(User instance)
+    {
         hibernateTemplate.delete(instance);
     }
 
     @Override
-    public User findById(String id) {
+    public User findById(String id)
+    {
         return (User) hibernateTemplate.get("user_id", id);
     }
 
     @Override
-    public List<User> findAll() {
+    public List<User> findAll()
+    {
         return hibernateTemplate.loadAll(User.class);
     }
 }

@@ -23,7 +23,8 @@ public class HelloSpringAnnotation {
     static final Logger logger = LoggerFactory.getLogger(HelloSpringAnnotation.class);
 
     @RequestMapping("/hello1")
-    public String hello(@RequestParam("name") String name, ModelMap model){
+    public String hello(@RequestParam("name") String name, ModelMap model)
+    {
         model.put("message", helloSpring.sayHello(name));
         logger.debug("Test");
 
@@ -31,14 +32,16 @@ public class HelloSpringAnnotation {
     }
 
     @RequestMapping("/hello2")
-    public String hello2(@RequestParam("name") String name, ModelMap model){
+    public String hello2(@RequestParam("name") String name, ModelMap model)
+    {
         model.put("message", helloSpring.sayHello(name + "^^"));
 
         return "hello";
     }
 
     @RequestMapping("/")
-    public String index(){
+    public String index()
+    {
 
         logger.warn("Succeed");
         return "/index.jsp";

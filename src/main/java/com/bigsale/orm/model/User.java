@@ -23,18 +23,22 @@ public class User {
 
         private int value;
 
-        UserType(int value) {
+        UserType(int value)
+        {
             this.value = value;
         }
 
         // the identifierMethod
-        public int toInt() {
+        public int toInt()
+        {
             return value;
         }
 
         // the valueOfMethod
-        public static UserType fromInt(int value) {
-            switch (value) {
+        public static UserType fromInt(int value)
+        {
+            switch (value)
+            {
                 case 0:
                     return ADMIN;
                 case 1:
@@ -46,8 +50,10 @@ public class User {
             }
         }
 
-        public String toString() {
-            switch (this) {
+        public String toString()
+        {
+            switch (this)
+            {
                 case ADMIN:
                     return "admin";
                 case BUYER:
@@ -64,18 +70,22 @@ public class User {
 
         private int value;
 
-        UserLevel(int value) {
+        UserLevel(int value)
+        {
             this.value = value;
         }
 
         // the identifierMethod
-        public int toInt() {
+        public int toInt()
+        {
             return value;
         }
 
         // the valueOfMethod
-        public static UserLevel fromInt(int value) {
-            switch (value) {
+        public static UserLevel fromInt(int value)
+        {
+            switch (value)
+            {
                 case 0:
                     return BRONZE;
                 case 1:
@@ -89,8 +99,10 @@ public class User {
             }
         }
 
-        public String toString() {
-            switch (this) {
+        public String toString()
+        {
+            switch (this)
+            {
                 case BRONZE:
                     return "bronze";
                 case SILVER:
@@ -111,7 +123,7 @@ public class User {
     private String userId;
 
     @Enumerated(EnumType.ORDINAL)
-    @Column(name= "USER_TYPE", nullable = false)
+    @Column(name = "USER_TYPE", nullable = false)
     @Getter
     @Setter
     private UserType userType;
@@ -126,6 +138,11 @@ public class User {
     @Getter
     @Setter
     private String password;
+
+    @Getter
+    @Setter
+    @Transient
+    private String passwordConfirm;
 
     @Column(name = "FST_NAME", nullable = false)
     @Getter

@@ -1,7 +1,6 @@
 package controller;
 
-import com.bigsale.controller.user.AdminController;
-import com.bigsale.orm.model.User;
+import com.bigsale.controller.admin.AdminController;
 import org.junit.Test;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -24,17 +23,47 @@ public class AdminControllerTest extends AbstractDispatcherServletTest {
     public static final String APP_CONTEXT = "../testconf/web-application-context.xml";
 
     @Test
-    public void shallRedirectToProperFormPage() throws ServletException, IOException {
-        ModelAndView sut = setRelativeLocations(APP_CONTEXT)
-                .setClasses(AdminController.class)
-                .initRequest("/admin/addSellers", RequestMethod.POST)
-                .runService()
-                .getModelAndView();
-
+    public void shouldHandleInitialRequest() throws ServletException, IOException {
+        ModelAndView sut = getMAVWithRequestUri("/admin/welcome.html");
         assertThat(sut).isNotNull();
-        assertThat(sut.getViewName()).isEqualTo("/admin/addSeller1stForm");
-        assertThat(sut.getModel().get("user")).isInstanceOf(User.class);
+        assertThat(sut.getViewName()).isEqualTo("/admin/index");
+    }
 
+    @Test
+    public void shouldHandleAddFormRequest() throws ServletException, IOException {
+        ModelAndView sut = getMAVWithRequestUri("/admin/addSeller.html");
+        assertThat(sut).isNotNull();
+        assertThat(sut.getViewName()).isEqualTo("redirect:/admin/addSellerForm.html");
+    }
+
+    @Test
+    public void shouldHandleQuerySellerRequest() throws ServletException, IOException {
+        ModelAndView sut = getMAVWithRequestUri("/admin/querySeller.html");
+        assertThat(sut).isNotNull();
+        assertThat(sut.getViewName()).isEqualTo("redirect:/admin/querySellerForm.html");
+    }
+
+    @Test
+    public void shouldHandleMakeReportequest() throws ServletException, IOException {
+        ModelAndView sut = getMAVWithRequestUri("/admin/makeReport.html");
+        assertThat(sut).isNotNull();
+        assertThat(sut.getViewName()).isEqualTo("redirect:/admin/makeReportForm.html");
+    }
+
+    @Test
+    public void shouldHandleLogoutRequest() throws ServletException, IOException {
+        ModelAndView sut = getMAVWithRequestUri("/admin/logout.html");
+        assertThat(sut).isNotNull();
+        assertThat(sut.getViewName()).isEqualTo("redirect:/index.html");
+    }
+
+    private ModelAndView getMAVWithRequestUri(String requestUri) throws ServletException, IOException
+    {
+        return setRelativeLocations(APP_CONTEXT)
+                    .setClasses(AdminController.class)
+                    .initRequest(requestUri, RequestMethod.POST)
+                    .runService()
+                    .getModelAndView();
     }
 
 }

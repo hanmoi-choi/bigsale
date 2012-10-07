@@ -36,7 +36,8 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
-          <unit-entry name="&lt;anonymous&gt;hibernate.xml@754" value="dataSource" />
+          <unit-entry name="&lt;anonymous&gt;hibernate.xml@570" value="19f5af9e-a4d5-4f7c-b1e1-9d68748237db" />
+          <unit-entry name="&lt;anonymous&gt;hibernate.xml@754" value="19f5af9e-a4d5-4f7c-b1e1-9d68748237db" />
           <unit-entry name="hibernate.cfg.xml" />
           <unit-entry name="sessionFactory" value="dataSource" />
         </datasource-map>

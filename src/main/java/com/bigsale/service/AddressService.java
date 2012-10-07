@@ -13,8 +13,12 @@ import java.util.List;
  */
 public interface AddressService {
     void addAddress(Address user);
+
     void updateAddress(Address user);
+
     void deleteAddress(Address user);
+
     Address getAddressById(Integer id);
+
     List<Address> getAllAddress();
 }

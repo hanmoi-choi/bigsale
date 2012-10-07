@@ -4,15 +4,27 @@
        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
 <tiles-definitions>
 
-    <definition name="/admin/addSellerFormPageOne" extends="base.definition">
+    <definition name="admin.base" extends="base.definition">
+        <put-attribute name="menu" value="/WEB-INF/jsp/user/admin/menu.jsp"/>
+    </definition>
+
+    <definition name="/admin/index" extends="admin.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/admin/index.jsp"/>
+    </definition>
+
+    <definition name="/admin/addSellerFormPageOne" extends="admin.base">
         <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSellerFormPageOne.jsp"/>
     </definition>
 
-    <definition name="/admin/addSellerFormPageTwo" extends="base.definition">
+    <definition name="/admin/addSellerFormPageTwo" extends="admin.base">
         <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSellerFormPageTwo.jsp"/>
     </definition>
 
-    <definition name="/admin/addSellerFormPageConfirm" extends="base.definition">
+    <definition name="/admin/addSellerFormPageConfirm" extends="admin.base">
         <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSellerFormPageConfirm.jsp"/>
+    </definition>
+
+    <definition name="/admin/registrationSuccess" extends="admin.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSellerSuccess.jsp"/>
     </definition>
 </tiles-definitions>
