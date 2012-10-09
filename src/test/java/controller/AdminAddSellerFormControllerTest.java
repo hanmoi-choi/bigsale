@@ -44,7 +44,7 @@ public class AdminAddSellerFormControllerTest extends AbstractDispatcherServletT
 
         assertThat(sut).isNotNull();
         assertThat(sut.getViewName()).isEqualTo(FORM_PAGE_ONE);
-        assertThat(sut.getModel().get("buyer")).isInstanceOf(User.class);
+        assertThat(sut.getModel().get("user")).isInstanceOf(User.class);
         assertThat(sut.getModel().get("address")).isInstanceOf(Address.class);
     }
 
@@ -94,7 +94,7 @@ public class AdminAddSellerFormControllerTest extends AbstractDispatcherServletT
        return setRelativeLocations(APP_CONTEXT)
                     .setClasses(AddSellerFormController.class)
                     .initRequest(requestUri)
-                    .addSessionValue("buyer", user)
+                    .addSessionValue("user", user)
                     .addSessionValue("address", address)
                     .runService()
                     .getModelAndView();
@@ -111,7 +111,7 @@ public class AdminAddSellerFormControllerTest extends AbstractDispatcherServletT
             servletTest.addParameter((String)entry.getKey(), (String)entry.getValue());
         }
 
-        return servletTest.addSessionValue("buyer", user)
+        return servletTest.addSessionValue("user", user)
                 .addSessionValue("address", address)
                 .runService()
                 .getModelAndView();

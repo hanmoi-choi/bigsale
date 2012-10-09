@@ -36,6 +36,6 @@ public class BuyerController {
     @RequestMapping("/logout")
     public String logout()
     {
-        return "redirect:/index.html";
+        return "redirect:/j_spring_security_logout";
     }
 }

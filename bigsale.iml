@@ -51,6 +51,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/config/properties" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -58,8 +59,6 @@
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 6" level="application_server_libraries" />
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 6" level="application_server_libraries" />
     <orderEntry type="library" name="org.springframework.web.servlet-3.1.2.RELEASE" level="project" />
-    <orderEntry type="library" name="slf4j-taglib-0.1RC" level="project" />
-    <orderEntry type="library" name="org.springbyexample.dynamic.tiles2-1.2 (3)" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.16" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.6.1" level="project" />
@@ -124,6 +123,9 @@
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-servlet:2.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-template:2.2.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:0.11.4" level="project" />
+    <orderEntry type="library" name="spring-security-acl-3.0.7.RELEASE" level="project" />
+    <orderEntry type="library" name="spring-security-crypto-3.1.0.RC1" level="project" />
+    <orderEntry type="library" name="spring-security-core-3.1.0.RELEASE" level="project" />
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">

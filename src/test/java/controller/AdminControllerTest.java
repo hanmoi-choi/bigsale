@@ -54,7 +54,7 @@ public class AdminControllerTest extends AbstractDispatcherServletTest {
     public void shouldHandleLogoutRequest() throws ServletException, IOException {
         ModelAndView sut = getMAVWithRequestUri("/admin/logout.html");
         assertThat(sut).isNotNull();
-        assertThat(sut.getViewName()).isEqualTo("redirect:/index.html");
+        assertThat(sut.getViewName()).isEqualTo("redirect:/j_spring_security_logout");
     }
 
     private ModelAndView getMAVWithRequestUri(String requestUri) throws ServletException, IOException

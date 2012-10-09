@@ -3,10 +3,5 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <h2>Buyer Menu</h2>
 
-<form method="POST" action="/bigsale/buyer/checkOrder.html">
-    <input type="submit" value="Check Order"/>
-</form>
+<%@include file="navigation.jsp"%>
 
-<form method="POST" action="/bigsale/buyer/logout.html">
-    <input type="submit" value="Log Out"/>
-</form>

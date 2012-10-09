@@ -45,7 +45,7 @@ public class BuyerControllerTest extends AbstractDispatcherServletTest {
         ModelAndView sut = getMAVWithRequestUri("/buyer/logout.html");
 
         assertThat(sut).isNotNull();
-        assertThat(sut.getViewName()).isEqualTo("redirect:/index.html");
+        assertThat(sut.getViewName()).isEqualTo("redirect:/j_spring_security_logout");
 
     }
 
