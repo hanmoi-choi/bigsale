@@ -64,7 +64,6 @@ public class User {
             return "unknown";
         }
     }
-
     public enum UserLevel {
         BRONZE(0), SILVER(1), GOLD(2), PLATINUM(3), UNKNOW(-1);
 
@@ -139,20 +138,10 @@ public class User {
     @Setter
     private String password;
 
+    @Column(name = "FULL_NAME", nullable = false)
     @Getter
     @Setter
-    @Transient
-    private String passwordConfirm;
-
-    @Column(name = "FST_NAME", nullable = false)
-    @Getter
-    @Setter
-    private String firstName;
-
-    @Column(name = "LST_NAME", nullable = false)
-    @Getter
-    @Setter
-    private String lastName;
+    private String fullName;
 
     @Column(name = "EMAIL", nullable = true)
     @Getter

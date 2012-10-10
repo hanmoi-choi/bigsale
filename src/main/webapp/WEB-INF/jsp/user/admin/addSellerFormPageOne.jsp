@@ -4,38 +4,37 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <h2> Enter User Information</h2>
-<form:form method="POST" commandName="user">
+<form:form method="POST" commandName="userDto">
     <form:errors path="*" cssClass="errorblock" element="div" />
     <table>
         <tr>
             <td>ID:</td>
-            <td><form:input path="userId" /></td>
+            <td><form:input path="userId" size="20"/></td>
             <td><form:errors path="userId" cssClass="error" /></td>
         </tr>
         <tr>
             <td>First Name:</td>
-            <td><form:input path="firstName"/></td>
-            <td><form:errors path="firstName" cssClass="error" /></td>
+            <td><form:input path="fullName" size="30"/></td>
+            <td><form:errors path="fullName" cssClass="error" /></td>
         </tr>
         <tr>
-            <td>Last Name:</td>
-            <td><form:input path="lastName" /></td>
-            <td><form:errors path="lastName" cssClass="error" /></td>
+            <td><form:errors path="isPasswordInputMatched" cssClass="error" /></td>
         </tr>
         <tr>
             <td>Password:</td>
-            <td><form:password path="password" /></td>
+            <td><form:password path="password" size="40"/></td>
             <td><form:errors path="password" cssClass="error" /></td>
+
         </tr>
         <tr>
             <td>Confirm Password :</td>
-            <td><form:password path="passwordConfirm" /></td>
+            <td><form:password path="passwordConfirm" size="40"/></td>
             <td><form:errors path="passwordConfirm" cssClass="error" /></td>
         </tr>
 
         <tr>
             <td>E-Mail:</td>
-            <td><form:input path="email" /></td>
+            <td><form:input path="email" size="40"/></td>
             <td><form:errors path="email" cssClass="error" /></td>
         </tr>
 
