@@ -65,6 +65,8 @@ public class User {
     @JoinColumn(name = "ADDR_ID")
     private Address address;
 
+    @Getter
+    @Setter
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(name="USER_ORDER_JOIN",
             joinColumns={@JoinColumn(name="USER_ID")},

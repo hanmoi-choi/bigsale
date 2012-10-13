@@ -19,6 +19,8 @@ import java.util.Set;
 public class Item {
 
     @Id
+    @Getter
+    @Setter
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ITEM_ID", nullable = false, unique = true)
     private int itemId;
@@ -49,6 +51,8 @@ public class Item {
     @Lob
     private String description;
 
+    @Getter
+    @Setter
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(name="SELLER_ITEM_JOIN",
             joinColumns={@JoinColumn(name="ITEM_ID")},

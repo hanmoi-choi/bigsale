@@ -18,7 +18,7 @@ import java.util.List;
  */
 @Repository("itemRepository")
 @Transactional
-public class ItemRepository extends AbstractRepository<Item, String> {
+public class ItemRepository extends AbstractRepository<Item, Integer> {
 
     public static final String ENTITY_NAME = "com.bigsale.orm.model.Item";
     HibernateTemplate hibernateTemplate;
@@ -56,7 +56,7 @@ public class ItemRepository extends AbstractRepository<Item, String> {
     }
 
     @Override
-    public Item findById(String id)
+    public Item findById(Integer id)
     {
         return (Item) hibernateTemplate.get(ENTITY_NAME, id);
     }

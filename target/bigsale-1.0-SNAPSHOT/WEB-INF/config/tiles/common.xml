@@ -26,5 +26,10 @@
         <put-attribute name="menu" value="/WEB-INF/jsp/common/menuHome.jsp"/>
         <put-attribute name="body" value="/WEB-INF/jsp/common/signUpSuccess.jsp"/>
     </definition>
+
+    <definition name="/itemSearchResultForm" extends="base.definition">
+        <put-attribute name="menu" value="/WEB-INF/jsp/common/menuLogin.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/common/itemSearchResultForm.jsp"/>
+    </definition>
 </tiles-definitions>
 

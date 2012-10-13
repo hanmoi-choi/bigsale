@@ -20,6 +20,8 @@ import java.util.Set;
 public class ItemOrder {
 
     @Id
+    @Getter
+    @Setter
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ITEM_ORDER_ID", nullable = false, unique = true)
     private int itemOrderId;
@@ -41,6 +43,8 @@ public class ItemOrder {
     @Lob
     private DeliveryStatus description;
 
+    @Getter
+    @Setter
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(name="USER_ORDER_JOIN",
             joinColumns={@JoinColumn(name="ORDER_ID")},

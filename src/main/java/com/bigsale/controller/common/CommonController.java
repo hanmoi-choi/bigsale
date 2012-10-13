@@ -1,15 +1,19 @@
 package com.bigsale.controller.common;
 
+import com.bigsale.controller.dto.ItemSearchDto;
+import com.bigsale.orm.model.Item;
+import com.bigsale.service.ItemService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.support.SessionStatus;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -23,6 +27,10 @@ import javax.servlet.http.HttpServletResponse;
 public class CommonController {
 
     static final Logger logger = LoggerFactory.getLogger(CommonController.class);
+    public static final String VIEW_NAME = "/itemSearchResultForm";
+
+    @Autowired
+    ItemService itemService;
 
     @RequestMapping("welcome")
     public String index()
@@ -53,12 +61,18 @@ public class CommonController {
     }
 
     @RequestMapping("searchItem")
-    public ModelAndView searchItem(
+    public String searchItem(
             HttpServletRequest request, HttpServletResponse response,
             @RequestParam("_itemName") String itemName,
             SessionStatus status)
     {
         logger.warn("searchItem: {}", itemName);
-        return null;
+        ItemSearchDto itemSearchDto = new  ItemSearchDto();
+        itemSearchDto.setItemName(itemName);
+
+        List<Item> itemList = itemService.findItemBySearchCriteria(itemSearchDto);
+
+        request.setAttribute("itemList", itemList);
+        return VIEW_NAME;
     }
 }

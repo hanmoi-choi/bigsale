@@ -25,6 +25,8 @@ public class Address {
     }
 
     @Id
+    @Getter
+    @Setter
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ADDR_ID", nullable = false, unique = true)
     private int addrId;

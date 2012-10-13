@@ -20,7 +20,7 @@
 
 	<h1 class="errormessage">Access Denied</h1>
 
-    <h1><a href="/welcome.html">HOME</a></h1>
+    <h1><a href="/bigsale/welcome.html">HOME</a></h1>
 </body>
 
 </html>

@@ -16,7 +16,7 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 @Repository("addressRepository")
-public class AddressRepository extends AbstractRepository<Address, String> {
+public class AddressRepository extends AbstractRepository<Address, Integer> {
     public static final String ENTITY_NAME = "com.bigsale.orm.model.Address";
     HibernateTemplate hibernateTemplate;
 
@@ -45,7 +45,7 @@ public class AddressRepository extends AbstractRepository<Address, String> {
     }
 
     @Override
-    public Address findById(String id)
+    public Address findById(Integer id)
     {
         return (Address) hibernateTemplate.get(ENTITY_NAME, id);
     }

@@ -2,20 +2,23 @@ package com.bigsale.controller.seller;
 
 import com.bigsale.controller.admin.AddSellerFormController;
 import com.bigsale.controller.dto.ItemAddDto;
+import com.bigsale.orm.model.Item;
+import com.bigsale.orm.model.Seller;
+import com.bigsale.service.ItemService;
+import com.bigsale.service.SellerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.Validator;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.util.WebUtils;
-import org.springframework.validation.Validator;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 
 /**
@@ -33,13 +36,18 @@ public class AddItemFormController {
     public static final String FORM_PAGE_CONFIRM = "/seller/addItemFormPageConfirm";
     private static final String REDIRECT_TO_SELLER_INDEX = "redirect:/seller/welcome.html";
 
-
+    private HashMap<Integer, String> pageForms;
+    private Validator validator;
     static final Logger logger = LoggerFactory.getLogger(AddSellerFormController.class);
 
     @Autowired
     ItemAddDto itemAddDto;
-    private HashMap<Integer, String> pageForms;
-    private Validator validator;
+
+    @Autowired
+    ItemService itemService;
+
+    @Autowired
+    SellerService sellerService;
 
     @Autowired
     public AddItemFormController(Validator validator)
@@ -70,19 +78,20 @@ public class AddItemFormController {
     @RequestMapping(method = RequestMethod.POST)
     public String submitForm(
             HttpServletRequest request, HttpServletResponse response,
-            HttpSession session,
             @ModelAttribute("itemAddDto")ItemAddDto itemAddDto,
             BindingResult itemAddresult, SessionStatus status,
             @RequestParam("_page") int currentPage,
             Model model)
     {
+
         if (sellerClickedCancel(request))
         {
             return REDIRECT_TO_SELLER_INDEX;
         }
         else if (sellerIsFinished(request))
         {
-            persistItem(itemAddDto);
+            String sellerId = (String) request.getSession().getAttribute("userId");
+            persistItem(itemAddDto, sellerId);
             status.setComplete();
             return REDIRECT_TO_SELLER_INDEX;
         }
@@ -113,7 +122,21 @@ public class AddItemFormController {
         }
     }
 
-    private void persistItem(ItemAddDto itemAddDto) {}
+    private void persistItem(ItemAddDto itemAddDto, String sellerId) {
+        Seller seller = sellerService.getSellerById(sellerId);
+
+        Item item = new Item();
+        item.setItemName(itemAddDto.getItemName());
+        item.setStockQuantity(itemAddDto.getStockQuantity());
+        item.setDescription(itemAddDto.getDescription());
+        item.setPrice(itemAddDto.getPrice());
+        item.setDiscountRate(itemAddDto.getDiscountRate());
+        item.getSellers().add(seller);
+
+        seller.getItems().add(item);
+
+        itemService.addItem(item);
+    }
 
     private boolean sellerIsFinished(HttpServletRequest request)
     {

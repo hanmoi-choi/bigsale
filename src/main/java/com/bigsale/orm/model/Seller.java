@@ -57,11 +57,13 @@ public class Seller {
     @Setter
     private Date dateCreated;
 
-    @ManyToMany(cascade = {CascadeType.ALL})
+    @Getter
+    @Setter
+    @ManyToMany(cascade = {CascadeType.ALL}, fetch = FetchType.EAGER)
     @JoinTable(name="SELLER_ITEM_JOIN",
             joinColumns={@JoinColumn(name="SELLER_ID")},
             inverseJoinColumns={@JoinColumn(name="ITEM_ID")})
-    private Set<Item> meetings = new HashSet<Item>();
+    private Set<Item> items = new HashSet<Item>();
 
     public void increaseLoginCount() {
         loginCount++;

@@ -6,6 +6,17 @@
         </encoder>
     </appender>
 
+    <appender name="CONSOLE-stddebug" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+
+        <target>System.out</target>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
     <appender name="CONSOLE-stdwarn" class="ch.qos.logback.core.ConsoleAppender">
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>WARN</level>
@@ -37,8 +48,8 @@ It still inherits CONSOLE-stdout from the root logger -->
     <logger name="org.springframework" level="WARN">
         <appender-ref ref="CONSOLE-stdwarn"/>
     </logger>
-    <logger name="org.hibernate" level="WARN">
-        <appender-ref ref="CONSOLE-stdwarn"/>
+    <logger name="org.hibernate" level="DEBUG">
+        <appender-ref ref="CONSOLE-stddebug"/>
     </logger>
     <logger name="org.apache" level="WARN">
         <appender-ref ref="CONSOLE-stdwarn"/>

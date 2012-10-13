@@ -44,7 +44,7 @@ public class AuthenticationProcessingFilter extends UsernamePasswordAuthenticati
     protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response,
             Authentication authResult) throws ServletException, IOException
     {
-        logger.debug("Unsuccessful authentication");
+        logger.debug("successful authentication");
         User user = userDetailsService.getCurrentUser();
 
         String password = userDetailsService.getPassword();

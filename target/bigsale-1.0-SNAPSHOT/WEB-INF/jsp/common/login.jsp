@@ -7,17 +7,6 @@
 <head>
 
     <title>Login - Custom Authentication Sample App</title>
-
-    <style TYPE="text/css">
-        .errormessage {
-            color: red;
-        }
-
-        .successmessage {
-            color: blue;
-        }
-    </style>
-
 </head>
 
 <body onload='document.loginForm.j_username.focus();'>

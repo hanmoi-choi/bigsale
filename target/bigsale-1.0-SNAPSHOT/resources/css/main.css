@@ -65,11 +65,18 @@ body {
   padding: 0.5ex 0 0.5ex 1ex;
 }
 
-.searchItem {
-    float: left;
-}
 .error {
     color: #ff0000;
+    background-color: #ffEEEE;
+}
+
+.errormessage {
+    color: red;
+    background-color: #ffEEEE;
+}
+
+.successmessage {
+    color: blue;
 }
 
 .errorblock {
@@ -79,3 +86,20 @@ body {
     padding: 8px;
     margin: 16px;
 }
+
+.searchResultBlock {
+    color: #000;
+    background-color: #dcdcdc;
+    border: 3px solid gray;
+    padding: 8px;
+    margin: 16px;
+}
+.searchResultTitleBlock{
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border: 3px solid gray;
+    padding: 8px;
+    margin: 16px;
+}
+
