@@ -1,10 +1,8 @@
 package com.bigsale.controller.admin;
 
-import com.bigsale.controller.dto.UserSignUpDto;
-import com.bigsale.orm.model.Address;
-import com.bigsale.orm.model.User;
-import com.bigsale.service.AddressService;
-import com.bigsale.service.UserService;
+import com.bigsale.controller.dto.SellerSignUpDto;
+import com.bigsale.orm.model.Seller;
+import com.bigsale.service.SellerService;
 import com.bigsale.util.CipherUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,30 +21,26 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.bigsale.orm.model.User.UserLevel.BRONZE;
-import static com.bigsale.orm.model.User.UserType.SELLER;
+import static com.bigsale.orm.model.Level.BRONZE;
 
 @Controller
 @RequestMapping("/admin/addSellerForm")
-@SessionAttributes({"userSignUpDto"})
+@SessionAttributes({"sellerSignUpDto"})
 public class AddSellerFormController {
     private static final String FORM_PAGE_ONE = "/admin/addSellerFormPageOne";
     private static final String FORM_PAGE_CONFIRM = "/admin/addSellerFormPageConfirm";
     private static final String SUCCESS_PAGE = "/admin/registrationSuccess";
-    private static final String REDIRECT_TO_ADMIN_INDEX = "redirect:/bigsale/admin/";
+    private static final String REDIRECT_TO_ADMIN_INDEX = "redirect:/admin/welcome.html";
 
     private Map<Integer, String> pageForms;
     private Validator validator;
     static final Logger logger = LoggerFactory.getLogger(AddSellerFormController.class);
 
     @Autowired
-    UserService userService;
+    SellerService sellerService;
 
     @Autowired
-    AddressService addressService;
-
-    @Autowired
-    UserSignUpDto userSignUpDto;
+    SellerSignUpDto sellerSignUpDto;
 
     @Autowired
     public AddSellerFormController(Validator validator)
@@ -57,7 +51,7 @@ public class AddSellerFormController {
     @RequestMapping(method = RequestMethod.GET)
     public String setupForm(Model model)
     {
-        model.addAttribute("userSignUpDto", userSignUpDto);
+        model.addAttribute("sellerSignUpDto", sellerSignUpDto);
 
         initAddSellerFromMap();
 
@@ -74,20 +68,20 @@ public class AddSellerFormController {
     @RequestMapping(method = RequestMethod.POST)
     public String submitForm(
             HttpServletRequest request, HttpServletResponse response,
-            @ModelAttribute("userSignUpDto") UserSignUpDto userSignUpDto,
-            BindingResult userResult,
+            @ModelAttribute("sellerSignUpDto") SellerSignUpDto sellerSignUpDto,
+            BindingResult sellerResult,
             SessionStatus status,
             @RequestParam("_page") int currentPage, Model model)
     {
-        logger.warn("{}", userSignUpDto);
+        logger.warn("{}", sellerSignUpDto);
 
-        if (userClickedCancel(request))
+        if (sellerClickedCancel(request))
         {
             return REDIRECT_TO_ADMIN_INDEX;
         }
-        else if (userIsFinished(request))
+        else if (sellerIsFinished(request))
         {
-            persistUser(userSignUpDto);
+            persistSeller(sellerSignUpDto);
             status.setComplete();
             return SUCCESS_PAGE;
         }
@@ -101,10 +95,10 @@ public class AddSellerFormController {
             }
             else
             {
-                validateInput(userSignUpDto, userResult);
+                validateInput(sellerSignUpDto, sellerResult);
             }
 
-            if (!userResult.hasErrors())
+            if (!sellerResult.hasErrors())
             {
                 //No errors, return target page
                 return (String) pageForms.get(targetPage);
@@ -118,56 +112,46 @@ public class AddSellerFormController {
         }
     }
 
-    private void validateInput(UserSignUpDto userSignUpDto, BindingResult userResult)
-    {// User clicked next Validate data based on page
-        userSignUpDto.isPasswordInputMatched();
-        userSignUpDto.isIdDuplicated();
-        validator.validate(userSignUpDto, userResult);
+    private void validateInput(SellerSignUpDto sellerSignUpDto, BindingResult sellerResult)
+    {// Seller clicked next Validate data based on page
+        sellerSignUpDto.isPasswordInputMatched();
+        sellerSignUpDto.isIdDuplicated();
+        validator.validate(sellerSignUpDto, sellerResult);
     }
 
-    private void setDefaultValue(User user)
+    private void setDefaultValue(Seller seller)
     {
-        user.setUserType(SELLER);
-        user.setDateCreated(new Date());
-        user.setUserLevel(BRONZE);
+        seller.setDateCreated(new Date());
+        seller.setSellerLevel(BRONZE);
+        seller.setLoginCount(1);
     }
 
-    private void persistUser(UserSignUpDto userSignUpDto)
+    private void persistSeller(SellerSignUpDto sellerSignUpDto)
     {
-        User user = new User();
-        Address address = new Address();
+        Seller seller = new Seller();
 
-        setDefaultValue(user);
-        setUserInfo(user, userSignUpDto);
-        setAddressInfo(address, userSignUpDto);
-        user.setAddress(address);
-        address.getUsers().add(user);
-        addressService.addAddress(address);
+        setDefaultValue(seller);
+        setSellerInfo(seller, sellerSignUpDto);
+        sellerService.addSeller(seller);
     }
 
-    private void setAddressInfo(Address address, UserSignUpDto userSignUpDto)
+
+
+    private void setSellerInfo(Seller seller, SellerSignUpDto sellerSignUpDto)
     {
-        address.setStreet(userSignUpDto.getStreet());
-        address.setCity(userSignUpDto.getCity());
-        address.setState(userSignUpDto.getState());
-        address.setZipcode(userSignUpDto.getZipcode());
+        seller.setSellerId(sellerSignUpDto.getSellerId());
+        String password = CipherUtil.hashPassword(sellerSignUpDto.getPassword());
+        seller.setPassword(password);
+        seller.setFullName(sellerSignUpDto.getFullName());
+        seller.setEmail(sellerSignUpDto.getEmail());
     }
 
-    private void setUserInfo(User user, UserSignUpDto userSignUpDto)
-    {
-        user.setUserId(userSignUpDto.getUserId());
-        String password = CipherUtil.hashPassword(userSignUpDto.getPassword());
-        user.setPassword(password);
-        user.setFullName(userSignUpDto.getFullName());
-        user.setEmail(userSignUpDto.getEmail());
-    }
-
-    private boolean userIsFinished(HttpServletRequest request)
+    private boolean sellerIsFinished(HttpServletRequest request)
     {
         return request.getParameter("_finish") != null;
     }
 
-    private boolean userClickedCancel(HttpServletRequest request)
+    private boolean sellerClickedCancel(HttpServletRequest request)
     {
         return request.getParameter("_cancel") != null;
     }

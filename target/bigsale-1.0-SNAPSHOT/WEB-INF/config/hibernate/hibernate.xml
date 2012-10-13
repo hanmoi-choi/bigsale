@@ -42,6 +42,10 @@
         <property name="annotatedClasses">
             <list>
                 <value>com.bigsale.orm.model.User</value>
+                <value>com.bigsale.orm.model.Seller</value>
+                <value>com.bigsale.orm.model.Item</value>
+                <value>com.bigsale.orm.model.Order</value>
+                <value>com.bigsale.orm.model.Admin</value>
                 <value>com.bigsale.orm.model.Address</value>
             </list>
         </property>

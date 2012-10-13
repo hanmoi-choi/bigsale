@@ -13,9 +13,6 @@ import org.springmodules.validation.bean.conf.loader.annotation.handler.Length;
 import org.springmodules.validation.bean.conf.loader.annotation.handler.Min;
 import org.springmodules.validation.bean.conf.loader.annotation.handler.NotBlank;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created with IntelliJ IDEA.
  * User: hanmoi
@@ -24,36 +21,17 @@ import java.util.Map;
  * To change this template use File | Settings | File Templates.
  */
 @Component
-public class UserSignUpDto {
-    Logger logger = LoggerFactory.getLogger(UserSignUpDto.class);
-
+public class SellerSignUpDto {
+    Logger logger = LoggerFactory.getLogger(SellerSignUpDto.class);
     private SellerService sellerService;
     private UserService userService;
 
-    @Setter
-    @Getter
-    Map<String, String> stateMap;
-
-
-
     @Autowired
-    public UserSignUpDto(UserService userService, SellerService sellerService)
+    public SellerSignUpDto(UserService userService, SellerService sellerService)
     {
         this.userService = userService;
         this.sellerService = sellerService;
-        logger.warn("{}", this.userService);
-        stateMap = new HashMap<String, String>();
-        stateMap.put("ACT", "ACT");
-        stateMap.put("JBT", "JBT");
-        stateMap.put("NSW", "NSW");
-        stateMap.put("NT", "NT");
-        stateMap.put("QLD", "QLD");
-        stateMap.put("SA", "SA");
-        stateMap.put("TAS", "TAS");
-        stateMap.put("VIC", "VIC");
-        stateMap.put("WA", "WA");
     }
-
     public void isPasswordInputMatched(){
         if(password.equals(passwordConfirm)){
             isPasswordInputMatched = 0;
@@ -64,8 +42,8 @@ public class UserSignUpDto {
     }
 
     public void isIdDuplicated(){
-        boolean result = sellerService.checkIdDuplication(userId)
-                        || userService.checkIdDuplication(userId);
+        boolean result = sellerService.checkIdDuplication(sellerId)
+                        ||userService.checkIdDuplication(sellerId);
 
         if(result == true){
             isIdDuplicated = -1; //duplicated
@@ -79,7 +57,7 @@ public class UserSignUpDto {
     @Getter
     @NotBlank(message = "Please enter your ID.")
     @Length(min = 2, max = 20, message = "Please enter between {1} and {2} characters.")
-    private String userId;
+    private String sellerId;
 
     @Setter
     @Getter
@@ -114,29 +92,4 @@ public class UserSignUpDto {
     @Email(message = "Please enter a valid e-mail address.")
     @Length(min = 4, max = 40, message = "Please enter between {1} and {2} characters.")
     private String email;
-
-    @Getter
-    @Setter
-    @NotBlank(message = "Please enter your ID.")
-    @Length(min = 4, max = 20, message = "Please enter between {1} and {2} characters.")
-
-    private String street;
-
-    @Getter
-    @Setter
-    @NotBlank(message = "Please enter your ID.")
-    @Length(min = 2, max = 20, message = "Please enter between {1} and {2} characters.")
-    private String city;
-
-    @Getter
-    @Setter
-    @NotBlank(message = "Please enter your ID.")
-    @Length(min = 2, max = 3, message = "Please Select State.")
-    private String state;
-
-    @Getter
-    @Setter
-    @NotBlank(message = "Please enter your ID.")
-    @Length(min = 4, max = 4, message = "Please enter {1} characters.")
-    private String zipcode;
 }

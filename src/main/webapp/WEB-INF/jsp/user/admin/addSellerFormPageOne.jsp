@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <h3> Enter User Information</h3>
-<form:form method="POST" commandName="userSignUpDto">
+<form:form method="POST" commandName="sellerSignUpDto">
     <form:errors path="*" cssClass="errorblock" element="div"/>
     <table>
         <tr>
@@ -12,8 +12,8 @@
         </tr>
         <tr>
             <td>ID:</td>
-            <td><form:input path="userId" size="20"/></td>
-            <td><form:errors path="userId" cssClass="error"/></td>
+            <td><form:input path="sellerId" size="20"/></td>
+            <td><form:errors path="sellerId" cssClass="error"/></td>
         </tr>
         <tr>
             <td>Full Name:</td>
@@ -39,34 +39,6 @@
             <td>E-Mail:</td>
             <td><form:input path="email" size="40"/></td>
             <td><form:errors path="email" cssClass="error"/></td>
-        </tr>
-
-        <H3>Address</H3>
-
-        <tr>
-            <td>Street:</td>
-            <td><form:input path="street" size="40"/></td>
-            <td><form:errors path="street" cssClass="error"/></td>
-        </tr>
-        <tr>
-            <td>City:</td>
-            <td><form:input path="city" size="10"/></td>
-            <td><form:errors path="city" cssClass="error"/></td>
-        </tr>
-        <tr>
-            <td>State:</td>
-            <td>
-                <form:select path="state">
-                    <form:option value="NONE" label="--- Select ---"/>
-                    <form:options items="${userSignUpDto.stateMap}"/>
-                </form:select>
-            </td>
-            <td><form:errors path="state" cssClass="error"/></td>
-        </tr>
-        <tr>
-            <td>ZipCode:</td>
-            <td><form:input path="zipcode" size="4"/></td>
-            <td><form:errors path="zipcode" cssClass="error"/></td>
         </tr>
 
         <tr>

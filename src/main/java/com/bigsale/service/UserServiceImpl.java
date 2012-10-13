@@ -59,7 +59,6 @@ public class UserServiceImpl implements UserService {
     public boolean checkIdDuplication(String userId)
     {
         User user = (User) userRepository.findById(userId);
-
         return user != null;
     }
 
@@ -77,5 +76,13 @@ public class UserServiceImpl implements UserService {
         session.close();
 
         return userList;
+    }
+
+    @Override
+    public void updateUserInfoWithLogin(User user)
+    {
+        user.increaseLoginCount();
+        user.UpdateLevel();
+        userRepository.update(user);
     }
 }

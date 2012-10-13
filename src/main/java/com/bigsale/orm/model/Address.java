@@ -17,7 +17,7 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 @Entity
-@Table(name = "address")
+@Table(name = "ADDRESS")
 public class Address {
     public Address()
     {

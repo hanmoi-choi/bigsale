@@ -3,21 +3,21 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <h1>Registration Succeeded.</h1>
-<form:form method="POST" commandName="sellerSignUpDto" ACTION="/bigsale/admin.html">
+<form:form method="POST" commandName="userSignUpDto" ACTION="/bigsale/welcome.html">
     <table>
         <tr>
             <td>User ID :</td>
-            <td>${sellerSignUpDto.sellerId}</td>
+            <td>${userSignUpDto.userId}</td>
         </tr>
 
         <tr>
             <td>Full Name:</td>
-            <td>${sellerSignUpDto.fullName}</td>
+            <td>${userSignUpDto.fullName}</td>
         </tr>
 
         <tr>
             <td>E-mail :</td>
-            <td>${sellerSignUpDtor.email}</td>
+            <td>${userSignUpDtor.email}</td>
         </tr>
         <tr>
             <td colspan="1">

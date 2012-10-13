@@ -1,5 +1,9 @@
 package com.bigsale.service.security;
 
+import com.bigsale.orm.model.Admin;
+import com.bigsale.orm.model.Seller;
+import com.bigsale.service.AdminService;
+import com.bigsale.service.SellerService;
 import com.bigsale.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,14 +38,18 @@ public class UserDetailsService implements org.springframework.security.core.use
     private Map<String, Date> sessionValidity = new HashMap<String, Date>();
 
     private UserService userService;
-
+    private SellerService sellerService;
+    private AdminService adminService;
+    private  Vector<GrantedAuthority> userAuthorities;
     @Autowired
-    public UserDetailsService(UserService userService)
+    public UserDetailsService(UserService userService,
+                              SellerService sellerService,
+                              AdminService adminService)
     {
         this.userService = userService;
-        createSSOSession("admin");
-//        createSSOSession("seller");
-//        createSSOSession("buyer");
+        this.sellerService = sellerService;
+        this.adminService = adminService;
+        userAuthorities = new Vector<GrantedAuthority>();
     }
 
     public String createSSOSession(String username)
@@ -102,57 +110,23 @@ public class UserDetailsService implements org.springframework.security.core.use
 
     public UserDetails loadUserByUsername(String userId) throws UsernameNotFoundException, DataAccessException
     {
-        com.bigsale.orm.model.User user = null;
+        userAuthorities.clear();
 
-        //Temp code.
-        if (userId != null && userId.equals("admin"))
-        {
-            Vector<GrantedAuthority> userAuthorities = new Vector<GrantedAuthority>();
-            userAuthorities.add(new GrantedAuthorityImpl(ROLE_ADMIN));
-            User userAuthorised = new User("admin", "0DPiKuNIrrVmD8IUCuw1hQxNqZc=" /* SHA-1 encoded of "admin" */, true, true,
-                    true, true, userAuthorities);
-            currentUser.set(userAuthorised);
-            return userAuthorised;
-        }
+        if(userId == null) throw new UsernameNotFoundException("Invalid User ID");
 
+        if (userId.equals("admin")) return loginAsAdmin();
 
-        if(userId != null){
-            user = userService.getUserById(userId);
-            if(user == null) throw new UsernameNotFoundException("User Id " + userId + " not found!");
-        }
-        else{
-            throw new UsernameNotFoundException("User Id " + userId + " not found!");
-        }
+        //User
+        com.bigsale.orm.model.User user = userService.getUserById(userId);
+        if(user != null) return loginAsUser(user);
 
-        Vector<GrantedAuthority> userAuthorities = new Vector<GrantedAuthority>();
+        //Seller
+        Seller seller = sellerService.getSellerById(userId);
+        if(seller != null) return loginAsSeller(seller);
 
-        String userType = user.getUserType().toString();
-
-        logger.debug("PW From DB: {}", user.getPassword());
-        logger.debug("User Type: {}", user.getUserType());
-
-        if(userType.equals("admin")){
-            userAuthorities.add(new GrantedAuthorityImpl(ROLE_ADMIN));
-        }
-        else if(userType.equals("seller")){
-            userAuthorities.add(new GrantedAuthorityImpl(ROLE_SELLER));
-        }
-        else if(userType.equals("buyer")){
-            userAuthorities.add(new GrantedAuthorityImpl(ROLE_BUYER));
-        }
-        createSSOSession(user.getUserId());
-
-        User userAuthorised = new User(user.getUserId(),
-                user.getPassword(),
-                true, true,
-                true, true, userAuthorities);
-
-        logger.debug("userId: {}", userId);
-
-
-        currentUser.set(userAuthorised);
-        return userAuthorised;
+        throw new UsernameNotFoundException("User Id " + userId + " not found!");
     }
+
 
     public User getCurrentUser()
     {
@@ -177,4 +151,37 @@ public class UserDetailsService implements org.springframework.security.core.use
     public void setUserService(UserService userService) {this.userService = userService;}
 
     public UserService getUserService() { return userService; }
+
+    private UserDetails loginAsSeller(Seller seller)
+    {
+        createSSOSession(seller.getSellerId());
+        userAuthorities.add(new GrantedAuthorityImpl(ROLE_SELLER));
+        return getUserAuthorised(seller.getSellerId(), seller.getPassword());
+    }
+
+    private UserDetails loginAsUser(com.bigsale.orm.model.User user)
+    {
+        userService.updateUserInfoWithLogin(user);
+        createSSOSession(user.getUserId());
+        userAuthorities.add(new GrantedAuthorityImpl(ROLE_BUYER));
+
+        return getUserAuthorised(user.getUserId(), user.getPassword());
+    }
+
+    private UserDetails loginAsAdmin()
+    {
+        userAuthorities.add(new GrantedAuthorityImpl(ROLE_ADMIN));
+        Admin admin = adminService.getAdminById("admin");
+        createSSOSession(admin.getAdminId());
+        String password = admin.getPassword();
+        return getUserAuthorised("admin", password);
+    }
+    private User getUserAuthorised(String id, String password)
+    {
+        User userAuthorised = new User(id, password,
+                true, true,
+                true, true, userAuthorities);
+        currentUser.set(userAuthorised);
+        return userAuthorised;
+    }
 }

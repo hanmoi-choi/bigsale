@@ -1,3 +1,3 @@
-ALTER TABLE USER ADD LAST_LOGIN_DATE TIMESTAMP;
+select * from user;
 
 

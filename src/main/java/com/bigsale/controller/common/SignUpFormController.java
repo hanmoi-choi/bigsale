@@ -23,17 +23,16 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.bigsale.orm.model.User.UserLevel.BRONZE;
-import static com.bigsale.orm.model.User.UserType.BUYER;
+import static com.bigsale.orm.model.Level.SILVER;
 
 @Controller
 @RequestMapping("/signUpForm")
 @SessionAttributes({"userSignUpDto"})
 public class SignUpFormController {
     private static final String FORM_PAGE_ONE = "/signUpFormPageOne";
-    private static final String FORM_PAGE_CONFIRM = "/signUormPageConfirm";
-    private static final String SUCCESS_PAGE = "/admin/registrationSuccess";
-    private static final String REDIRECT_TO_ADMIN_INDEX = "redirect:/bigsale/admin/";
+    private static final String FORM_PAGE_CONFIRM = "/signUpFormPageConfirm";
+    private static final String SUCCESS_PAGE = "/signUpSuccess";
+    private static final String REDIRECT_BIGSALE = "redirect:/welcome.html";
 
     private Map<Integer, String> pageForms;
     private Validator validator;
@@ -83,7 +82,7 @@ public class SignUpFormController {
 
         if (userClickedCancel(request))
         {
-            return REDIRECT_TO_ADMIN_INDEX;
+            return REDIRECT_BIGSALE;
         }
         else if (userIsFinished(request))
         {
@@ -127,9 +126,9 @@ public class SignUpFormController {
 
     private void setDefaultValue(User user)
     {
-        user.setUserType(BUYER);
         user.setDateCreated(new Date());
-        user.setUserLevel(BRONZE);
+        user.setUserLevel(SILVER);
+        user.setLoginCount(1);
     }
 
     private void persistUser(UserSignUpDto userSignUpDto)
@@ -138,11 +137,13 @@ public class SignUpFormController {
         Address address = new Address();
 
         setDefaultValue(user);
+
         setUserInfo(user, userSignUpDto);
         setAddressInfo(address, userSignUpDto);
         user.setAddress(address);
         address.getUsers().add(user);
         addressService.addAddress(address);
+//        userService.addUser(user);
     }
 
     private void setAddressInfo(Address address, UserSignUpDto userSignUpDto)

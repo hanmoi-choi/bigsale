@@ -17,7 +17,7 @@ import java.util.List;
  */
 @Repository("addressRepository")
 public class AddressRepository extends AbstractRepository<Address, String> {
-
+    public static final String ENTITY_NAME = "com.bigsale.orm.model.Address";
     HibernateTemplate hibernateTemplate;
 
     @Autowired
@@ -47,12 +47,12 @@ public class AddressRepository extends AbstractRepository<Address, String> {
     @Override
     public Address findById(String id)
     {
-        return super.findById(id);
+        return (Address) hibernateTemplate.get(ENTITY_NAME, id);
     }
 
     @Override
     public List<Address> findAll()
     {
-        return super.findAll();
+        return hibernateTemplate.loadAll(Address.class);
     }
 }

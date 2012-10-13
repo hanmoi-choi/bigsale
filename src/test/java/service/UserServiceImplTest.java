@@ -1,6 +1,7 @@
 package service;
 
 import com.bigsale.controller.dto.UserSearchDto;
+import com.bigsale.orm.model.Level;
 import com.bigsale.orm.model.User;
 import com.bigsale.service.AddressService;
 import com.bigsale.service.UserService;
@@ -47,4 +48,14 @@ public class UserServiceImplTest extends AbstractSpringTest{
         assertThat(userList.get(0).getUserId()).isEqualTo("hmchoi46");
     }
 
+    @Test
+    public void couldUpdateUseNextLevelProperly(){
+        User user = new User();
+        user.setUserId("hm");
+        user.setLoginCount(5);
+        user.setUserLevel(Level.BRONZE);
+        userService.updateUserInfoWithLogin(user);
+        assertThat(user.getUserLevel()).isEqualTo(Level.SILVER);
+
+    }
 }

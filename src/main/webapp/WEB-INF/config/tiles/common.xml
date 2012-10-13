@@ -11,4 +11,20 @@
     <definition name="/home" extends="base.definition">
         <put-attribute name="menu" value="/WEB-INF/jsp/common/menuHome.jsp"/>
     </definition>
+
+    <definition name="/signUpFormPageOne" extends="base.definition">
+        <put-attribute name="menu" value="/WEB-INF/jsp/common/menuHome.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/common/signUpFormPageOne.jsp"/>
+    </definition>
+
+    <definition name="/signUpFormPageConfirm" extends="base.definition">
+        <put-attribute name="menu" value="/WEB-INF/jsp/common/menuHome.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/common/signUpFormPageConfirm.jsp"/>
+    </definition>
+
+    <definition name="/signUpSuccess" extends="base.definition">
+        <put-attribute name="menu" value="/WEB-INF/jsp/common/menuHome.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/common/signUpSuccess.jsp"/>
+    </definition>
 </tiles-definitions>
+

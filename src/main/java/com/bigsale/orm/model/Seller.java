@@ -9,28 +9,26 @@ import java.util.Date;
 
 /**
  * Created with IntelliJ IDEA.
- * User: hanmoi
+ * Seller: hanmoi
  * Date: 2/09/12
  * Time: 10:20 AM
  * To change this template use File | Settings | File Templates.
  */
 @Entity
-@Table(name = "USER")
-public class User {
-
-
+@Table(name = "SELLER")
+public class Seller {
 
     @Id
-    @Column(name = "USER_ID", nullable = false, unique = true)
+    @Column(name = "SELLER_ID", nullable = false, unique = true)
     @Getter
     @Setter
-    private String userId;
+    private String sellerId;
 
     @Enumerated(EnumType.ORDINAL)
-    @Column(name = "USER_LEVEL", nullable = false)
+    @Column(name = "SELLER_LEVEL", nullable = false)
     @Getter
     @Setter
-    private Level userLevel;
+    private Level sellerLevel;
 
     @Column(name = "LOG_IN_COUNT", nullable = false)
     @Getter
@@ -57,25 +55,19 @@ public class User {
     @Setter
     private Date dateCreated;
 
-    @Getter
-    @Setter
-    @ManyToOne
-    @JoinColumn(name = "addr_id")
-    private Address address;
-
     public void increaseLoginCount() {
         loginCount++;
     }
 
     public void UpdateLevel() {
-        if(loginCount > 5 && userLevel == Level.BRONZE){
-            userLevel = userLevel.nextLevel();
+        if(loginCount > 5 && sellerLevel == Level.BRONZE){
+            sellerLevel = sellerLevel.nextLevel();
         }
-        else if(loginCount > 10 && userLevel == Level.SILVER){
-            userLevel = userLevel.nextLevel();
+        else if(loginCount > 10 && sellerLevel == Level.SILVER){
+            sellerLevel = sellerLevel.nextLevel();
         }
-        else if(loginCount > 20 && userLevel == Level.GOLD){
-            userLevel = userLevel.nextLevel();
+        else if(loginCount > 20 && sellerLevel == Level.GOLD){
+            sellerLevel = sellerLevel.nextLevel();
         }
     }
 
