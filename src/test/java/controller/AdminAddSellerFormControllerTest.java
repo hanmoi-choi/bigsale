@@ -1,8 +1,7 @@
 package controller;
 
 import com.bigsale.controller.admin.AddSellerFormController;
-import com.bigsale.orm.model.Address;
-import com.bigsale.orm.model.User;
+import com.bigsale.controller.dto.UserSignUpDto;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,26 +14,28 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static org.fest.assertions.Assertions.assertThat;
+import static org.mockito.Mockito.mock;
 
 public class AdminAddSellerFormControllerTest extends AbstractDispatcherServletTest {
 
     public static final String APP_CONTEXT = "../testconf/web-application-context.xml";
     private static final String FORM_PAGE_ONE = "/admin/addSellerFormPageOne";
-    private static final String FORM_PAGE_TWO = "/admin/addSellerFormPageTwo";
     private static final String FORM_PAGE_CONFIRM = "/admin/addSellerFormPageConfirm";
     private static final String SUCCESS_PAGE = "/admin/registrationSuccess";
     private static final String REDIRECT_TO_ADMIN_INDEX = "redirect:/bigsale/admin";
     public static final String REQUEST_URI = "/admin/addSellerForm.html";
 
-    private User user;
-    private Address address;
+    private UserSignUpDto userSignUpDto;
+
     private ModelAndView sut;
     private Map<String, String> paramMap;
 
     @Before
     public void initSutEnv(){
-        user = new User();
-        address = new Address();
+        userSignUpDto = mock(UserSignUpDto.class);
+        userSignUpDto.setPassword("1111");
+        userSignUpDto.setPasswordConfirm("1111");
+
         paramMap = new HashMap<String, String>();
     }
 
@@ -44,8 +45,8 @@ public class AdminAddSellerFormControllerTest extends AbstractDispatcherServletT
 
         assertThat(sut).isNotNull();
         assertThat(sut.getViewName()).isEqualTo(FORM_PAGE_ONE);
-        assertThat(sut.getModel().get("user")).isInstanceOf(User.class);
-        assertThat(sut.getModel().get("address")).isInstanceOf(Address.class);
+        assertThat(sut.getModel().get("userSignUpDto")).isInstanceOf(UserSignUpDto.class);
+
     }
 
     @Test
@@ -58,20 +59,6 @@ public class AdminAddSellerFormControllerTest extends AbstractDispatcherServletT
         sut = mavWhenSubmit(paramMap);
 
         assertThat(sut).isNotNull();
-        assertThat(sut.getViewName()).isEqualTo(FORM_PAGE_TWO);
-    }
-
-    @Test
-    public void shallProceedFormPageConfirmWithNextSubmit_WhenPageTwo() throws ServletException, IOException{
-        sut = initMavWithRequestUri(REQUEST_URI);
-
-        paramMap.put("_page", "1");
-        paramMap.put("_target2", "_target2");
-
-        sut = mavWhenSubmit(paramMap);
-
-
-        assertThat(sut).isNotNull();
         assertThat(sut.getViewName()).isEqualTo(FORM_PAGE_CONFIRM);
     }
 
@@ -79,8 +66,8 @@ public class AdminAddSellerFormControllerTest extends AbstractDispatcherServletT
     public void shallProceedAdminInitWithCancelSubmit() throws ServletException, IOException{
         sut = initMavWithRequestUri(REQUEST_URI);
 
-        paramMap.put("_page", "1");
-        paramMap.put("_target2", "_target2");
+        paramMap.put("_page", "0");
+        paramMap.put("_target1", "_target1");
         paramMap.put("_cancel", "_cancel");
 
         sut = mavWhenSubmit(paramMap);
@@ -94,8 +81,7 @@ public class AdminAddSellerFormControllerTest extends AbstractDispatcherServletT
        return setRelativeLocations(APP_CONTEXT)
                     .setClasses(AddSellerFormController.class)
                     .initRequest(requestUri)
-                    .addSessionValue("user", user)
-                    .addSessionValue("address", address)
+                    .addSessionValue("userSignUpDto", userSignUpDto)
                     .runService()
                     .getModelAndView();
     }
@@ -111,8 +97,7 @@ public class AdminAddSellerFormControllerTest extends AbstractDispatcherServletT
             servletTest.addParameter((String)entry.getKey(), (String)entry.getValue());
         }
 
-        return servletTest.addSessionValue("user", user)
-                .addSessionValue("address", address)
+        return servletTest.addSessionValue("userSignUpDto", userSignUpDto)
                 .runService()
                 .getModelAndView();
     }

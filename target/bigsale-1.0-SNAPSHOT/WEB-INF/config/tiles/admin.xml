@@ -29,11 +29,11 @@
     </definition>
 
     <definition name="/admin/querySellerFormPageOne" extends="admin.base">
-        <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSellerSuccess.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/user/admin/querySellerFormPageOne.jsp"/>
     </definition>
 
     <definition name="/admin/querySellerFormPageResult" extends="admin.base">
-        <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSellerSuccess.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/user/admin/querySellerFormPageResult.jsp"/>
     </definition>
 
     <definition name="/admin/makeReportFormPageOne" extends="admin.base">

@@ -1,5 +1,6 @@
 package com.bigsale.service;
 
+import com.bigsale.controller.dto.UserSearchDto;
 import com.bigsale.orm.model.User;
 
 import java.util.List;
@@ -18,7 +19,11 @@ public interface UserService {
 
     void deleteUser(User user);
 
-    User getUserById(Integer id);
+    User getUserById(String id);
 
     List<User> getAllUsers();
+
+    boolean checkIdDuplication(String userId);
+
+    List<User> findUserBySearchCriteria(UserSearchDto userSearchDto);
 }

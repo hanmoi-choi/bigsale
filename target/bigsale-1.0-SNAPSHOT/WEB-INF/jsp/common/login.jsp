@@ -14,7 +14,7 @@
 }
 
 .successmessage {
-
+    color: blue;
 }
 </style>
 

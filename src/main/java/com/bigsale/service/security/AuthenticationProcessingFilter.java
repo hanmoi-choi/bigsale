@@ -1,5 +1,6 @@
 package com.bigsale.service.security;
 
+import com.bigsale.util.CipherUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.core.Authentication;
@@ -23,7 +24,8 @@ public class AuthenticationProcessingFilter extends UsernamePasswordAuthenticati
     protected String obtainPassword(HttpServletRequest request)
     {
         String password = super.obtainPassword(request);
-        String passwordHash = EncryptionService.hashPassword(password);
+        String passwordHash = CipherUtil.hashPassword(password);
+        logger.debug("passwordHash: {}", passwordHash);
         userDetailsService.setPassword(passwordHash);
         return password;
     }

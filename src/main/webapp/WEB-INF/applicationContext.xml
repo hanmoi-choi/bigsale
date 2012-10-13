@@ -6,4 +6,13 @@
 	                    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
     ">
 
+    <!-- Spring -->
+    <import resource="config/spring/resource-placeholder.xml" />
+    <import resource="config/spring/utils.xml" />
+    <import resource="config/spring/spring-tiles2-conf.xml"/>
+    <import resource="config/spring/security-config.xml"/>
+    <import resource="config/spring/security-beans.xml"/>
+
+    <!-- Hibernate -->
+    <import resource="config/hibernate/hibernate.xml"/>
 </beans>

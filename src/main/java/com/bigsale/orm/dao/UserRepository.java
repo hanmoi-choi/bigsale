@@ -20,6 +20,7 @@ import java.util.List;
 @Transactional
 public class UserRepository extends AbstractRepository<User, String> {
 
+    public static final String ENTITY_NAME_FOR_USER = "com.bigsale.orm.model.User";
     HibernateTemplate hibernateTemplate;
 
     @Autowired
@@ -51,12 +52,13 @@ public class UserRepository extends AbstractRepository<User, String> {
     public void delete(User instance)
     {
         hibernateTemplate.delete(instance);
+
     }
 
     @Override
     public User findById(String id)
     {
-        return (User) hibernateTemplate.get("user_id", id);
+        return (User) hibernateTemplate.get(ENTITY_NAME_FOR_USER, id);
     }
 
     @Override
@@ -64,4 +66,11 @@ public class UserRepository extends AbstractRepository<User, String> {
     {
         return hibernateTemplate.loadAll(User.class);
     }
+
+    @Override
+    public SessionFactory getSessionFactory()
+    {
+        return hibernateTemplate.getSessionFactory();
+    }
+
 }

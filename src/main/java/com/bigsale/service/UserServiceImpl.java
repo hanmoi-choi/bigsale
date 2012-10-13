@@ -1,9 +1,15 @@
 package com.bigsale.service;
 
+import com.bigsale.controller.dto.UserSearchDto;
 import com.bigsale.orm.dao.Repository;
 import com.bigsale.orm.model.User;
+import org.hibernate.Session;
+import org.hibernate.criterion.MatchMode;
+import org.hibernate.criterion.Order;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -38,14 +44,38 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User getUserById(Integer id)
+    public User getUserById(String userId)
     {
-        return (User) userRepository.findById(id);
+        return (User) userRepository.findById(userId);
     }
 
     @Override
     public List<User> getAllUsers()
     {
         return userRepository.findAll();
+    }
+
+    @Override
+    public boolean checkIdDuplication(String userId)
+    {
+        User user = (User) userRepository.findById(userId);
+
+        return user != null;
+    }
+
+    @Override
+    @Transactional
+    public List<User> findUserBySearchCriteria(UserSearchDto userSearchDto){
+        Session session = userRepository.getSessionFactory().openSession();
+        session.beginTransaction();
+
+        List<User> userList = (List<User>) session.createCriteria(User.class)
+                .add(Restrictions.ilike("userId", userSearchDto.getUserId(), MatchMode.ANYWHERE))
+                .addOrder(Order.asc("userId"))
+                .list();
+
+        session.close();
+
+        return userList;
     }
 }

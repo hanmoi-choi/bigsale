@@ -1,4 +1,4 @@
-package com.bigsale.controller.admin;
+package com.bigsale.controller.common;
 
 import com.bigsale.controller.dto.UserSignUpDto;
 import com.bigsale.orm.model.Address;
@@ -24,20 +24,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static com.bigsale.orm.model.User.UserLevel.BRONZE;
-import static com.bigsale.orm.model.User.UserType.SELLER;
+import static com.bigsale.orm.model.User.UserType.BUYER;
 
 @Controller
-@RequestMapping("/admin/addSellerForm")
+@RequestMapping("/signUpForm")
 @SessionAttributes({"userSignUpDto"})
-public class AddSellerFormController {
-    private static final String FORM_PAGE_ONE = "/admin/addSellerFormPageOne";
-    private static final String FORM_PAGE_CONFIRM = "/admin/addSellerFormPageConfirm";
+public class SignUpFormController {
+    private static final String FORM_PAGE_ONE = "/signUpFormPageOne";
+    private static final String FORM_PAGE_CONFIRM = "/signUormPageConfirm";
     private static final String SUCCESS_PAGE = "/admin/registrationSuccess";
     private static final String REDIRECT_TO_ADMIN_INDEX = "redirect:/bigsale/admin/";
 
     private Map<Integer, String> pageForms;
     private Validator validator;
-    static final Logger logger = LoggerFactory.getLogger(AddSellerFormController.class);
+    static final Logger logger = LoggerFactory.getLogger(SignUpFormController.class);
 
     @Autowired
     UserService userService;
@@ -49,7 +49,7 @@ public class AddSellerFormController {
     UserSignUpDto userSignUpDto;
 
     @Autowired
-    public AddSellerFormController(Validator validator)
+    public SignUpFormController(Validator validator)
     {
         this.validator = validator;
     }
@@ -127,7 +127,7 @@ public class AddSellerFormController {
 
     private void setDefaultValue(User user)
     {
-        user.setUserType(SELLER);
+        user.setUserType(BUYER);
         user.setDateCreated(new Date());
         user.setUserLevel(BRONZE);
     }

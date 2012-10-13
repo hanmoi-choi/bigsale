@@ -1,5 +1,6 @@
-package com.bigsale.service.security;
+package com.bigsale.util;
 
+import com.bigsale.service.security.AuthenticationProcessingFilter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.crypto.codec.Base64;
@@ -7,15 +8,16 @@ import org.springframework.security.crypto.codec.Base64;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class EncryptionService {
-    private Logger logger = LoggerFactory.getLogger(EncryptionService.class);
+public class CipherUtil {
+    public static final String ALGORITHM = "SHA-1";
+    private Logger logger = LoggerFactory.getLogger(CipherUtil.class);
 
     public static String hashPassword(String password)
     {
         String passwordHash = "";
         try
         {
-            MessageDigest sha1 = MessageDigest.getInstance("SHA-1");
+            MessageDigest sha1 = MessageDigest.getInstance(ALGORITHM);
             sha1.reset();
             sha1.update(password.getBytes());
             Base64 encoder = new Base64();

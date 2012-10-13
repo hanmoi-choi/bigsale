@@ -16,9 +16,9 @@ import static org.fest.assertions.Assertions.assertThat;
 public class SellerQueryItemFormControllerTest extends AbstractDispatcherServletTest {
     public static final String APP_CONTEXT = "../testconf/web-application-context.xml";
     public static final String REQUEST_URI = "/seller/queryItemForm.html";
-    private Map<String, String> paramMap;
-    private ModelAndView sut;
 
+    private ModelAndView sut;
+    private Map<String, String> paramMap;
     @Before
     public void initSutEnv(){
         paramMap = new HashMap<String, String>();
@@ -29,7 +29,9 @@ public class SellerQueryItemFormControllerTest extends AbstractDispatcherServlet
         sut = initMavWithRequestUri(REQUEST_URI);
 
         assertThat(sut).isNotNull();
+
     }
+
 
     private ModelAndView initMavWithRequestUri(String requestUri) throws ServletException, IOException
     {
