@@ -1,6 +1,8 @@
 package com.bigsale.service;
 
+import com.bigsale.controller.dto.AddressSearchDto;
 import com.bigsale.orm.model.Address;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -21,4 +23,7 @@ public interface AddressService {
     Address getAddressById(Integer id);
 
     List<Address> getAllAddress();
+
+    @Transactional
+    Address findAddressBySearchCriteria(AddressSearchDto addressSearchDto);
 }

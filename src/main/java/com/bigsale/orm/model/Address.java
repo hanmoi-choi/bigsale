@@ -54,7 +54,7 @@ public class Address {
 
     @Getter
     @Setter
-    @OneToMany(cascade = {CascadeType.ALL})
+    @OneToMany(cascade = {CascadeType.ALL}, fetch = FetchType.EAGER)
     @JoinColumn(name = "ADDR_ID")
     @IndexColumn(name = "USER_IDX")
     private List<User> users;

@@ -18,10 +18,9 @@
 
 <body onload='document.loginForm.j_username.focus();'>
 
-	<%@ include file="/WEB-INF/jsp/common/navigation.jsp"%>
-
 	<h1 class="errormessage">Access Denied</h1>
 
+    <h1><a href="/welcome.html">HOME</a></h1>
 </body>
 
 </html>

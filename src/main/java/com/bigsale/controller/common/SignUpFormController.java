@@ -1,5 +1,6 @@
 package com.bigsale.controller.common;
 
+import com.bigsale.controller.dto.AddressSearchDto;
 import com.bigsale.controller.dto.UserSignUpDto;
 import com.bigsale.orm.model.Address;
 import com.bigsale.orm.model.User;
@@ -31,7 +32,6 @@ import static com.bigsale.orm.model.Level.SILVER;
 public class SignUpFormController {
     private static final String FORM_PAGE_ONE = "/signUpFormPageOne";
     private static final String FORM_PAGE_CONFIRM = "/signUpFormPageConfirm";
-    private static final String SUCCESS_PAGE = "/signUpSuccess";
     private static final String REDIRECT_BIGSALE = "redirect:/welcome.html";
 
     private Map<Integer, String> pageForms;
@@ -88,7 +88,7 @@ public class SignUpFormController {
         {
             persistUser(userSignUpDto);
             status.setComplete();
-            return SUCCESS_PAGE;
+            return REDIRECT_BIGSALE;
         }
         else
         {
@@ -131,19 +131,29 @@ public class SignUpFormController {
         user.setLoginCount(1);
     }
 
+
     private void persistUser(UserSignUpDto userSignUpDto)
     {
         User user = new User();
-        Address address = new Address();
+        AddressSearchDto addressSearchDto = new AddressSearchDto();
+        addressSearchDto.setStreet(userSignUpDto.getStreet());
+        addressSearchDto.setCity(userSignUpDto.getCity());
+        addressSearchDto.setState(userSignUpDto.getState());
+        addressSearchDto.setZipcode(userSignUpDto.getZipcode());
+
+        Address address = addressService.findAddressBySearchCriteria(addressSearchDto);
+
+        if(address == null){
+            address = new Address();
+            setAddressInfo(address, userSignUpDto);
+        }
 
         setDefaultValue(user);
-
         setUserInfo(user, userSignUpDto);
-        setAddressInfo(address, userSignUpDto);
+
         user.setAddress(address);
         address.getUsers().add(user);
-        addressService.addAddress(address);
-//        userService.addUser(user);
+        userService.addUser(user);
     }
 
     private void setAddressInfo(Address address, UserSignUpDto userSignUpDto)

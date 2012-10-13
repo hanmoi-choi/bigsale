@@ -55,4 +55,10 @@ public class AddressRepository extends AbstractRepository<Address, String> {
     {
         return hibernateTemplate.loadAll(Address.class);
     }
+
+    @Override
+    public SessionFactory getSessionFactory()
+    {
+        return hibernateTemplate.getSessionFactory();
+    }
 }

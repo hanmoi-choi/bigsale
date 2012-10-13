@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -46,6 +48,18 @@ public class Item {
     @Setter
     @Lob
     private String description;
+
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(name="SELLER_ITEM_JOIN",
+            joinColumns={@JoinColumn(name="ITEM_ID")},
+            inverseJoinColumns={@JoinColumn(name="SELLER_ID")})
+    private Set<Seller> sellers = new HashSet<Seller>();
+
+    @Getter
+    @Setter
+    @OneToMany(cascade = {CascadeType.ALL})
+    @JoinColumn(name = "ITEM_ORDER_ID")
+    private Set<ItemOrder> itemOrders = new HashSet<ItemOrder>();
 
 //    @Column(name = "Seller", nullable = false)
 //    @Getter

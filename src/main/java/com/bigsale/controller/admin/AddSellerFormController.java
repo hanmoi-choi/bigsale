@@ -29,7 +29,6 @@ import static com.bigsale.orm.model.Level.BRONZE;
 public class AddSellerFormController {
     private static final String FORM_PAGE_ONE = "/admin/addSellerFormPageOne";
     private static final String FORM_PAGE_CONFIRM = "/admin/addSellerFormPageConfirm";
-    private static final String SUCCESS_PAGE = "/admin/registrationSuccess";
     private static final String REDIRECT_TO_ADMIN_INDEX = "redirect:/admin/welcome.html";
 
     private Map<Integer, String> pageForms;
@@ -73,7 +72,6 @@ public class AddSellerFormController {
             SessionStatus status,
             @RequestParam("_page") int currentPage, Model model)
     {
-        logger.warn("{}", sellerSignUpDto);
 
         if (sellerClickedCancel(request))
         {
@@ -83,7 +81,7 @@ public class AddSellerFormController {
         {
             persistSeller(sellerSignUpDto);
             status.setComplete();
-            return SUCCESS_PAGE;
+            return REDIRECT_TO_ADMIN_INDEX;
         }
         else
         {

@@ -13,6 +13,7 @@
           p:configurationLoader-ref="configurationLoader"/>
 
     <bean id="LogginInjector" class="com.bigsale.util.LoggerService" />
+
     <context:component-scan base-package="com.bigsale" />
 
 </beans>

@@ -53,6 +53,7 @@ public class AuthenticationProcessingFilter extends UsernamePasswordAuthenticati
 
         response.addCookie(sso);
         request.getSession().setAttribute("user", user);
+        request.getSession().setAttribute("userId", user.getUsername());
         request.getSession().setAttribute(cookieName, currentCookie);
         super.successfulAuthentication(request, response, authResult);
     }

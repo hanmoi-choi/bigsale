@@ -1,6 +1,6 @@
 package com.bigsale.orm.dao;
 
-import com.bigsale.orm.model.Order;
+import com.bigsale.orm.model.ItemOrder;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.HibernateTemplate;
@@ -18,7 +18,7 @@ import java.util.List;
  */
 @Repository("orderRepository")
 @Transactional
-public class OrderRepository extends AbstractRepository<Order, String> {
+public class OrderRepository extends AbstractRepository<ItemOrder, String> {
 
     public static final String ENTITY_NAME = "com.bigsale.orm.model.Order";
     HibernateTemplate hibernateTemplate;
@@ -36,35 +36,35 @@ public class OrderRepository extends AbstractRepository<Order, String> {
     }
 
     @Override
-    public void add(Order instance)
+    public void add(ItemOrder instance)
     {
         hibernateTemplate.save(instance);
 
     }
 
     @Override
-    public void update(Order instance)
+    public void update(ItemOrder instance)
     {
         hibernateTemplate.update(instance);
     }
 
     @Override
-    public void delete(Order instance)
+    public void delete(ItemOrder instance)
     {
         hibernateTemplate.delete(instance);
 
     }
 
     @Override
-    public Order findById(String id)
+    public ItemOrder findById(String id)
     {
-        return (Order) hibernateTemplate.get(ENTITY_NAME, id);
+        return (ItemOrder) hibernateTemplate.get(ENTITY_NAME, id);
     }
 
     @Override
-    public List<Order> findAll()
+    public List<ItemOrder> findAll()
     {
-        return hibernateTemplate.loadAll(Order.class);
+        return hibernateTemplate.loadAll(ItemOrder.class);
     }
 
     @Override

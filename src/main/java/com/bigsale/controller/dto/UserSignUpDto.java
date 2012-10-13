@@ -34,8 +34,6 @@ public class UserSignUpDto {
     @Getter
     Map<String, String> stateMap;
 
-
-
     @Autowired
     public UserSignUpDto(UserService userService, SellerService sellerService)
     {

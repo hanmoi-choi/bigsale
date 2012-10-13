@@ -6,6 +6,8 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -54,6 +56,12 @@ public class Seller {
     @Getter
     @Setter
     private Date dateCreated;
+
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(name="SELLER_ITEM_JOIN",
+            joinColumns={@JoinColumn(name="SELLER_ID")},
+            inverseJoinColumns={@JoinColumn(name="ITEM_ID")})
+    private Set<Item> meetings = new HashSet<Item>();
 
     public void increaseLoginCount() {
         loginCount++;

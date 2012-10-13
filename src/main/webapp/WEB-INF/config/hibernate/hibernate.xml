@@ -44,7 +44,7 @@
                 <value>com.bigsale.orm.model.User</value>
                 <value>com.bigsale.orm.model.Seller</value>
                 <value>com.bigsale.orm.model.Item</value>
-                <value>com.bigsale.orm.model.Order</value>
+                <value>com.bigsale.orm.model.ItemOrder</value>
                 <value>com.bigsale.orm.model.Admin</value>
                 <value>com.bigsale.orm.model.Address</value>
             </list>
@@ -53,5 +53,9 @@
 
     <bean name="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+        <property name="transactionManager" ref="transactionManager"/>
     </bean>
 </beans>

@@ -5,6 +5,8 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,27 +17,22 @@ import java.util.Date;
  */
 @Entity
 @Table(name = "ORDER")
-public class Order {
+public class ItemOrder {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "ORDER_ID", nullable = false, unique = true)
-    private int orderId;
+    @Column(name = "ITEM_ORDER_ID", nullable = false, unique = true)
+    private int itemOrderId;
 
     @Column(name = "ORDER_QUANTITY", nullable = false)
     @Getter
     @Setter
-    private int orderQuantity;
+    private int itemOrderQuantity;
 
     @Column(name = "ORDER_DATE", nullable = false)
     @Getter
     @Setter
-    private Date orderDate;
-
-    @Column(name = "ITEM_ID", nullable = false)
-    @Getter
-    @Setter
-    private int itemId;
+    private Date itemOrderDate;
 
     @Column(name = "DELIVERY_STATUS", nullable = false)
     @Enumerated(EnumType.ORDINAL)
@@ -43,4 +40,16 @@ public class Order {
     @Setter
     @Lob
     private DeliveryStatus description;
+
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(name="USER_ORDER_JOIN",
+            joinColumns={@JoinColumn(name="ORDER_ID")},
+            inverseJoinColumns={@JoinColumn(name="USER_ID")})
+    private Set<User> itemOrders = new HashSet<User>();
+
+    @Getter
+    @Setter
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "ITEM_ID")
+    private Item item;
 }

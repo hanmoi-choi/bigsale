@@ -6,6 +6,8 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -59,9 +61,15 @@ public class User {
 
     @Getter
     @Setter
-    @ManyToOne
-    @JoinColumn(name = "addr_id")
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "ADDR_ID")
     private Address address;
+
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(name="USER_ORDER_JOIN",
+            joinColumns={@JoinColumn(name="USER_ID")},
+            inverseJoinColumns={@JoinColumn(name="ITEM_ORDER_ID")})
+    private Set<ItemOrder> itemOrders = new HashSet<ItemOrder>();
 
     public void increaseLoginCount() {
         loginCount++;

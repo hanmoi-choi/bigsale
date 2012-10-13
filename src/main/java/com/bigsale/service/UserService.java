@@ -2,6 +2,7 @@ package com.bigsale.service;
 
 import com.bigsale.controller.dto.UserSearchDto;
 import com.bigsale.orm.model.User;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -25,6 +26,7 @@ public interface UserService {
 
     boolean checkIdDuplication(String userId);
 
+    @Transactional
     List<User> findUserBySearchCriteria(UserSearchDto userSearchDto);
 
     void updateUserInfoWithLogin(User user);
