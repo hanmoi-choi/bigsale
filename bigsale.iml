@@ -27,10 +27,6 @@
         <webroots>
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/java" />
-          <root url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/config/properties" />
-        </sourceRoots>
       </configuration>
     </facet>
     <facet type="hibernate" name="Hibernate">
@@ -63,6 +59,12 @@
     <orderEntry type="library" name="spring-security-acl-3.0.7.RELEASE" level="project" />
     <orderEntry type="library" name="spring-security-crypto-3.1.0.RC1" level="project" />
     <orderEntry type="library" name="spring-security-core-3.1.0.RELEASE" level="project" />
+    <orderEntry type="library" name="spring-modules-validation-0.8" level="project" />
+    <orderEntry type="library" name="commons-collections-3.2.1" level="project" />
+    <orderEntry type="library" name="commons-lang3-3.1" level="project" />
+    <orderEntry type="library" name="commons-lang-2.6" level="project" />
+    <orderEntry type="library" name="mail" level="project" />
+    <orderEntry type="library" name="spring-support-2.0.8" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.16" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.6.1" level="project" />
@@ -132,10 +134,6 @@
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-servlet:2.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-template:2.2.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:0.11.4" level="project" />
-    <orderEntry type="library" name="spring-modules-validation-0.8" level="project" />
-    <orderEntry type="library" name="commons-collections-3.2.1" level="project" />
-    <orderEntry type="library" name="commons-lang3-3.1" level="project" />
-    <orderEntry type="library" name="commons-lang-2.6" level="project" />
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">

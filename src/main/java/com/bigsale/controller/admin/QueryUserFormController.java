@@ -1,7 +1,10 @@
 package com.bigsale.controller.admin;
 
 import com.bigsale.controller.dto.UserSearchDto;
+import com.bigsale.controller.dto.UserSearchResultDto;
+import com.bigsale.orm.model.Seller;
 import com.bigsale.orm.model.User;
+import com.bigsale.service.SellerService;
 import com.bigsale.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,6 +19,7 @@ import org.springframework.web.bind.support.SessionStatus;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -27,16 +31,19 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("/admin/querySellerForm")
-public class QuerySellerFormController {
+public class QueryUserFormController {
+    @Autowired
+    SellerService sellerService;
+
     @Autowired
     UserService userService;
 
     @Autowired
     UserSearchDto userSearchDto;
 
-    static final Logger logger = LoggerFactory.getLogger(AddSellerFormController.class);
-    public static final String FORM_PAGE_FOR_QUERY_INPUT = "/admin/querySellerFormPageOne";
-    public static final String FORM_PAGE_FOR_QUERY_RESULT = "/admin/querySellerFormPageResult";
+    static final Logger logger = LoggerFactory.getLogger(QueryUserFormController.class);
+    public static final String FORM_PAGE_FOR_QUERY_INPUT = "/admin/queryUserFormPageOne";
+    public static final String FORM_PAGE_FOR_QUERY_RESULT = "/admin/queryUserFormPageResult";
 
     @RequestMapping(method = RequestMethod.GET)
     public String setupForm(Model model)
@@ -53,10 +60,33 @@ public class QuerySellerFormController {
             BindingResult result, SessionStatus status,
             Model model)
     {
-        List<User> userList = userService.findUserBySearchCriteria(userSearchDto);
-        logger.debug("size: {}", userList.size());
-        request.setAttribute("userList", userList);
+        List<UserSearchResultDto> userSearchResultList = new ArrayList<UserSearchResultDto>();
+
+        fillBuyersInfo(userSearchDto, userSearchResultList);
+        fillSellersInfo(userSearchDto, userSearchResultList);
+
+        request.setAttribute("userSearchResultList", userSearchResultList);
 
         return FORM_PAGE_FOR_QUERY_RESULT;
+    }
+
+    private void fillSellersInfo(UserSearchDto userSearchDto, List<UserSearchResultDto> userSearchResultList)
+    {
+        List<Seller> sellerList = sellerService.findSellerBySearchCriteria(userSearchDto);
+        for(Seller seller : sellerList){
+            UserSearchResultDto searchResultDto = new UserSearchResultDto();
+            searchResultDto.fillDataWith(seller);
+            userSearchResultList.add(searchResultDto);
+        }
+    }
+
+    private void fillBuyersInfo(UserSearchDto userSearchDto, List<UserSearchResultDto> userSearchResultList)
+    {
+        List<User> userList = userService.findUserBySearchCriteria(userSearchDto);
+        for(User user : userList){
+            UserSearchResultDto searchResultDto = new UserSearchResultDto();
+            searchResultDto.fillDataWith(user);
+            userSearchResultList.add(searchResultDto);
+        }
     }
 }

@@ -43,13 +43,11 @@ public class ItemOrder {
     @Lob
     private DeliveryStatus description;
 
+
+    @ManyToMany(mappedBy="itemOrders")
     @Getter
     @Setter
-    @ManyToMany(cascade = {CascadeType.ALL})
-    @JoinTable(name="USER_ORDER_JOIN",
-            joinColumns={@JoinColumn(name="ORDER_ID")},
-            inverseJoinColumns={@JoinColumn(name="USER_ID")})
-    private Set<User> itemOrders = new HashSet<User>();
+    private Set<User> users = new HashSet<User>();
 
     @Getter
     @Setter

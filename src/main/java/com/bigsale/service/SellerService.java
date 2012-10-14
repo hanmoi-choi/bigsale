@@ -1,6 +1,6 @@
 package com.bigsale.service;
 
-import com.bigsale.controller.dto.SellerSearchDto;
+import com.bigsale.controller.dto.UserSearchDto;
 import com.bigsale.orm.model.Seller;
 
 import java.util.List;
@@ -25,7 +25,7 @@ public interface SellerService {
 
     boolean checkIdDuplication(String sellerId);
 
-    List<Seller> findSellerBySearchCriteria(SellerSearchDto sellerSearchDto);
+    List<Seller> findSellerBySearchCriteria(UserSearchDto sellerSearchDto);
 
     void updateSellerInfoWithLogin(Seller seller);
 }

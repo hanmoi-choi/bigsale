@@ -26,6 +26,12 @@ public class BuyerController {
         return "/buyer/index";
     }
 
+    @RequestMapping("/modifyInfo")
+    public String modifyInfo()
+    {
+        return "redirect:/buyer/modifyInfoForm.html";
+    }
+
     @RequestMapping("/checkOrder")
     public String addItems()
     {

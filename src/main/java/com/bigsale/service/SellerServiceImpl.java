@@ -1,15 +1,16 @@
 package com.bigsale.service;
 
-import com.bigsale.controller.dto.SellerSearchDto;
+import com.bigsale.controller.dto.UserSearchDto;
 import com.bigsale.orm.dao.Repository;
 import com.bigsale.orm.model.Seller;
 import org.hibernate.Session;
 import org.hibernate.criterion.MatchMode;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -24,7 +25,7 @@ import java.util.List;
 public class SellerServiceImpl implements SellerService {
     @Autowired
     Repository sellerRepository;
-
+    static final Logger logger = LoggerFactory.getLogger(SellerServiceImpl.class);
     @Override
     public void addSeller(Seller seller)
     {
@@ -63,18 +64,18 @@ public class SellerServiceImpl implements SellerService {
     }
 
     @Override
-    @Transactional
-    public List<Seller> findSellerBySearchCriteria(SellerSearchDto sellerSearchDto){
+
+    public List<Seller> findSellerBySearchCriteria(UserSearchDto sellerSearchDto){
         Session session = sellerRepository.getSessionFactory().openSession();
         session.beginTransaction();
 
         List<Seller> sellerList = (List<Seller>) session.createCriteria(Seller.class)
-                .add(Restrictions.ilike("sellerId", sellerSearchDto.getSellerId(), MatchMode.ANYWHERE))
+                .add(Restrictions.ilike("sellerId", sellerSearchDto.getUserId(), MatchMode.ANYWHERE))
                 .addOrder(Order.asc("sellerId"))
                 .list();
 
+        logger.debug("Size: {}", sellerList.size());
         session.close();
-
         return sellerList;
     }
 

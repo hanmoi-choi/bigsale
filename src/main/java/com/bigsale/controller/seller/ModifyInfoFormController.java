@@ -1,10 +1,8 @@
-package com.bigsale.controller.admin;
+package com.bigsale.controller.seller;
 
-import com.bigsale.controller.dto.SellerSignUpDto;
+import com.bigsale.controller.dto.SellerModifyDto;
 import com.bigsale.orm.model.Seller;
 import com.bigsale.service.SellerService;
-import com.bigsale.util.CipherUtil;
-import com.bigsale.util.MailService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,40 +23,50 @@ import java.util.Map;
 import static com.bigsale.orm.model.Level.BRONZE;
 
 @Controller
-@RequestMapping("/admin/addSellerForm")
-@SessionAttributes({"sellerSignUpDto"})
-public class AddSellerFormController {
-    private static final String FORM_PAGE_ONE = "/admin/addSellerFormPageOne";
-    private static final String FORM_PAGE_CONFIRM = "/admin/addSellerFormPageConfirm";
+@RequestMapping("/admin/modifySellerForm")
+@SessionAttributes({"sellerModifyDto"})
+public class ModifyInfoFormController {
+    private static final String FORM_PAGE_ONE = "/admin/modifySellerFormPageOne";
+    private static final String FORM_PAGE_CONFIRM = "/admin/modifySellerFormPageConfirm";
     private static final String REDIRECT_TO_ADMIN_INDEX = "redirect:/admin/welcome.html";
 
     private Map<Integer, String> pageForms;
     private Validator validator;
-    static final Logger logger = LoggerFactory.getLogger(AddSellerFormController.class);
+    static final Logger logger = LoggerFactory.getLogger(ModifyInfoFormController.class);
 
     @Autowired
     SellerService sellerService;
 
     @Autowired
-    SellerSignUpDto sellerSignUpDto;
+    SellerModifyDto sellerModifyDto;
 
     @Autowired
-    private MailService mailService;
-
-    @Autowired
-    public AddSellerFormController(Validator validator)
+    public ModifyInfoFormController(Validator validator)
     {
         this.validator = validator;
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public String setupForm(Model model)
+    public String setupForm(HttpServletRequest request,
+                            HttpServletResponse response,
+                            Model model)
     {
-        model.addAttribute("sellerSignUpDto", sellerSignUpDto);
+        String userId = (String) request.getSession().getAttribute("userId");
+
+        getSellerInfo(sellerModifyDto, userId);
+        model.addAttribute("sellerModifyDto", sellerModifyDto);
 
         initAddSellerFromMap();
 
         return FORM_PAGE_ONE;
+    }
+
+    private void getSellerInfo(SellerModifyDto sellerModifyDto, String userId) {
+        Seller seller = sellerService.getSellerById(userId);
+
+        sellerModifyDto.setSellerId(seller.getSellerId());
+        sellerModifyDto.setFullName(seller.getFullName());
+        sellerModifyDto.setEmail(seller.getEmail());
     }
 
     private void initAddSellerFromMap()
@@ -71,7 +79,7 @@ public class AddSellerFormController {
     @RequestMapping(method = RequestMethod.POST)
     public String submitForm(
             HttpServletRequest request, HttpServletResponse response,
-            @ModelAttribute("sellerSignUpDto") SellerSignUpDto sellerSignUpDto,
+            @ModelAttribute("sellerModifyDto") SellerModifyDto sellerModifyDto,
             BindingResult sellerResult,
             SessionStatus status,
             @RequestParam("_page") int currentPage, Model model)
@@ -83,8 +91,8 @@ public class AddSellerFormController {
         }
         else if (sellerIsFinished(request))
         {
-            persistSeller(sellerSignUpDto);
-            sendMailToUser(sellerSignUpDto);
+            modifySeller(sellerModifyDto);
+
             status.setComplete();
             return REDIRECT_TO_ADMIN_INDEX;
         }
@@ -98,7 +106,7 @@ public class AddSellerFormController {
             }
             else
             {
-                validateInput(sellerSignUpDto, sellerResult);
+                validator.validate(sellerModifyDto, sellerResult);
             }
 
             if (!sellerResult.hasErrors())
@@ -115,19 +123,6 @@ public class AddSellerFormController {
         }
     }
 
-    private void sendMailToUser(SellerSignUpDto sellerSignUpDto) {
-        mailService.sendSignUpSuccessMail(sellerSignUpDto.getEmail(),
-                sellerSignUpDto.getSellerId(),
-                sellerSignUpDto.getPassword());
-    }
-
-    private void validateInput(SellerSignUpDto sellerSignUpDto, BindingResult sellerResult)
-    {// Seller clicked next Validate data based on page
-        sellerSignUpDto.isPasswordInputMatched();
-        sellerSignUpDto.isIdDuplicated();
-        validator.validate(sellerSignUpDto, sellerResult);
-    }
-
     private void setDefaultValue(Seller seller)
     {
         seller.setDateCreated(new Date());
@@ -135,22 +130,21 @@ public class AddSellerFormController {
         seller.setLoginCount(1);
     }
 
-    private void persistSeller(SellerSignUpDto sellerSignUpDto)
+    private void modifySeller(SellerModifyDto sellerModifyDto)
     {
         Seller seller = new Seller();
 
         setDefaultValue(seller);
-        setSellerInfo(seller, sellerSignUpDto);
-        sellerService.addSeller(seller);
+        setSellerInfo(seller, sellerModifyDto);
+        sellerService.updateSeller(seller);
     }
 
 
 
-    private void setSellerInfo(Seller seller, SellerSignUpDto sellerSignUpDto)
+    private void setSellerInfo(Seller seller, SellerModifyDto sellerSignUpDto)
     {
         seller.setSellerId(sellerSignUpDto.getSellerId());
-        String password = CipherUtil.hashPassword(sellerSignUpDto.getPassword());
-        seller.setPassword(password);
+
         seller.setFullName(sellerSignUpDto.getFullName());
         seller.setEmail(sellerSignUpDto.getEmail());
     }

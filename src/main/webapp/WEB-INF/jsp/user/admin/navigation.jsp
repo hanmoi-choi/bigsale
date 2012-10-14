@@ -9,7 +9,7 @@
 		</li>
 
         <li>
-            <a href="/bigsale/admin/querySeller.html">Query Seller</a>
+            <a href="/bigsale/admin/querySeller.html">Query User</a>
         </li>
 
         <li>

@@ -51,12 +51,9 @@ public class Item {
     @Lob
     private String description;
 
+    @ManyToMany(mappedBy="items")
     @Getter
     @Setter
-    @ManyToMany(cascade = {CascadeType.ALL})
-    @JoinTable(name="SELLER_ITEM_JOIN",
-            joinColumns={@JoinColumn(name="ITEM_ID")},
-            inverseJoinColumns={@JoinColumn(name="SELLER_ID")})
     private Set<Seller> sellers = new HashSet<Seller>();
 
     @Getter

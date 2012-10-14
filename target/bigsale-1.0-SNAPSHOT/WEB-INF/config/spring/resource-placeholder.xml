@@ -7,7 +7,8 @@
         <property name="locations">
             <list>
                 <value>/WEB-INF/config/properties/database.properties</value>
-                <value>classpath:cookie.properties</value>
+                <value>/WEB-INF/config/properties/cookie.properties</value>
+                <value>/WEB-INF/config/properties/mail.properties</value>
             </list>
 
         </property>

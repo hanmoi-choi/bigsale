@@ -3,9 +3,6 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
-
-
     <!-- Hibernate session factory -->
     <bean name="sessionFactory"
           class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
@@ -55,7 +52,7 @@
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
-    <bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
-        <property name="transactionManager" ref="transactionManager"/>
-    </bean>
+    <!--<bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">-->
+        <!--<property name="transactionManager" ref="transactionManager"/>-->
+    <!--</bean>-->
 </beans>

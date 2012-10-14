@@ -12,6 +12,7 @@
     <import resource="config/spring/spring-tiles2-conf.xml"/>
     <import resource="config/spring/security-config.xml"/>
     <import resource="config/spring/security-beans.xml"/>
+    <import resource="config/spring/spring-mail.config.xml"/>
 
     <!-- Hibernate -->
     <import resource="config/hibernate/hibernate.xml"/>

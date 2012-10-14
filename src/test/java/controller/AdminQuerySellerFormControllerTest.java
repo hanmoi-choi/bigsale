@@ -1,6 +1,6 @@
 package controller;
 
-import com.bigsale.controller.admin.QuerySellerFormController;
+import com.bigsale.controller.admin.QueryUserFormController;
 import com.bigsale.controller.dto.UserSearchDto;
 import com.bigsale.orm.model.User;
 import org.junit.Before;
@@ -50,7 +50,7 @@ public class AdminQuerySellerFormControllerTest extends AbstractDispatcherServle
     @Test
     public void shallSearchSellerWithID() throws ServletException, IOException {
         sut = setRelativeLocations(APP_CONTEXT)
-                .setClasses(QuerySellerFormController.class)
+                .setClasses(QueryUserFormController.class)
                 .initRequest(REQUEST_URI, RequestMethod.POST)
                 .addParameter("_search","_search")
                 .addSessionValue("userSearchDto", userSearchDto)
@@ -65,7 +65,7 @@ public class AdminQuerySellerFormControllerTest extends AbstractDispatcherServle
     private ModelAndView initMavWithRequestUri(String requestUri) throws ServletException, IOException
     {
         return setRelativeLocations(APP_CONTEXT)
-                .setClasses(QuerySellerFormController.class)
+                .setClasses(QueryUserFormController.class)
                 .initRequest(requestUri)
                 .runService()
                 .getModelAndView();

@@ -24,6 +24,12 @@ public class SellerController {
         return "/seller/index";
     }
 
+    @RequestMapping("/modifyInfo")
+    public String modifyInfo()
+    {
+        return "redirect:/seller/modifyInfoForm.html";
+    }
+
     @RequestMapping("/addItem")
     public String addItem()
     {

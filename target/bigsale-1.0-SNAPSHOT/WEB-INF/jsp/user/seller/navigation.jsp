@@ -5,6 +5,10 @@
         </li>
 
         <li>
+            <a href="/bigsale/seller/modifyInfo.html">Modify Info</a>
+        </li>
+
+        <li>
             <a href="/bigsale/seller/addItem.html">Add Item</a>
         </li>
 

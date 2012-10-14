@@ -7,6 +7,7 @@ import com.bigsale.orm.model.User;
 import com.bigsale.service.AddressService;
 import com.bigsale.service.UserService;
 import com.bigsale.util.CipherUtil;
+import com.bigsale.util.MailService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +44,9 @@ public class SignUpFormController {
 
     @Autowired
     AddressService addressService;
+
+    @Autowired
+    MailService mailService;
 
     @Autowired
     UserSignUpDto userSignUpDto;
@@ -88,6 +92,7 @@ public class SignUpFormController {
         {
             persistUser(userSignUpDto);
             status.setComplete();
+            sendMailToUser(userSignUpDto);
             return REDIRECT_BIGSALE;
         }
         else
@@ -115,6 +120,12 @@ public class SignUpFormController {
             }
 
         }
+    }
+
+    private void sendMailToUser(UserSignUpDto userSignUpDto) {
+        mailService.sendSignUpSuccessMail(userSignUpDto.getEmail(),
+                userSignUpDto.getUserId(),
+                userSignUpDto.getPassword());
     }
 
     private void validateInput(UserSignUpDto userSignUpDto, BindingResult userResult)

@@ -9,7 +9,6 @@ import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -63,7 +62,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @Transactional
     public List<User> findUserBySearchCriteria(UserSearchDto userSearchDto){
         Session session = userRepository.getSessionFactory().openSession();
         session.beginTransaction();

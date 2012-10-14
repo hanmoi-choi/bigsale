@@ -5,7 +5,6 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -17,7 +16,6 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 @Repository("itemRepository")
-@Transactional
 public class ItemRepository extends AbstractRepository<Item, Integer> {
 
     public static final String ENTITY_NAME = "com.bigsale.orm.model.Item";

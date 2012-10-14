@@ -45,14 +45,14 @@
 
     <!-- We want error logging from this logger to go to an extra appender
 It still inherits CONSOLE-stdout from the root logger -->
-    <logger name="org.springframework" level="WARN">
-        <appender-ref ref="CONSOLE-stdwarn"/>
-    </logger>
-    <logger name="org.hibernate" level="DEBUG">
-        <appender-ref ref="CONSOLE-stddebug"/>
-    </logger>
-    <logger name="org.apache" level="WARN">
-        <appender-ref ref="CONSOLE-stdwarn"/>
-    </logger>
+    <!--<logger name="org.springframework" level="WARN">-->
+        <!--<appender-ref ref="CONSOLE-stdwarn"/>-->
+    <!--</logger>-->
+    <!--<logger name="org.hibernate" level="DEBUG">-->
+        <!--<appender-ref ref="CONSOLE-stddebug"/>-->
+    <!--</logger>-->
+    <!--<logger name="org.apache" level="WARN">-->
+        <!--<appender-ref ref="CONSOLE-stdwarn"/>-->
+    <!--</logger>-->
 
 </configuration>

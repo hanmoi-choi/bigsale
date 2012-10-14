@@ -19,6 +19,7 @@ import org.springframework.web.util.WebUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 
 /**
@@ -81,7 +82,7 @@ public class AddItemFormController {
             @ModelAttribute("itemAddDto")ItemAddDto itemAddDto,
             BindingResult itemAddresult, SessionStatus status,
             @RequestParam("_page") int currentPage,
-            Model model)
+            HttpSession session)
     {
 
         if (sellerClickedCancel(request))
@@ -90,7 +91,7 @@ public class AddItemFormController {
         }
         else if (sellerIsFinished(request))
         {
-            String sellerId = (String) request.getSession().getAttribute("userId");
+            String sellerId = (String) session.getAttribute("userId");
             persistItem(itemAddDto, sellerId);
             status.setComplete();
             return REDIRECT_TO_SELLER_INDEX;
@@ -123,6 +124,7 @@ public class AddItemFormController {
     }
 
     private void persistItem(ItemAddDto itemAddDto, String sellerId) {
+        logger.debug("sellerId: {}", sellerId);
         Seller seller = sellerService.getSellerById(sellerId);
 
         Item item = new Item();
@@ -131,11 +133,9 @@ public class AddItemFormController {
         item.setDescription(itemAddDto.getDescription());
         item.setPrice(itemAddDto.getPrice());
         item.setDiscountRate(itemAddDto.getDiscountRate());
-        item.getSellers().add(seller);
 
         seller.getItems().add(item);
-
-        itemService.addItem(item);
+        sellerService.updateSeller(seller);
     }
 
     private boolean sellerIsFinished(HttpServletRequest request)
