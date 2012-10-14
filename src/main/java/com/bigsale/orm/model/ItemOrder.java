@@ -5,8 +5,6 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,7 +14,7 @@ import java.util.Set;
  * To change this template use File | Settings | File Templates.
  */
 @Entity
-@Table(name = "ORDER")
+@Table(name = "ITEM_ORDER")
 public class ItemOrder {
 
     @Id
@@ -29,7 +27,7 @@ public class ItemOrder {
     @Column(name = "ORDER_QUANTITY", nullable = false)
     @Getter
     @Setter
-    private int itemOrderQuantity;
+    private int orderQuantity;
 
     @Column(name = "ORDER_DATE", nullable = false)
     @Getter
@@ -40,14 +38,13 @@ public class ItemOrder {
     @Enumerated(EnumType.ORDINAL)
     @Getter
     @Setter
-    @Lob
-    private DeliveryStatus description;
+    private DeliveryStatus deliveryStatus;
 
-
-    @ManyToMany(mappedBy="itemOrders")
     @Getter
     @Setter
-    private Set<User> users = new HashSet<User>();
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "USER_ID")
+    private User user;
 
     @Getter
     @Setter

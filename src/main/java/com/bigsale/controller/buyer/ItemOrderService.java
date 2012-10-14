@@ -1,11 +1,11 @@
-package com.bigsale.controller.dto;
+package com.bigsale.controller.buyer;
 
 /**
  * Created with IntelliJ IDEA.
  * User: hanmoi
- * Date: 11/10/12
- * Time: 1:26 AM
+ * Date: 15/10/12
+ * Time: 1:03 AM
  * To change this template use File | Settings | File Templates.
  */
-public class OrderDto {
+public class ItemOrderService {
 }

@@ -52,10 +52,6 @@ public class ModifyBuyerInfoFormController {
                             Model model)
     {
         String userId = (String) session.getAttribute("userId");
-        logger.debug("session: {}",session.getAttributeNames());
-        logger.debug("userId: {}", userId);
-        logger.debug("userId: {}", request.getSession().getAttribute("userId"));
-
 
         getUserInfo(userModifyDto, userId);
         model.addAttribute("userModifyDto", userModifyDto);

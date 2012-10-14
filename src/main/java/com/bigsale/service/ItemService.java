@@ -20,7 +20,7 @@ public interface ItemService {
 
     void deleteItem(Item item);
 
-    Item getItemById(String id);
+    Item getItemById(Integer id);
 
     List<Item> getAllItems();
 

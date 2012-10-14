@@ -48,7 +48,7 @@ public class BuyerController {
                              HttpServletResponse response,
                              @RequestParam("itemId") String itemId)
     {
-        request.getSession().setAttribute("itemId", itemId);
+        request.getSession().setAttribute("itemId", new Integer(itemId));
         return "redirect:/buyer/placeOrderForm.html";
     }
 

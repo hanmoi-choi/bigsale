@@ -7,20 +7,6 @@
 
     <title>Login - Custom Authentication Sample App</title>
 
-    <style TYPE="text/css">
-        .errormessage {
-            color: #000;
-            background-color: #ffEEEE;
-            border: 3px solid #ff0000;
-            padding: 8px;
-            margin: 16px;
-        }
-
-        .successmessage {
-
-        }
-    </style>
-
 </head>
 
 <body onload='document.loginForm.j_username.focus();'>

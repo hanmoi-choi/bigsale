@@ -29,7 +29,7 @@ import static com.bigsale.orm.model.Level.BRONZE;
 public class ModifySellerInfoFormController {
     private static final String FORM_PAGE_ONE = "/seller/modifyInfoFormPageOne";
     private static final String FORM_PAGE_CONFIRM = "/seller/modifyInfoFormPageConfirm";
-    private static final String REDIRECT_TO_ADMIN_INDEX = "redirect:/seller/welcome.html";
+    private static final String REDIRECT_TO_SELLER_INDEX = "redirect:/seller/welcome.html";
 
     private Map<Integer, String> pageForms;
     private Seller sellerModified;
@@ -92,14 +92,14 @@ public class ModifySellerInfoFormController {
 
         if (sellerClickedCancel(request))
         {
-            return REDIRECT_TO_ADMIN_INDEX;
+            return REDIRECT_TO_SELLER_INDEX;
         }
         else if (sellerIsFinished(request))
         {
             modifySeller(sellerModifyDto);
 
             status.setComplete();
-            return REDIRECT_TO_ADMIN_INDEX;
+            return REDIRECT_TO_SELLER_INDEX;
         }
         else
         {

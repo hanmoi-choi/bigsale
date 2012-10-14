@@ -62,6 +62,10 @@ public class Item {
     @JoinColumn(name = "ITEM_ORDER_ID")
     private Set<ItemOrder> itemOrders = new HashSet<ItemOrder>();
 
+    public void deduceStock(int amount){
+        stockQuantity -= amount;
+    }
+
 //    @Column(name = "Seller", nullable = false)
 //    @Getter
 //    @Setter

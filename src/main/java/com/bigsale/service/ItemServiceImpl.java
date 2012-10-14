@@ -43,7 +43,7 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
-    public Item getItemById(String itemId)
+    public Item getItemById(Integer itemId)
     {
         return (Item) itemRepository.findById(itemId);
     }

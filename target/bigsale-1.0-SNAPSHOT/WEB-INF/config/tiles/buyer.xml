@@ -13,11 +13,11 @@
     </definition>
 
     <definition name="/buyer/placeOrderFormPageOne" extends="buyer.base">
-        <put-attribute name="body" value="/WEB-INF/jsp/user/buyer/index.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/user/buyer/placeOrderFormPageOne.jsp"/>
     </definition>
 
-    <definition name="/buyer/placeOrderFormPageResult" extends="buyer.base">
-        <put-attribute name="body" value="/WEB-INF/jsp/user/buyer/index.jsp"/>
+    <definition name="/buyer/placeOrderFormPageConfirm" extends="buyer.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/buyer/placeOrderFormPageConfirm.jsp"/>
     </definition>
 
     <definition name="/buyer/modifyInfoFormPageOne" extends="buyer.base">

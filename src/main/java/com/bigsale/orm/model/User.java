@@ -67,10 +67,8 @@ public class User {
 
     @Getter
     @Setter
-    @ManyToMany(cascade = {CascadeType.ALL})
-    @JoinTable(name="USER_ORDER_JOIN",
-            joinColumns={@JoinColumn(name="USER_ID")},
-            inverseJoinColumns={@JoinColumn(name="ITEM_ORDER_ID")})
+    @OneToMany(cascade = {CascadeType.ALL}, fetch = FetchType.EAGER)
+    @JoinColumn(name = "USER_ID")
     private Set<ItemOrder> itemOrders = new HashSet<ItemOrder>();
 
     public void increaseLoginCount() {
