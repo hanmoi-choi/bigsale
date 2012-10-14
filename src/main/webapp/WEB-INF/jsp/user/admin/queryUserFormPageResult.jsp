@@ -21,19 +21,12 @@
 
 
     <c:forEach var="user" items="${userSearchResultList}">
-        <c:url var="modifyUrl" value="/admin/modifySeller.html">
-            <c:param name="id" value="${user.userId}" />
-        </c:url>
-
         <tr class="searchResultBlock">
-            <form action="${modifyUrl}" method="post">
-                <td id="itemId">${user.userId}</td>
-                <td>${user.fullName}</td>
-                <td>${user.email}</td>
-                <td>${user.type}</td>
-                <td>${user.level}</td>
-                <td><input type="submit" value="Modify"></td>
-            </form>
+            <td id="itemId">${user.userId}</td>
+            <td>${user.fullName}</td>
+            <td>${user.email}</td>
+            <td>${user.type}</td>
+            <td>${user.level}</td>
         </tr>
     </c:forEach>
 
@@ -41,22 +34,22 @@
 
 
 <%--<c:forEach var="person" items="${persons}" varStatus="status">--%>
-    <%--<tr>--%>
-        <%--<c:set var="personFormId" value="person${status.index}"/>--%>
+<%--<tr>--%>
+<%--<c:set var="personFormId" value="person${status.index}"/>--%>
 
-        <%--<c:url var="editUrl" value="/person/form.html">--%>
-            <%--<c:param name="id" value="${person.id}" />--%>
-        <%--</c:url>--%>
-        <%--<c:url var="deleteUrl" value="/person/delete.html"/>--%>
-        <%--<form id="${personFormId}" action="${deleteUrl}" method="POST">--%>
-            <%--<input id="id" name="id" type="hidden" value="${person.id}"/>--%>
-        <%--</form>--%>
+<%--<c:url var="editUrl" value="/person/form.html">--%>
+<%--<c:param name="id" value="${person.id}" />--%>
+<%--</c:url>--%>
+<%--<c:url var="deleteUrl" value="/person/delete.html"/>--%>
+<%--<form id="${personFormId}" action="${deleteUrl}" method="POST">--%>
+<%--<input id="id" name="id" type="hidden" value="${person.id}"/>--%>
+<%--</form>--%>
 
-        <%--<td>${person.firstName}</td>--%>
-        <%--<td>${person.lastName}</td>--%>
-        <%--<td>--%>
-            <%--<a href='<c:out value="${editUrl}"/>'><fmt:message key="button.edit"/></a>--%>
-            <%--<a href="javascript:document.forms['${personFormId}'].submit();"><fmt:message key="button.delete"/></a>--%>
-        <%--</td>--%>
-    <%--</tr>--%>
+<%--<td>${person.firstName}</td>--%>
+<%--<td>${person.lastName}</td>--%>
+<%--<td>--%>
+<%--<a href='<c:out value="${editUrl}"/>'><fmt:message key="button.edit"/></a>--%>
+<%--<a href="javascript:document.forms['${personFormId}'].submit();"><fmt:message key="button.delete"/></a>--%>
+<%--</td>--%>
+<%--</tr>--%>
 <%--</c:forEach>--%>

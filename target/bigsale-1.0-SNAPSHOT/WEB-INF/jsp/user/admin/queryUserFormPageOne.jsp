@@ -17,7 +17,7 @@
             <td colspan="3">
                 <input type="submit" value="Cancel" name="_cancel"/>
                 <input type="submit" value="Search" name="_search"/>
-                <input type="submit" value="All Buyers" name="_allBuyers"/>
+                <input type="submit" value="All Users" name="_allBuyers"/>
             </td>
         </tr>
     </table>

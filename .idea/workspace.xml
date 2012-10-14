@@ -10,58 +10,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a80526e-c670-4943-9ad9-1bc7680c4485" name="Default" comment="k">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/spring_support_2_0_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/SellerModifyDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/ModifyInfoFormController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/util/MailService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/mail.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/spring-mail.config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/queryUserFormPageResult.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/modifySellerFormPageConfirm.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/modifySellerFormPageOne.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/AdminSearchDto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/querySellerFormPageResult.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/WEB-INF/config/properties/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/WEB-INF/jsp/user/admin/querySellerFormPageOne.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/WEB-INF/jsp/user/admin/querySellerFormPageResult.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/QuerySellerFormController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/QueryUserFormController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/SellerSearchDto.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSearchResultDto.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/querySellerFormPageOne.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/queryUserFormPageOne.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/ModifyBuyerInfoFormController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserModifyDto.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/placeOrderFormPageConfirm.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/placeOrderFormPageOne.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/modifyInfoFormPageConfirm.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/modifyInfoFormPageOne.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/WEB-INF/jsp/user/seller/modifySellerFormPageConfirm.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/WEB-INF/jsp/user/seller/modifySellerFormPageOne.jsp" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/ModifyInfoFormController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/ModifySellerInfoFormController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/modifySellerFormPageConfirm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/modifyInfoFormPageConfirm.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/modifySellerFormPageOne.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/modifyInfoFormPageOne.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bigsale.iml" afterPath="$PROJECT_DIR$/bigsale.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/AddSellerFormController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/AddSellerFormController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/AdminController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/BuyerController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/BuyerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/SignUpFormController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/SignUpFormController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/AddItemFormController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/AddItemFormController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/SellerController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/SellerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/ItemRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/ItemRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/UserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/UserRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Item.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Item.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/ItemOrder.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/ItemOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/service/AddressService.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/service/AddressService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/SellerModifyDto.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/SellerModifyDto.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/service/AddressServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/service/AddressServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/service/SellerService.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/service/SellerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/service/SellerServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/service/SellerServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/service/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/sql/create user table.sql" afterPath="$PROJECT_DIR$/src/main/sql/create user table.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/service/security/AuthenticationProcessingFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/service/security/AuthenticationProcessingFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/hibernate/hibernate.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/hibernate/hibernate.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/logback-test.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/logback-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/logback.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/resource-placeholder.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/resource-placeholder.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/admin.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/admin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/navigation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/navigation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/navigation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/navigation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/navigation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/navigation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/denied.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/denied.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/controller/AdminQuerySellerFormControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/controller/AdminQuerySellerFormControllerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/security-config.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/security-config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/utils.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/utils.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/buyer.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/buyer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/seller.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/seller.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/itemSearchResultForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/itemSearchResultForm.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/menu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/menu.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/queryUserFormPageOne.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/queryUserFormPageOne.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/queryUserFormPageResult.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/queryUserFormPageResult.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/menu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/menu.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/menu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/menu.jsp" />
     </list>
     <ignored path="bigsale.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -133,108 +109,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Repository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/Repository.java">
+      <file leaf-file-name="itemSearchResultForm.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/itemSearchResultForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Item.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="11" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1171#1179#0" expanded="true" />
-                <element signature="e#1343#1354#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MailService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/util/MailService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="35" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.0">
+            <state line="20" column="49" selection-start="647" selection-end="647" vertical-scroll-proportion="-11.428572">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Seller.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Seller.java">
+      <file leaf-file-name="BuyerController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/BuyerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="20" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#1471#1477#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddItemFormController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/AddItemFormController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="35" selection-start="4477" selection-end="4477" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemOrder.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/ItemOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="38" selection-start="998" selection-end="998" vertical-scroll-proportion="0.86984813">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1064#1070#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="36" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1577#1588#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/ItemRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="0" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.0">
+            <state line="36" column="49" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SellerRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/SellerRepository.java">
+      <file leaf-file-name="placeOrderFormPageOne.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/placeOrderFormPageOne.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create user table.sql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/sql/create user table.sql">
+      <file leaf-file-name="placeOrderFormPageConfirm.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/placeOrderFormPageConfirm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="39" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryUserFormController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/QueryUserFormController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="79" column="8" selection-start="2972" selection-end="2972" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2257#2278#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/AdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="0" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckOrderFormController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/CheckOrderFormController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="93" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queryUserFormPageOne.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/queryUserFormPageOne.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="28" selection-start="559" selection-end="559" vertical-scroll-proportion="-9.142858">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUpFormController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/SignUpFormController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="0" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -428,8 +384,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/navigation.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/model/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/security/EncryptionService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/menu.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/menu.jsp" />
         <option value="$PROJECT_DIR$/src/test/java/controller/AdminControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/controller/BuyerControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/controller/SellerControllerTest.java" />
@@ -458,7 +412,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/spring-mvc-context.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/applicationContext-security.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/hibernate-cfg/hibernate.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/security-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/security/UserDetailsServiceBackup.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/security-beans.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSearchDto.java" />
@@ -486,12 +439,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/SellerSearchDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/SellerSignUpDto.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/addItemFormPageConfirm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/buyer.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSignUpDto.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/utils.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/ItemAddDto.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/addItemFormPageOne.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/seller.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/addSellerSuccess.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/template/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Order.java" />
@@ -504,18 +454,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Seller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/security/AuthenticationProcessingFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/AddressRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/OrderRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/security/UserDetailsService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/userinfobar.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/ItemSearchDto.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/searchResultForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/common.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/itemSearchResultForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/main.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/ItemServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/resource-placeholder.xml" />
@@ -527,8 +474,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/denied.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/CommonController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/modifySellerFormPageConfirm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/SellerModifyDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/modifySellerFormPageOne.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/ModifySellerFormController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/querySellerFormPageOne.jsp" />
@@ -539,10 +484,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/navigation.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/navigation.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/SellerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/BuyerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/QueryUserFormController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/queryUserFormPageResult.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/AddressServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/AddressService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/SellerService.java" />
@@ -550,8 +492,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/SellerRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/hibernate/hibernate.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/web-application-context.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/logback-test.xml" />
@@ -563,6 +503,30 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Item.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/AddItemFormController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/ItemOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/seller.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/ModifyInfoFormController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/SellerModifyDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserModifyDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/ModifyInfoFormController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/buyer.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/security-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/ModifySellerInfoFormController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/web-application-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/utils.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/AddressServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/security/AuthenticationProcessingFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/ModifyBuyerInfoFormController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/menu.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/menu.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/menu.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/modifyInfoFormPageConfirm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/modifyInfoFormPageOne.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/queryUserFormPageOne.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/queryUserFormPageResult.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/itemSearchResultForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/BuyerController.java" />
       </list>
     </option>
   </component>
@@ -1677,6 +1641,10 @@
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1863,18 +1831,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bigsale.controller.buyer" />
       <recent name="com.bigsale.controller.dto" />
       <recent name="com.bigsale.controller.admin" />
       <recent name="com.bigsale.service" />
       <recent name="com.bigsale.orm.dao" />
-      <recent name="com.bigsale.orm.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
       <recent name="$PROJECT_DIR$/src/main/java/com/bigsale/util" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.bigsale.service" />
@@ -2350,9 +2318,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24676375" sideWeight="0.36911765" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967638" sideWeight="0.6643059" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.674221" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37944984" sideWeight="0.7167139" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37944984" sideWeight="0.7946176" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243626" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28328612" sideWeight="0.6885113" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20538244" sideWeight="0.6885113" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="100" width="1080" height="600" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.67058825" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="ASM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2718,11 +2686,6 @@
         <state line="26" column="95" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/CheckOrderFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="93" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/base.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="19" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" />
@@ -2987,16 +2950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/spring-tiles2-conf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="7" selection-start="967" selection-end="967" vertical-scroll-proportion="-17.052631">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-security-core-3.0.7.RELEASE.jar!/org/springframework/security/core/userdetails/User.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="183" selection-end="183" vertical-scroll-proportion="0.12612613">
@@ -3079,11 +3032,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="9" selection-start="189" selection-end="189" vertical-scroll-proportion="-1.7142857" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/AbstractRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
@@ -3142,13 +3090,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/buyer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="66" selection-start="682" selection-end="682" vertical-scroll-proportion="0.31141868">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/security/LogoutFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="4" selection-start="1741" selection-end="1741" vertical-scroll-proportion="0.7605634">
@@ -3202,37 +3143,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/security/AuthenticationProcessingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="49" selection-start="2589" selection-end="2589" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/OrderRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="37" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.4011142">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/AdminRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="4" selection-start="1763" selection-end="1763" vertical-scroll-proportion="0.71503955">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/security/UserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="14" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1501#1509#0" expanded="true" />
-            <element signature="e#1654#1670#0" expanded="true" />
-            <element signature="e#1733#1747#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3246,13 +3160,6 @@
     <entry file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-security-taglibs-3.0.7.RELEASE.jar!/META-INF/security.tld">
       <provider selected="true" editor-type-id="text-editor">
         <state line="96" column="4" selection-start="3645" selection-end="3645" vertical-scroll-proportion="0.8829517">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/PlaceOrderFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="46" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.4200627">
           <folding />
         </state>
       </provider>
@@ -3280,23 +3187,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/addSellerFormPageConfirm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="107" selection-end="107" vertical-scroll-proportion="-1.1428572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/addItemForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="-1.1428572">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="32" selection-start="234" selection-end="234" vertical-scroll-proportion="-2.857143" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/index.jsp">
@@ -3341,13 +3236,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/ItemServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="4" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/DeliveryStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="5" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.0">
@@ -3360,21 +3248,6 @@
         <state line="15" column="14" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/spring-mail.config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="33" selection-start="712" selection-end="712" vertical-scroll-proportion="0.21927711">
-          <folding>
-            <element signature="tag#value#0;tag#property#0;tag#bean#0;tag#beans#0" expanded="true" />
-            <element signature="tag#value#0;tag#property#1;tag#bean#0;tag#beans#0" expanded="true" />
-            <element signature="tag#value#0;tag#property#2;tag#bean#0;tag#beans#0" expanded="true" />
-            <element signature="tag#value#0;tag#property#3;tag#bean#0;tag#beans#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/mail.properties">
@@ -3391,38 +3264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/resource-placeholder.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="54" selection-start="647" selection-end="647" vertical-scroll-proportion="0.27586207">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/security-beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="43" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.91034484">
-          <folding>
-            <element signature="e#2889#2909#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/security-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.64827585">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSearchDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="13" selection-start="311" selection-end="311" vertical-scroll-proportion="0.45652175">
@@ -3435,13 +3276,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="20" selection-start="600" selection-end="600" vertical-scroll-proportion="-8.571428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/itemSearchResultForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="11" selection-start="1010" selection-end="1010" vertical-scroll-proportion="-17.142857">
           <folding />
         </state>
       </provider>
@@ -3463,20 +3297,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/menuLogin.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="19" selection-start="220" selection-end="220" vertical-scroll-proportion="-2.857143">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/userinfobar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="-3.4285715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/queryItemForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="-1.1428572">
           <folding />
         </state>
       </provider>
@@ -3507,23 +3327,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/signUpFormPageOne.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="12" selection-start="1998" selection-end="1998" vertical-scroll-proportion="-1.1428572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/common.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="16" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/seller.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="3" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -3535,54 +3341,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/modifySellerFormPageConfirm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="399" selection-end="399" vertical-scroll-proportion="-4.571429">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSignUpDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="138" column="26" selection-start="4173" selection-end="4173" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/addSellerFormPageOne.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="12" selection-start="1362" selection-end="1362" vertical-scroll-proportion="-8.571428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/modifySellerFormPageOne.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="648" selection-end="648" vertical-scroll-proportion="-4.952381">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/ModifyInfoFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="14" selection-start="1495" selection-end="1495" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/queryUserFormPageOne.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="412" selection-end="412" vertical-scroll-proportion="-5.142857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/SellerModifyDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="29" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3598,30 +3360,9 @@
         <state line="4" column="19" selection-start="201" selection-end="201" vertical-scroll-proportion="-2.2857144" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="22" selection-start="224" selection-end="224" vertical-scroll-proportion="-2.857143">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/navigation.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="12" selection-start="329" selection-end="329" vertical-scroll-proportion="-8.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="285" selection-end="285" vertical-scroll-proportion="-4.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/navigation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="-5.142857">
           <folding />
         </state>
       </provider>
@@ -3640,47 +3381,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/SellerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="34" selection-start="662" selection-end="662" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/queryUserFormPageResult.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="584" selection-end="584" vertical-scroll-proportion="-8.571428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/MakeReportFormController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="93" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="951" selection-end="951" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/CommonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/SignUpFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1557" selection-end="1557" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3694,13 +3398,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/AdminService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="30" selection-start="450" selection-end="450" vertical-scroll-proportion="0.53571427">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/AddressServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2147" selection-end="2147" vertical-scroll-proportion="0.97321427">
           <folding />
         </state>
       </provider>
@@ -3721,26 +3418,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/QueryUserFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="38" selection-start="3329" selection-end="3329" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2257#2278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSearchResultDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="0" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -3761,39 +3441,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/utils.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="4" selection-start="985" selection-end="985" vertical-scroll-proportion="-9.473684">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/hibernate/hibernate.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="1249" selection-end="1249" vertical-scroll-proportion="-2.1578948">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/web-application-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="477" selection-end="477" vertical-scroll-proportion="-3.1578948">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="57" selection-start="567" selection-end="567" vertical-scroll-proportion="-7.5789475">
           <folding />
         </state>
       </provider>
@@ -3822,37 +3472,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/BuyerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="80" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/AddressRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/SellerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/SellerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="46" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -3876,20 +3498,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/sql/create user table.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="39" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/SellerRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/ItemRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -3935,11 +3543,408 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/ItemOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="38" selection-start="998" selection-end="998" vertical-scroll-proportion="0.86984813">
+        <state line="41" column="11" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1064#1070#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/queryItemForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="-1.1428572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/SellerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="46" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/seller.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="92" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/SellerModifyDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/signUpFormPageOne.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="13" selection-start="2554" selection-end="2554" vertical-scroll-proportion="-18.571428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/addSellerFormPageOne.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="12" selection-start="1362" selection-end="1362" vertical-scroll-proportion="-11.714286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/addSellerFormPageConfirm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="107" selection-end="107" vertical-scroll-proportion="-1.1428572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserModifyDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/buyer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="87" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/security/UserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="10" selection-start="964" selection-end="964" vertical-scroll-proportion="0.086021505">
+          <folding>
+            <element signature="e#1501#1509#0" expanded="true" />
+            <element signature="e#1654#1670#0" expanded="true" />
+            <element signature="e#1733#1747#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/ModifySellerInfoFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="19" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/CommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/resource-placeholder.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="54" selection-start="647" selection-end="647" vertical-scroll-proportion="-6.3157897">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/security-beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="1123" selection-end="1123" vertical-scroll-proportion="-6.3157897">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/security-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-16.421053">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/spring-mail.config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="33" selection-start="712" selection-end="712" vertical-scroll-proportion="-12.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/spring-tiles2-conf.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="7" selection-start="967" selection-end="967" vertical-scroll-proportion="-17.052631">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/utils.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="8" selection-start="1053" selection-end="1053" vertical-scroll-proportion="-11.368421">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/web-application-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="7" selection-start="545" selection-end="545" vertical-scroll-proportion="-5.0526314">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/AddressServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="40" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.8543689">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/ItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="4" selection-start="983" selection-end="983" vertical-scroll-proportion="0.8611111">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/SellerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="39" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.8611111">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="0" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.16666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="61" selection-start="759" selection-end="759" vertical-scroll-proportion="0.37772396">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/SellerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.82580644">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/ItemRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.82580644">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/AdminRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.44946235">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/AddressRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="912" selection-end="912" vertical-scroll-proportion="0.2882883">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/security/AuthenticationProcessingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="48" selection-start="2082" selection-end="2082" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/userinfobar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="34" selection-start="128" selection-end="128" vertical-scroll-proportion="-1.7142857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="9" selection-start="189" selection-end="189" vertical-scroll-proportion="-1.7142857" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/navigation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="-5.142857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="-2.2857144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="11" selection-start="191" selection-end="191" vertical-scroll-proportion="-1.7142857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="285" selection-end="285" vertical-scroll-proportion="-5.714286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/SignUpFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="0" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/modifyInfoFormPageConfirm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="33" selection-start="399" selection-end="399" vertical-scroll-proportion="0.19668247">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/modifyInfoFormPageOne.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="12" selection-start="836" selection-end="836" vertical-scroll-proportion="0.34718826">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/CheckOrderFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="93" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/ModifyBuyerInfoFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="35" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.11472275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/PlaceOrderFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="37" selection-start="719" selection-end="719" vertical-scroll-proportion="0.26519337">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/modifyInfoFormPageConfirm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="632" selection-end="632" vertical-scroll-proportion="0.43678162">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/modifyInfoFormPageOne.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="12" selection-start="2242" selection-end="2242" vertical-scroll-proportion="1.4086444">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/QueryUserFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="8" selection-start="2972" selection-end="2972" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2257#2278#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/queryUserFormPageResult.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="33" selection-start="883" selection-end="883" vertical-scroll-proportion="0.6380368">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/queryUserFormPageOne.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="28" selection-start="559" selection-end="559" vertical-scroll-proportion="-9.142858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/itemSearchResultForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="49" selection-start="647" selection-end="647" vertical-scroll-proportion="-11.428572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/BuyerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="49" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/placeOrderFormPageOne.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/placeOrderFormPageConfirm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>

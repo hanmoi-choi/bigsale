@@ -60,8 +60,8 @@ public class AddressServiceImpl implements AddressService {
 
     @Override
     public Address findAddressBySearchCriteria(AddressSearchDto addressSearchDto){
-        Session session = addressRepository.getSessionFactory().getCurrentSession();
-//        session.beginTransaction();
+        Session session = addressRepository.getSessionFactory().openSession();
+        session.beginTransaction();
 
         List<Address> addressList = (List<Address>) session.createCriteria(Address.class)
                 .add(Restrictions.ilike("street", addressSearchDto.getStreet(), MatchMode.EXACT))
@@ -70,7 +70,7 @@ public class AddressServiceImpl implements AddressService {
                 .add(Restrictions.ilike("zipcode", addressSearchDto.getZipcode(), MatchMode.EXACT))
                 .list();
 
-//        session.close();
+        session.close();
 
         if(addressList.isEmpty()) return null;
 

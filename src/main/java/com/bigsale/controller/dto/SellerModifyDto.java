@@ -22,8 +22,6 @@ public class SellerModifyDto {
 
     @Setter
     @Getter
-    @NotBlank(message = "Please enter your ID.")
-    @Length(min = 2, max = 20, message = "Please enter between {1} and {2} characters.")
     private String sellerId;
 
     @Setter

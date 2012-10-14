@@ -16,6 +16,7 @@ import org.springframework.web.util.WebUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -23,16 +24,17 @@ import java.util.Map;
 import static com.bigsale.orm.model.Level.BRONZE;
 
 @Controller
-@RequestMapping("/admin/modifySellerForm")
+@RequestMapping("/seller/modifyInfoForm")
 @SessionAttributes({"sellerModifyDto"})
-public class ModifyInfoFormController {
-    private static final String FORM_PAGE_ONE = "/admin/modifySellerFormPageOne";
-    private static final String FORM_PAGE_CONFIRM = "/admin/modifySellerFormPageConfirm";
-    private static final String REDIRECT_TO_ADMIN_INDEX = "redirect:/admin/welcome.html";
+public class ModifySellerInfoFormController {
+    private static final String FORM_PAGE_ONE = "/seller/modifyInfoFormPageOne";
+    private static final String FORM_PAGE_CONFIRM = "/seller/modifyInfoFormPageConfirm";
+    private static final String REDIRECT_TO_ADMIN_INDEX = "redirect:/seller/welcome.html";
 
     private Map<Integer, String> pageForms;
+    private Seller sellerModified;
     private Validator validator;
-    static final Logger logger = LoggerFactory.getLogger(ModifyInfoFormController.class);
+    static final Logger logger = LoggerFactory.getLogger(ModifySellerInfoFormController.class);
 
     @Autowired
     SellerService sellerService;
@@ -40,8 +42,10 @@ public class ModifyInfoFormController {
     @Autowired
     SellerModifyDto sellerModifyDto;
 
+
+
     @Autowired
-    public ModifyInfoFormController(Validator validator)
+    public ModifySellerInfoFormController(Validator validator)
     {
         this.validator = validator;
     }
@@ -49,9 +53,10 @@ public class ModifyInfoFormController {
     @RequestMapping(method = RequestMethod.GET)
     public String setupForm(HttpServletRequest request,
                             HttpServletResponse response,
+                            HttpSession session,
                             Model model)
     {
-        String userId = (String) request.getSession().getAttribute("userId");
+        String userId = (String) session.getAttribute("userId");
 
         getSellerInfo(sellerModifyDto, userId);
         model.addAttribute("sellerModifyDto", sellerModifyDto);
@@ -62,11 +67,11 @@ public class ModifyInfoFormController {
     }
 
     private void getSellerInfo(SellerModifyDto sellerModifyDto, String userId) {
-        Seller seller = sellerService.getSellerById(userId);
+        sellerModified = sellerService.getSellerById(userId);
 
-        sellerModifyDto.setSellerId(seller.getSellerId());
-        sellerModifyDto.setFullName(seller.getFullName());
-        sellerModifyDto.setEmail(seller.getEmail());
+        sellerModifyDto.setSellerId(sellerModified.getSellerId());
+        sellerModifyDto.setFullName(sellerModified.getFullName());
+        sellerModifyDto.setEmail(sellerModified.getEmail());
     }
 
     private void initAddSellerFromMap()
@@ -132,21 +137,9 @@ public class ModifyInfoFormController {
 
     private void modifySeller(SellerModifyDto sellerModifyDto)
     {
-        Seller seller = new Seller();
-
-        setDefaultValue(seller);
-        setSellerInfo(seller, sellerModifyDto);
-        sellerService.updateSeller(seller);
-    }
-
-
-
-    private void setSellerInfo(Seller seller, SellerModifyDto sellerSignUpDto)
-    {
-        seller.setSellerId(sellerSignUpDto.getSellerId());
-
-        seller.setFullName(sellerSignUpDto.getFullName());
-        seller.setEmail(sellerSignUpDto.getEmail());
+        sellerModified.setFullName(sellerModifyDto.getFullName());
+        sellerModified.setEmail(sellerModifyDto.getEmail());
+        sellerService.updateSeller(sellerModified);
     }
 
     private boolean sellerIsFinished(HttpServletRequest request)

@@ -41,8 +41,10 @@ public class AuthenticationProcessingFilter extends UsernamePasswordAuthenticati
     }
 
     @Override
-    protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response,
-            Authentication authResult) throws ServletException, IOException
+    protected void successfulAuthentication(
+                                HttpServletRequest request,
+                                HttpServletResponse response,
+                                Authentication authResult) throws ServletException, IOException
     {
         logger.debug("successful authentication");
         User user = userDetailsService.getCurrentUser();

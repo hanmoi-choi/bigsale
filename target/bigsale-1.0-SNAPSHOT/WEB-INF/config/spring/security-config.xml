@@ -25,7 +25,6 @@
         <access-denied-handler ref="accessDeniedHandler"/>
     </http>
 
-
     <!-- Authentication Manager -->
     <!-- This will override the settings of authentication manager bean. -->
     <authentication-manager alias="authenticationManager">

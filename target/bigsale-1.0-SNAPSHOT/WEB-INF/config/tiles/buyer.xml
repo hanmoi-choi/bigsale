@@ -20,6 +20,14 @@
         <put-attribute name="body" value="/WEB-INF/jsp/user/buyer/index.jsp"/>
     </definition>
 
+    <definition name="/buyer/modifyInfoFormPageOne" extends="buyer.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/buyer/modifyInfoFormPageOne.jsp"/>
+    </definition>
+
+    <definition name="/buyer/modifyInfoFormPageConfirm" extends="buyer.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/buyer/modifyInfoFormPageConfirm.jsp"/>
+    </definition>
+
     <definition name="/buyer/checkOrderFormPageOne" extends="buyer.base">
         <put-attribute name="body" value="/WEB-INF/jsp/user/buyer/index.jsp"/>
     </definition>
