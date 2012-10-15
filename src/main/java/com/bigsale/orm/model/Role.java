@@ -1,4 +1,4 @@
-package com.bigsale.controller.dto;
+package com.bigsale.orm.model;
 
 public enum Role
 {

@@ -49,7 +49,6 @@ public class QueryUserFormController {
     public String setupForm(Model model)
     {
         model.addAttribute("userSearchDto", userSearchDto);
-        logger.warn("QuerySellerFormController setupForm");
         return FORM_PAGE_FOR_QUERY_INPUT;
     }
 

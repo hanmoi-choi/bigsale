@@ -21,11 +21,11 @@
     </definition>
 
     <definition name="/seller/queryItemFormPageOne" extends="seller.base">
-        <put-attribute name="body" value="/WEB-INF/jsp/user/seller/index.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/user/seller/queryItemFormPageOne.jsp"/>
     </definition>
 
     <definition name="/seller/queryItemFormPageResult" extends="seller.base">
-        <put-attribute name="body" value="/WEB-INF/jsp/user/seller/index.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/user/seller/queryItemFormPageResult.jsp"/>
     </definition>
 
     <definition name="/seller/modifyInfoFormPageOne" extends="seller.base">
@@ -37,12 +37,21 @@
     </definition>
 
     <definition name="/seller/checkOrderFormPageOne" extends="seller.base">
-        <put-attribute name="body" value="/WEB-INF/jsp/user/seller/index.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/user/seller/checkOrderFormPageOne.jsp"/>
     </definition>
 
     <definition name="/seller/checkOrderFormPageReult" extends="seller.base">
-        <put-attribute name="body" value="/WEB-INF/jsp/user/seller/index.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/user/seller/checkOrderFormPageReult.jsp"/>
     </definition>
+
+    <definition name="/seller/modifyItemFormPageOne" extends="seller.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/seller/modifyItemFormPageOne.jsp"/>
+    </definition>
+
+    <definition name="/seller/modifyItemFormPageConfirm" extends="seller.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/seller/modifyItemFormPageConfirm.jsp"/>
+    </definition>
+
 
 </tiles-definitions>
 

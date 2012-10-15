@@ -1,8 +1,8 @@
 package com.bigsale.controller.dto;
 
+import com.bigsale.orm.model.Item;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.springmodules.validation.bean.conf.loader.annotation.handler.Length;
 import org.springmodules.validation.bean.conf.loader.annotation.handler.Max;
@@ -48,4 +48,13 @@ public class ItemAddDto {
     @Setter
     @Getter
     private String picturePath;
+
+    public void fiilWith(Item item)
+    {
+        itemName = item.getItemName();
+        stockQuantity = item.getStockQuantity();
+        price = item.getPrice();
+        discountRate = item.getDiscountRate();
+        description = item.getDescription();
+    }
 }
