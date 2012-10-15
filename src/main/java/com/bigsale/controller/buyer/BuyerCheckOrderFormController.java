@@ -29,9 +29,9 @@ import java.util.Set;
  */
 @Controller
 @RequestMapping("/buyer/checkOrderForm")
-public class CheckOrderFormController {
-    public static final String CHECK_ORDER_FORM = "/buyer/checkOrderFormResult";
-    static final Logger logger = LoggerFactory.getLogger(CheckOrderFormController.class);
+public class BuyerCheckOrderFormController {
+    public static final String CHECK_ORDER_FORM = "/buyer/checkOrderResultForm";
+    static final Logger logger = LoggerFactory.getLogger(BuyerCheckOrderFormController.class);
 
     private Set<CheckOrderDto> ordersOnProcess = new HashSet<CheckOrderDto>();
     private Set<CheckOrderDto> ordersDelivered = new HashSet<CheckOrderDto>();
@@ -47,6 +47,9 @@ public class CheckOrderFormController {
         String userId = (String) request.getSession().getAttribute("userId");
         User user = userService.getUserById(userId);
         Set<ItemOrder> itemOrders = user.getItemOrders();
+
+        ordersDelivered.clear();
+        ordersOnProcess.clear();
 
         Iterator<ItemOrder> iterator = itemOrders.iterator();
 

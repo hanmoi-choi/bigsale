@@ -58,8 +58,8 @@ public class Item {
 
     @Getter
     @Setter
-    @OneToMany(cascade = {CascadeType.ALL})
-    @JoinColumn(name = "ITEM_ORDER_ID")
+    @OneToMany(cascade = {CascadeType.ALL}, fetch = FetchType.EAGER)
+    @JoinColumn(name = "ITEM_ID")
     private Set<ItemOrder> itemOrders = new HashSet<ItemOrder>();
 
     public void deduceStock(int amount){

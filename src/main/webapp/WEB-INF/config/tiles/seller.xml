@@ -52,7 +52,9 @@
         <put-attribute name="body" value="/WEB-INF/jsp/user/seller/modifyItemFormPageConfirm.jsp"/>
     </definition>
 
-
+    <definition name="/seller/checkOrderResultForm" extends="seller.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/seller/checkOrderResultForm.jsp"/>
+    </definition>
 </tiles-definitions>
 
 
