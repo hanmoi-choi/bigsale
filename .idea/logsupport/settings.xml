@@ -7,6 +7,7 @@
           <DefaultLogConfiguration>
             <option name="defaultFrameworkName" value="slf4j" />
             <option name="logIdName" value="Default" />
+            <option name="logIdSequenceValue" value="10" />
           </DefaultLogConfiguration>
         </option>
       </ProjectLogConfigurations>
