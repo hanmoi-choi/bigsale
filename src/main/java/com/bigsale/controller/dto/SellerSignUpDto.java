@@ -26,12 +26,14 @@ public class SellerSignUpDto {
     private SellerService sellerService;
     private UserService userService;
 
+
     @Autowired
     public SellerSignUpDto(UserService userService, SellerService sellerService)
     {
         this.userService = userService;
         this.sellerService = sellerService;
     }
+
     public void isPasswordInputMatched(){
         if(password.equals(passwordConfirm)){
             isPasswordInputMatched = 0;
@@ -50,6 +52,18 @@ public class SellerSignUpDto {
         }
         else{
             isIdDuplicated = 0; //not duplicated
+        }
+    }
+
+    public void isEmailDuplicated(){
+        boolean result = sellerService.checkEmailDuplication(email)
+                ||userService.checkEmailDuplication(email);
+
+        if(result == true){
+            isEmailDuplicated = -1; //duplicated
+        }
+        else{
+            isEmailDuplicated = 0; //not duplicated
         }
     }
 
@@ -92,4 +106,9 @@ public class SellerSignUpDto {
     @Email(message = "Please enter a valid e-mail address.")
     @Length(min = 4, max = 40, message = "Please enter between {1} and {2} characters.")
     private String email;
+
+    @Setter
+    @Getter
+    @Min(value = 0, message = "Email Duplicated ")
+    private int isEmailDuplicated;
 }

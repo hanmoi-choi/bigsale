@@ -9,6 +9,7 @@ import com.bigsale.service.SellerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -91,7 +92,7 @@ public class AddItemFormController {
         }
         else if (sellerIsFinished(request))
         {
-            String sellerId = (String) session.getAttribute("userId");
+            String sellerId = SecurityContextHolder.getContext().getAuthentication().getName();
             persistItem(itemAddDto, sellerId);
             status.setComplete();
             return REDIRECT_TO_SELLER_INDEX;

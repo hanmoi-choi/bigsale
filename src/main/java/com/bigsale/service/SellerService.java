@@ -25,6 +25,8 @@ public interface SellerService {
 
     boolean checkIdDuplication(String sellerId);
 
+    boolean checkEmailDuplication(String email);
+
     List<Seller> findSellerBySearchCriteria(UserSearchDto sellerSearchDto);
 
     void updateSellerInfoWithLogin(Seller seller);

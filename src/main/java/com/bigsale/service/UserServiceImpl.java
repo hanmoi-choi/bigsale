@@ -10,6 +10,7 @@ import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -59,6 +60,21 @@ public class UserServiceImpl implements UserService {
     {
         User user = (User) userRepository.findById(userId);
         return user != null;
+    }
+
+    @Override
+    public boolean checkEmailDuplication( String email)
+    {
+        List<User> users = (List<User>) userRepository.findAll();
+
+        Iterator<User> iterator = users.iterator();
+        while (iterator.hasNext()){
+            User user = iterator.next();
+            if(user.getEmail().equalsIgnoreCase(email))
+                return true;
+        }
+
+        return false;
     }
 
     @Override

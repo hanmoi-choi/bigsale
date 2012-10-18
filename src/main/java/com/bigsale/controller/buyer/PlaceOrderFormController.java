@@ -5,12 +5,13 @@ import com.bigsale.orm.model.DeliveryStatus;
 import com.bigsale.orm.model.Item;
 import com.bigsale.orm.model.ItemOrder;
 import com.bigsale.orm.model.User;
-import com.bigsale.service.ItemService;
 import com.bigsale.service.ItemOrderService;
+import com.bigsale.service.ItemService;
 import com.bigsale.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -95,7 +96,7 @@ public class PlaceOrderFormController {
         }
         else if (userIsFinished(request))
         {
-            String userId = (String) request.getSession().getAttribute("userId");
+            String userId = SecurityContextHolder.getContext().getAuthentication().getName();
             User user = userService.getUserById(userId);
 
             changeItemInfo(itemById, placeOrderDto);

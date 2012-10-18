@@ -25,6 +25,8 @@ public interface UserService {
 
     boolean checkIdDuplication(String userId);
 
+    boolean checkEmailDuplication(String email);
+
     List<User> findUserBySearchCriteria(UserSearchDto userSearchDto);
 
     void updateUserInfoWithLogin(User user);

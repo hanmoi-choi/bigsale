@@ -34,7 +34,9 @@
             <td><form:password path="passwordConfirm" size="40"/></td>
             <td><form:errors path="passwordConfirm" cssClass="error"/></td>
         </tr>
-
+        <tr>
+            <td><form:errors path="isEmailDuplicated" cssClass="error"/></td>
+        </tr>
         <tr>
             <td>E-Mail:</td>
             <td><form:input path="email" size="40"/></td>

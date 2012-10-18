@@ -125,6 +125,7 @@ public class AddSellerFormController {
     {// Seller clicked next Validate data based on page
         sellerSignUpDto.isPasswordInputMatched();
         sellerSignUpDto.isIdDuplicated();
+        sellerSignUpDto.isEmailDuplicated();
         validator.validate(sellerSignUpDto, sellerResult);
     }
 

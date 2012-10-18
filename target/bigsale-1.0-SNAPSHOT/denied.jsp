@@ -11,7 +11,7 @@
 <body onload='document.loginForm.j_username.focus();'>
 
 	<h1 class="errormessage">Access Denied</h1>
-    <h1><a href="/bigsale/welcome.html">HOME</a></h1>
+    <h1><a href="/bigsale/home.jsp">HOME</a></h1>
 </body>
 
 </html>

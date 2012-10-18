@@ -6,6 +6,7 @@ import com.bigsale.service.SellerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -16,7 +17,6 @@ import org.springframework.web.util.WebUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -53,11 +53,9 @@ public class ModifySellerInfoFormController {
     @RequestMapping(method = RequestMethod.GET)
     public String setupForm(HttpServletRequest request,
                             HttpServletResponse response,
-                            HttpSession session,
                             Model model)
     {
-        String userId = (String) session.getAttribute("userId");
-
+        String userId = SecurityContextHolder.getContext().getAuthentication().getName();
         getSellerInfo(sellerModifyDto, userId);
         model.addAttribute("sellerModifyDto", sellerModifyDto);
 
