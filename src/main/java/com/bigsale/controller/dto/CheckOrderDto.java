@@ -13,6 +13,10 @@ import lombok.Setter;
 public class CheckOrderDto {
     @Getter
     @Setter
+    private int orderId;
+
+    @Getter
+    @Setter
     private String itemName;
 
     @Getter

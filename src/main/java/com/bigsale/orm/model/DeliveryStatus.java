@@ -8,7 +8,7 @@ package com.bigsale.orm.model;
  * To change this template use File | Settings | File Templates.
  */
 public enum DeliveryStatus {
-    PREPARING(0), DELIVERED(1), ARRIVING(2), UNKNOWN(-1);
+    PREPARING(0), DELIVERED(1), UNKNOWN(-1);
 
     private int value;
 
@@ -32,11 +32,8 @@ public enum DeliveryStatus {
                 return PREPARING;
             case 1:
                 return DELIVERED;
-            case 2:
-                return ARRIVING;
-            default:
-                return UNKNOWN;
         }
+        return UNKNOWN;
     }
 
     public String toString()
@@ -44,12 +41,10 @@ public enum DeliveryStatus {
         switch (this)
         {
             case PREPARING:
-                return "preparing";
+                return "PREPARING";
             case DELIVERED:
-                return "delivered";
-            case ARRIVING:
-                return "arriving";
+                return "DELIVERED";
         }
-        return "unknown";
+        return "UNKNOWN";
     }
 }

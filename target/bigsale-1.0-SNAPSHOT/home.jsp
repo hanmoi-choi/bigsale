@@ -1,6 +1,6 @@
-<%@ page isELIgnored="false" session="true"%>
+<%@ page isELIgnored="false" session="true" %>
 <%@ taglib prefix='security'
-	uri='http://www.springframework.org/security/tags'%>
+           uri='http://www.springframework.org/security/tags' %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <security:authorize ifAnyGranted="ROLE_ADMIN">
@@ -14,3 +14,7 @@
 <security:authorize ifAnyGranted="ROLE_BUYER">
     <c:redirect url="/buyer/welcome.html"/>
 </security:authorize>
+
+
+<c:redirect url="/welcome.html"/>
+

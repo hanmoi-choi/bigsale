@@ -46,5 +46,6 @@ public class ItemSearchResultDto {
         stockAmount = item.getStockQuantity();
         price = item.getPrice();
         discountRate = item.getDiscountRate();
+        description = item.getDescription();
     }
 }

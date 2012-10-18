@@ -1,6 +1,7 @@
 package com.bigsale.service.security;
 
 import com.bigsale.orm.model.Admin;
+import com.bigsale.orm.model.Level;
 import com.bigsale.orm.model.Seller;
 import com.bigsale.service.AdminService;
 import com.bigsale.service.SellerService;
@@ -29,6 +30,7 @@ public class UserDetailsService implements org.springframework.security.core.use
     public static final String ROLE_ADMIN = "ROLE_ADMIN";
     public static final String ROLE_SELLER = "ROLE_SELLER";
     public static final String ROLE_BUYER = "ROLE_BUYER";
+    public static final String COOKIE_NAME_ADD = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     private Logger logger = LoggerFactory.getLogger(UserDetailsService.class);
 
@@ -43,6 +45,8 @@ public class UserDetailsService implements org.springframework.security.core.use
     private SellerService sellerService;
     private AdminService adminService;
     private  Vector<GrantedAuthority> userAuthorities;
+    private Level currentUserLevel;
+
     @Autowired
     public UserDetailsService(UserService userService,
                               SellerService sellerService,
@@ -57,7 +61,7 @@ public class UserDetailsService implements org.springframework.security.core.use
     public String createSSOSession(String username)
     {
         logger.debug("Creating SSO session for " + username);
-        String newCookieValue = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + username;
+        String newCookieValue = COOKIE_NAME_ADD + username;
         String oldCookie = usersToCookies.get(username);
         removeSSOSession(oldCookie);
         cookiesToUsers.put(newCookieValue, username);
@@ -91,24 +95,9 @@ public class UserDetailsService implements org.springframework.security.core.use
             logger.debug("Session no longer valid.");
             cookie = null;
         }
+
         return loadUserByUsername(cookiesToUsers.get(cookie));
     }
-
-//    public UserDetails loadUserByUsername(String userId) throws UsernameNotFoundException, DataAccessException
-//    {
-//
-//        if (userId != null && userId.equals("user"))
-//        {
-//            Vector<GrantedAuthority> userAuthorities = new Vector<GrantedAuthority>();
-//            userAuthorities.add(new GrantedAuthorityImpl(ROLE_BUYER));
-//            User user = new User("user", "Et6pb+wgWTVmq3VpLJlJWWgzrck=" /* SHA-1 encoded of "user" */, true, true,
-//                    true, true, userAuthorities);
-//            currentUser.set(user);
-//            return user;
-//        }
-
-//        throw new UsernameNotFoundException("User Id " + userId + " not found!");
-//    }
 
     public UserDetails loadUserByUsername(String userId) throws UsernameNotFoundException, DataAccessException
     {
@@ -120,15 +109,25 @@ public class UserDetailsService implements org.springframework.security.core.use
 
         //User
         com.bigsale.orm.model.User user = userService.getUserById(userId);
-        if(user != null) return loginAsUser(user);
+        if(user != null) {
+            currentUserLevel = user.getUserLevel();
+            return loginAsUser(user);
+        }
 
         //Seller
         Seller seller = sellerService.getSellerById(userId);
-        if(seller != null) return loginAsSeller(seller);
+        if(seller != null){
+            currentUserLevel = seller.getSellerLevel();
+            return loginAsSeller(seller);
+        }
 
         throw new UsernameNotFoundException("User Id " + userId + " not found!");
     }
 
+    public String getCurrentUserLevel(){
+        logger.warn(currentUserLevel.toString());
+        return currentUserLevel.toString();
+    }
 
     public User getCurrentUser()
     {

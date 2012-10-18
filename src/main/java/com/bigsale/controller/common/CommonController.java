@@ -6,6 +6,8 @@ import com.bigsale.service.ItemService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,6 +15,8 @@ import org.springframework.web.bind.support.SessionStatus;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -27,7 +31,10 @@ import java.util.List;
 public class CommonController {
 
     static final Logger logger = LoggerFactory.getLogger(CommonController.class);
-    public static final String VIEW_NAME = "/itemSearchResultForm";
+    public static final String BUYER_SEARCH_RESULT_VIEW = "/buyer/itemSearchResultForm";
+    public static final String SELLER_SEARCH_RESULT_VIEW = "/seller/itemSearchResultForm";
+    public static final String ADMIN_SEARCH_RESULT_VIEW = "/admin/itemSearchResultForm";
+    public static final String DEFAULT_SEARCH_RESULT_VIEW = "/itemSearchResultForm";
 
     @Autowired
     ItemService itemService;
@@ -72,7 +79,37 @@ public class CommonController {
 
         List<Item> itemList = itemService.findItemBySearchCriteria(itemSearchDto);
 
+
         request.setAttribute("itemList", itemList);
-        return VIEW_NAME;
+
+        String view = getView();
+        return view;
+    }
+
+    private String getView()
+    {
+        String view = "";
+        Collection<GrantedAuthority> authorities = SecurityContextHolder.getContext().getAuthentication().getAuthorities();
+        Iterator<GrantedAuthority> iterator = authorities.iterator();
+        while (iterator.hasNext()){
+            String role = iterator.next().toString();
+            if(role.equals("ROLE_BUYER")){
+                view = BUYER_SEARCH_RESULT_VIEW;
+                break;
+            }
+            else if(role.equals("ROLE_SELLER")){
+                view = SELLER_SEARCH_RESULT_VIEW;
+                break;
+            }
+            else if(role.equals("ROLE_ADMIN")){
+                view = ADMIN_SEARCH_RESULT_VIEW;
+                break;
+            }
+            else{
+                view = DEFAULT_SEARCH_RESULT_VIEW;
+                break;
+            }
+        }
+        return view;
     }
 }

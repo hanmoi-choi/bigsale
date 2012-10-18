@@ -1,8 +1,8 @@
 <%@ taglib prefix='security'
            uri='http://www.springframework.org/security/tags'%>
 
-<span id="loginstatus">Logged in as: <security:authentication
-		property="principal.username" /> </span>
+<div id="loginstatus">Logged in as: <security:authentication
+		property="principal.username" /> </div>
 <br />
-
+<div>Level : ${userLevel}</div>
 

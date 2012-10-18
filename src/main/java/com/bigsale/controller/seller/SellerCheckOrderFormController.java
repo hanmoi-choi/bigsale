@@ -5,6 +5,7 @@ import com.bigsale.orm.model.DeliveryStatus;
 import com.bigsale.orm.model.Item;
 import com.bigsale.orm.model.ItemOrder;
 import com.bigsale.orm.model.Seller;
+import com.bigsale.service.ItemOrderService;
 import com.bigsale.service.SellerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.support.SessionStatus;
 
 import javax.servlet.http.HttpServletRequest;
@@ -40,6 +42,9 @@ public class SellerCheckOrderFormController {
 
     @Autowired
     SellerService sellerService;
+
+    @Autowired
+    ItemOrderService itemOrderService;
 
     @RequestMapping(method = RequestMethod.GET)
     public String setupForm(HttpServletRequest request, HttpServletResponse response,
@@ -68,6 +73,7 @@ public class SellerCheckOrderFormController {
                 ItemOrder itemOrder = itemOrderIterator.next();
 
                 CheckOrderDto dto = new CheckOrderDto();
+                dto.setOrderId(itemOrder.getItemOrderId());
                 dto.setItemName(itemOrder.getItem().getItemName());
                 dto.setOrderAmount(itemOrder.getOrderQuantity());
 
@@ -80,12 +86,50 @@ public class SellerCheckOrderFormController {
                     ordersOnProcess.add(dto);
                 }
             }
-
         }
 
         model.addAttribute("ordersOnProcess", ordersOnProcess);
         model.addAttribute("ordersDelivered", ordersDelivered);
+
         return CHECK_ORDER_FORM;
+    }
+
+    @RequestMapping(method = RequestMethod.POST)
+    public String updateDeliveryStatus(
+            HttpServletRequest request, HttpServletResponse response,
+            @RequestParam("orderId") int orderId,
+            SessionStatus status,Model model){
+
+        logger.debug("order ID: {}", orderId);
+
+        updateItemOrder(orderId);
+
+        updateItemOrderDto(orderId);
+
+        model.addAttribute("ordersOnProcess", ordersOnProcess);
+        model.addAttribute("ordersDelivered", ordersDelivered);
+
+        return CHECK_ORDER_FORM;
+    }
+
+    private void updateItemOrderDto(int orderId)
+    {
+        Iterator<CheckOrderDto> iterator = ordersOnProcess.iterator();
+        while (iterator.hasNext()){
+            CheckOrderDto checkOrderDto = iterator.next();
+            if(checkOrderDto.getOrderId() == orderId){
+                ordersDelivered.add(checkOrderDto);
+                ordersOnProcess.remove(checkOrderDto);
+                break;
+            }
+        }
+    }
+
+    private void updateItemOrder(int orderId)
+    {
+        ItemOrder itemOrder = itemOrderService.getItemOrderById(orderId);
+        itemOrder.setDeliveryStatus(DeliveryStatus.DELIVERED);
+        itemOrderService.updateItemOrder(itemOrder);
     }
 
 }

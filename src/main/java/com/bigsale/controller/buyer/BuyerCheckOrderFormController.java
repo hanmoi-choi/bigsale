@@ -8,6 +8,7 @@ import com.bigsale.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -44,7 +45,7 @@ public class BuyerCheckOrderFormController {
                             SessionStatus status,
                             Model model)
     {
-        String userId = (String) request.getSession().getAttribute("userId");
+        String userId = SecurityContextHolder.getContext().getAuthentication().getName();
         User user = userService.getUserById(userId);
         Set<ItemOrder> itemOrders = user.getItemOrders();
 
@@ -57,6 +58,7 @@ public class BuyerCheckOrderFormController {
             ItemOrder itemOrder = iterator.next();
 
             CheckOrderDto dto = new CheckOrderDto();
+            dto.setOrderId(itemOrder.getItemOrderId());
             dto.setItemName(itemOrder.getItem().getItemName());
             dto.setOrderAmount(itemOrder.getOrderQuantity());
 

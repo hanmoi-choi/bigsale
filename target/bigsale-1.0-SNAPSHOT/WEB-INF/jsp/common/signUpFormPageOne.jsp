@@ -3,10 +3,12 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-<h3> Enter User Information</h3>
+
 <form:form method="POST" commandName="userSignUpDto">
     <form:errors path="*" cssClass="errorblock" element="div"/>
+    <h3> Enter User Information</h3>
     <table>
+        <
         <tr>
             <td><form:errors path="isIdDuplicated" cssClass="error"/></td>
         </tr>
@@ -40,7 +42,8 @@
             <td><form:input path="email" size="40"/></td>
             <td><form:errors path="email" cssClass="error"/></td>
         </tr>
-
+    </table>
+    <table>
         <H3>Address</H3>
 
         <tr>

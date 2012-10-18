@@ -52,4 +52,7 @@
         <put-attribute name="body" value="/WEB-INF/jsp/user/admin/addSellerSuccess.jsp"/>
     </definition>
 
+    <definition name="/admin/itemSearchResultForm" extends="admin.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/common/itemSearchResultForm.jsp"/>
+    </definition>
 </tiles-definitions>

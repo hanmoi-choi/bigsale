@@ -32,6 +32,10 @@
         <put-attribute name="body" value="/WEB-INF/jsp/user/buyer/checkOrderResultForm.jsp"/>
     </definition>
 
+    <definition name="/buyer/itemSearchResultForm" extends="buyer.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/common/itemSearchResultForm.jsp"/>
+    </definition>
+
 </tiles-definitions>
 
 

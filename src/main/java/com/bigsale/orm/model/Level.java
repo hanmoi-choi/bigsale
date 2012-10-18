@@ -46,13 +46,12 @@ public enum Level {
         switch (this)
         {
             case BRONZE:
-                return "bronze";
+                return "BRONZE";
             case SILVER:
-                return "silver";
+                return "SILVER";
             case GOLD:
-                return "gold";
+                return "GOLD";
             case PLATINUM:
-                return "platinum";
         }
         return "unknown";
     }

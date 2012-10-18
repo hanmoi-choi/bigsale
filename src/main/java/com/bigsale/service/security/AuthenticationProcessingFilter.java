@@ -55,10 +55,29 @@ public class AuthenticationProcessingFilter extends UsernamePasswordAuthenticati
         Cookie sso = createServerSSOSession(user, password, currentCookie);
 
         response.addCookie(sso);
-        request.getSession().setAttribute("user", user);
-        logger.warn("userId Set as {}", user.getUsername());
-        request.getSession().setAttribute(cookieName, currentCookie);
+        request.getSession(false).setAttribute("userLevel",userDetailsService.getCurrentUserLevel());
+        request.getSession(false).setAttribute(cookieName, currentCookie);
         super.successfulAuthentication(request, response, authResult);
+    }
+
+    @Override
+    protected void unsuccessfulAuthentication(HttpServletRequest request, HttpServletResponse response,
+            AuthenticationException failed) throws ServletException, IOException
+    {
+        logger.debug("Unsuccessful authentication");
+        userDetailsService.setCurrentUser(null);
+        userDetailsService.setPassword(null);
+        super.unsuccessfulAuthentication(request, response, failed);
+    }
+
+    public UserDetailsService getUserDetailsService()
+    {
+        return userDetailsService;
+    }
+
+    public void setUserDetailsService(UserDetailsService userDetailsService)
+    {
+        this.userDetailsService = userDetailsService;
     }
 
     private String getCookie(HttpServletRequest request)
@@ -89,25 +108,5 @@ public class AuthenticationProcessingFilter extends UsernamePasswordAuthenticati
         cookie.setMaxAge(10 * 60);
         cookie.setPath("/");
         return cookie;
-    }
-
-    @Override
-    protected void unsuccessfulAuthentication(HttpServletRequest request, HttpServletResponse response,
-            AuthenticationException failed) throws ServletException, IOException
-    {
-        logger.debug("Unsuccessful authentication");
-        userDetailsService.setCurrentUser(null);
-        userDetailsService.setPassword(null);
-        super.unsuccessfulAuthentication(request, response, failed);
-    }
-
-    public UserDetailsService getUserDetailsService()
-    {
-        return userDetailsService;
-    }
-
-    public void setUserDetailsService(UserDetailsService userDetailsService)
-    {
-        this.userDetailsService = userDetailsService;
     }
 }

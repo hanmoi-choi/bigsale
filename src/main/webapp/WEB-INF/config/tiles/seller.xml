@@ -55,6 +55,10 @@
     <definition name="/seller/checkOrderResultForm" extends="seller.base">
         <put-attribute name="body" value="/WEB-INF/jsp/user/seller/checkOrderResultForm.jsp"/>
     </definition>
+
+    <definition name="/seller/itemSearchResultForm" extends="seller.base">
+        <put-attribute name="body" value="/WEB-INF/jsp/common/itemSearchResultForm.jsp"/>
+    </definition>
 </tiles-definitions>
 
 
