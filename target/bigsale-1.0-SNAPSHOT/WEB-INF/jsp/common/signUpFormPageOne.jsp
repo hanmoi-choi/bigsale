@@ -6,9 +6,8 @@
 
 <form:form method="POST" commandName="userSignUpDto">
     <form:errors path="*" cssClass="errorblock" element="div"/>
-    <h3> Enter User Information</h3>
     <table>
-        <
+        <h3> Enter User Information</h3>
         <tr>
             <td><form:errors path="isIdDuplicated" cssClass="error"/></td>
         </tr>

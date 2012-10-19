@@ -26,7 +26,6 @@ public class AuthenticationProcessingFilter extends UsernamePasswordAuthenticati
     {
         String password = super.obtainPassword(request);
         String passwordHash = CipherUtil.hashPassword(password);
-        logger.debug("passwordHash: {}", passwordHash);
         userDetailsService.setPassword(passwordHash);
         return password;
     }
@@ -55,6 +54,8 @@ public class AuthenticationProcessingFilter extends UsernamePasswordAuthenticati
         Cookie sso = createServerSSOSession(user, password, currentCookie);
 
         response.addCookie(sso);
+
+        request.getSession(false).removeAttribute("userLevel");
         request.getSession(false).setAttribute("userLevel",userDetailsService.getCurrentUserLevel());
         request.getSession(false).setAttribute(cookieName, currentCookie);
         super.successfulAuthentication(request, response, authResult);

@@ -37,9 +37,10 @@ public class UserDetailsService implements org.springframework.security.core.use
     private ThreadLocal<User> currentUser = new ThreadLocal<User>();
     private ThreadLocal<String> currentPassword = new ThreadLocal<String>();
 
-    private Map<String, String> usersToCookies = new HashMap<String, String>();
-    private Map<String, String> cookiesToUsers = new HashMap<String, String>();
-    private Map<String, Date> sessionValidity = new HashMap<String, Date>();
+    private Map<String, String> usersToCookies;
+    private Map<String, String> cookiesToUsers;
+    private Map<String, Date> sessionValidity;
+
 
     private UserService userService;
     private SellerService sellerService;
@@ -56,6 +57,10 @@ public class UserDetailsService implements org.springframework.security.core.use
         this.sellerService = sellerService;
         this.adminService = adminService;
         userAuthorities = new Vector<GrantedAuthority>();
+
+        usersToCookies = new HashMap<String, String>();
+        cookiesToUsers = new HashMap<String, String>();
+        sessionValidity = new HashMap<String, Date>();
     }
 
     public String createSSOSession(String username)
@@ -125,8 +130,11 @@ public class UserDetailsService implements org.springframework.security.core.use
     }
 
     public String getCurrentUserLevel(){
-        logger.warn(currentUserLevel.toString());
         return currentUserLevel.toString();
+    }
+
+    public void setCurrentUserLevel(Level level){
+        currentUserLevel = level;
     }
 
     public User getCurrentUser()

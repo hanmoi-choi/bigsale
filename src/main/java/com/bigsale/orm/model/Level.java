@@ -52,7 +52,8 @@ public enum Level {
             case GOLD:
                 return "GOLD";
             case PLATINUM:
+                return "PLATINUM";
         }
-        return "unknown";
+        return "UNKNOWN";
     }
     }
