@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javax.faces-2.1.13">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/javax.faces-2.1.13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -118,6 +118,7 @@ public class SellerCheckOrderFormController {
         while (iterator.hasNext()){
             CheckOrderDto checkOrderDto = iterator.next();
             if(checkOrderDto.getOrderId() == orderId){
+                checkOrderDto.setDeliveryStatus(DeliveryStatus.DELIVERED.toString().toUpperCase());
                 ordersDelivered.add(checkOrderDto);
                 ordersOnProcess.remove(checkOrderDto);
                 break;

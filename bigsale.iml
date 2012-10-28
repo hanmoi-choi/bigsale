@@ -1,27 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="DBNavigator.Module.ConnectionManager">
-    <connections />
-  </component>
   <component name="FacetManager">
-    <facet type="Spring" name="Spring">
-      <configuration>
-        <fileset id="fileset1" name="Annotation Config Application Context" removed="false" type="annoContext">
-          <file>jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/3.1.2.RELEASE/spring-context-3.1.2.RELEASE.jar!/org/springframework/scheduling/annotation/AbstractAsyncConfiguration.class</file>
-          <file>jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/3.1.2.RELEASE/spring-context-3.1.2.RELEASE.jar!/org/springframework/cache/annotation/AbstractCachingConfiguration.class</file>
-          <file>jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/3.1.2.RELEASE/spring-context-3.1.2.RELEASE.jar!/org/springframework/context/annotation/LoadTimeWeavingConfiguration.class</file>
-          <file>jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/3.1.2.RELEASE/spring-context-3.1.2.RELEASE.jar!/org/springframework/scheduling/annotation/ProxyAsyncConfiguration.class</file>
-          <file>jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/3.1.2.RELEASE/spring-context-3.1.2.RELEASE.jar!/org/springframework/cache/annotation/ProxyCachingConfiguration.class</file>
-          <file>jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/3.1.2.RELEASE/spring-context-3.1.2.RELEASE.jar!/org/springframework/scheduling/annotation/SchedulingConfiguration.class</file>
-          <file>jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/3.1.2.RELEASE/spring-webmvc-3.1.2.RELEASE.jar!/org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class</file>
-          <file>file://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/3.1.2.RELEASE/spring-webmvc-3.1.2.RELEASE.jar</file>
-        </fileset>
-      </configuration>
-    </facet>
     <facet type="web" name="Web">
       <configuration>
         <descriptors>
-          <deploymentDescriptor name="context.xml" url="file://$MODULE_DIR$" />
           <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
         </descriptors>
         <webroots>
@@ -33,15 +15,13 @@
         </sourceRoots>
       </configuration>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration />
+    </facet>
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
-          <unit-entry name="&lt;anonymous&gt;hibernate.xml@337" />
-          <unit-entry name="&lt;anonymous&gt;hibernate.xml@340" value="dataSource" />
-          <unit-entry name="&lt;anonymous&gt;hibernate.xml@570" value="19f5af9e-a4d5-4f7c-b1e1-9d68748237db" />
-          <unit-entry name="&lt;anonymous&gt;hibernate.xml@754" value="19f5af9e-a4d5-4f7c-b1e1-9d68748237db" />
-          <unit-entry name="hibernate.cfg.xml" />
-          <unit-entry name="sessionFactory" value="dataSource" />
+          <unit-entry name="&lt;anonymous&gt;hibernate.xml@337" value="dataSource" />
         </datasource-map>
       </configuration>
     </facet>
@@ -58,31 +38,21 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 6" level="application_server_libraries" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 6" level="application_server_libraries" />
-    <orderEntry type="library" name="org.springframework.web.servlet-3.1.2.RELEASE" level="project" />
-    <orderEntry type="library" name="spring-security-acl-3.0.7.RELEASE" level="project" />
-    <orderEntry type="library" name="spring-security-crypto-3.1.0.RC1" level="project" />
-    <orderEntry type="library" name="spring-security-core-3.1.0.RELEASE" level="project" />
-    <orderEntry type="library" name="spring-modules-validation-0.8" level="project" />
+    <orderEntry type="library" name="jstl-1.2" level="project" />
     <orderEntry type="library" name="commons-collections-3.2.1" level="project" />
-    <orderEntry type="library" name="commons-lang3-3.1" level="project" />
-    <orderEntry type="library" name="commons-lang-2.6" level="project" />
     <orderEntry type="library" name="mail" level="project" />
-    <orderEntry type="library" name="spring-support-2.0.8" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
-    <orderEntry type="library" name="Maven: log4j:log4j:1.2.16" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.6.1" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:0.9.26" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:0.9.26" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-access:0.9.26" level="project" />
+    <orderEntry type="library" name="spring-modules-validation-0.8" level="project" />
+    <orderEntry type="library" name="javax.faces-2.1.13" level="project" />
+    <orderEntry type="library" name="slf4j-api-1.5.8" level="project" />
+    <orderEntry type="library" name="logback-classic-0.9.16" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:0.9.16" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-test:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-asm:3.1.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:3.1.2.RELEASE" level="project" />
@@ -91,19 +61,20 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-orm:3.1.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:3.0.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:3.0.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-config:3.0.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-acl:3.0.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-taglibs:3.0.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.10" level="project" />
+    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.1" level="project" />
+    <orderEntry type="library" name="Maven: xalan:xalan:2.7.1" level="project" />
+    <orderEntry type="library" name="Maven: xalan:serializer:2.7.1" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.3.04" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.4" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:jstl:1.1.2" level="project" />
     <orderEntry type="library" name="Maven: taglibs:standard:1.1.2" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:3.5.6-Final" level="project" />
     <orderEntry type="library" name="Maven: antlr:antlr:2.7.6" level="project" />
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.1" level="project" />
     <orderEntry type="library" name="Maven: dom4j:dom4j:1.6.1" level="project" />
-    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.0.b2" level="project" />
     <orderEntry type="library" name="Maven: javax.transaction:jta:1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.5.8" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-annotations:3.5.6-Final" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-commons-annotations:3.2.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.0.Final" level="project" />
@@ -120,26 +91,28 @@
     <orderEntry type="library" name="Maven: javassist:javassist:3.9.0.GA" level="project" />
     <orderEntry type="library" name="Maven: c3p0:c3p0:0.9.1.2" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
-    <orderEntry type="library" name="Maven: javax:javaee-api:6.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-api:6.0" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.9" level="project" />
-    <orderEntry type="library" name="Maven: hsqldb:hsqldb:1.8.0.7" level="project" />
     <orderEntry type="library" name="Maven: org.easytesting:fest-assert:1.4" level="project" />
     <orderEntry type="library" name="Maven: org.easytesting:fest-util:1.1.6" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit-dep:4.8.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.mockito:mockito-core:1.8.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.objenesis:objenesis:1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.dbunit:dbunit:2.4.7" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-api:2.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-core:2.2.2" level="project" />
     <orderEntry type="library" name="Maven: commons-digester:commons-digester:2.0" level="project" />
-    <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.8.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.7.0" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.5.8" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-jsp:2.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-servlet:2.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-template:2.2.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:0.11.4" level="project" />
-    <orderEntry type="library" name="itext-pdfa-5.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springmodules:spring-modules-validation:0.8" level="project" />
+    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-validator:commons-validator:1.3.0" level="project" />
+    <orderEntry type="library" name="Maven: oro:oro:2.0.8" level="project" />
+    <orderEntry type="library" name="Maven: rhino:js:1.6R2" level="project" />
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">

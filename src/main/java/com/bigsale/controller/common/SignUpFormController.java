@@ -132,6 +132,7 @@ public class SignUpFormController {
     {// User clicked next Validate data based on page
         userSignUpDto.isPasswordInputMatched();
         userSignUpDto.isIdDuplicated();
+        userSignUpDto.isEmailDuplicated();
         validator.validate(userSignUpDto, userResult);
     }
 

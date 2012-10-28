@@ -34,28 +34,30 @@
         </developer>
     </developers>
 
+
+
     <dependencies>
-        <dependency>
+     <!--    <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.16</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>jcl-over-slf4j</artifactId>
-            <version>${slf4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>${logback.version}</version>
-        </dependency>
-        <dependency>
+        </dependency> -->
+        <!--<dependency>-->
+            <!--<groupId>log4j</groupId>-->
+            <!--<artifactId>log4j</artifactId>-->
+            <!--<version>1.2.16</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.slf4j</groupId>-->
+            <!--<artifactId>jcl-over-slf4j</artifactId>-->
+            <!--<version>${slf4j.version}</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>ch.qos.logback</groupId>-->
+            <!--<artifactId>logback-classic</artifactId>-->
+            <!--<version>${logback.version}</version>-->
+        <!--</dependency>-->
+      <!--   <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-core</artifactId>
             <version>${logback.version}</version>
@@ -66,6 +68,13 @@
             <version>${logback.version}</version>
         </dependency>
 
+
+ -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>0.9.16</version>
+        </dependency>
         <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -98,37 +107,38 @@
             <version>${spring.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>${jstl.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>jstl</groupId>-->
+            <!--<artifactId>jstl</artifactId>-->
+            <!--<version>1.2</version>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>taglibs</groupId>
-            <artifactId>standard</artifactId>
-            <version>${standard.taglibs.version}</version>
-        </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>taglibs</groupId>-->
+            <!--<artifactId>standard</artifactId>-->
+            <!--<version>${standard.taglibs.version}</version>-->
+        <!--</dependency>-->
 
         <!-- Test Dependencies -->
 
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
+            <version>4.10</version>
         </dependency>
 
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>${servlet.api.version}</version>
-            <scope>provided</scope>
-        </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>javax.servlet</groupId>-->
+            <!--<artifactId>servlet-api</artifactId>-->
+            <!--<version>${servlet.api.version}</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
 
         <!-- logging -->
 
-        <dependency>
+    <!--     <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
@@ -146,7 +156,7 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>${slf4j.version}</version>
             <scope>runtime</scope>
-        </dependency>
+        </dependency> -->
 
         <!-- Other -->
 
@@ -242,12 +252,12 @@
 
 
         <!-- Test -->
-        <dependency>
+        <!-- <dependency>
             <groupId>hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
             <version>1.8.0.7</version>
         </dependency>
-
+ -->
         <dependency>
             <groupId>org.easytesting</groupId>
             <artifactId>fest-assert</artifactId>
@@ -273,11 +283,7 @@
             <version>2.4.7</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>6.0</version>
-        </dependency>
+
 
         <dependency>
             <groupId>org.apache.tiles</groupId>
@@ -311,16 +317,16 @@
             <groupId>org.springmodules</groupId>
             <artifactId>spring-modules-validation</artifactId>
             <version>0.8</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springmodules</groupId>
-            <artifactId>spring-modules-validation</artifactId>
-            <version>0.8</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springmodules</groupId>
-            <artifactId>spring-modules-validation</artifactId>
-            <version>0.8</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-mock</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
@@ -331,11 +337,11 @@
             </resource>
         </resources>
 
-        <!--<testResources>-->
-            <!--<testResource>-->
-                <!--<directory>src/test/resources</directory>-->
-            <!--</testResource>-->
-        <!--</testResources>-->
+        <!--<testResources> -->
+        <!--<testResource> -->
+        <!--<directory>src/test/resources</directory> -->
+        <!--</testResource> -->
+        <!--</testResources> -->
     </build>
 
 </project>

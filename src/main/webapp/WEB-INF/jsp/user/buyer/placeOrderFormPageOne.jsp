@@ -38,11 +38,6 @@
         </tr>
 
         <tr>
-            <td>Total Price:</td>
-            <td><form:input id="totalPirce" path="totalPrice" disabled="true"/></td>
-        </tr>
-
-        <tr>
             <td colspan="3">
                 <input type="submit" value="Cancel" name="_cancel"/>
                 <input type="submit" value="Next" name="_target1"/>

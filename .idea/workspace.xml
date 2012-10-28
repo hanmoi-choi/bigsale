@@ -5,16 +5,72 @@
       <artifact name="bigsale" />
     </artifacts-to-build>
   </component>
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSignUpDto.java" line="27" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="2a80526e-c670-4943-9ad9-1bc7680c4485" name="Default" comment="k">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springmodules_spring_modules_validation_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__oro_oro_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__rhino_js_1_6R2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_3_04.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/logback_classic_0_9_16.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/logback.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_access_0_9_26.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_0_9_26.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__hsqldb_hsqldb_1_8_0_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_acl_3_0_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_3_0_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_3_0_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_taglibs_3_0_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_3_0_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/spring_security_core_3_1_0_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/spring_support_2_0_8.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_0_9_26.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_0_9_16.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_5_8.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_5_8.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/commons_lang3_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/javax_faces_2_1_13.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/commons_lang_2_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jstl_1_2.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/itext_pdfa_5_3_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_api_1_5_8.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/spring_security_acl_3_0_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/spring_modules_validation_0_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/bigsale_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/bigsale_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_collections_3_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_collections_3_2_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Level.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Level.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.project" afterPath="$PROJECT_DIR$/.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bigsale.iml" afterPath="$PROJECT_DIR$/bigsale.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/AddSellerFormController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/AddSellerFormController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/SignUpFormController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/SignUpFormController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSignUpDto.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSignUpDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/SellerCheckOrderFormController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/SellerCheckOrderFormController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/ItemOrderRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/ItemOrderRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/service/security/AuthenticationProcessingFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/service/security/AuthenticationProcessingFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigsale/service/security/UserDetailsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigsale/service/security/UserDetailsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/userinfobar.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/userinfobar.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/sql/create user table.sql" afterPath="$PROJECT_DIR$/src/main/sql/create user table.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/database.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/database.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/signUpFormPageOne.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/signUpFormPageOne.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/placeOrderFormPageOne.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/placeOrderFormPageOne.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/denied.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/denied.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/WEB-INF/classes/database.properties" afterPath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/WEB-INF/classes/database.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/WEB-INF/config/properties/database.properties" afterPath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/WEB-INF/config/properties/database.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/WEB-INF/jsp/common/signUpFormPageOne.jsp" afterPath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/WEB-INF/jsp/common/signUpFormPageOne.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/WEB-INF/jsp/user/buyer/placeOrderFormPageOne.jsp" afterPath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/WEB-INF/jsp/user/buyer/placeOrderFormPageOne.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/denied.jsp" afterPath="$PROJECT_DIR$/target/bigsale-1.0-SNAPSHOT/denied.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/database.properties" afterPath="$PROJECT_DIR$/target/classes/database.properties" />
     </list>
     <ignored path="bigsale.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,27 +137,20 @@
     <breakpoint_rules />
     <ui_properties />
   </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="bigsale" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="makeReportForm.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/makeReportForm.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="6" selection-start="255" selection-end="255" vertical-scroll-proportion="-6.285714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthenticationProcessingFilter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AuthenticationProcessingFilter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/security/AuthenticationProcessingFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="16" selection-start="2773" selection-end="2773" vertical-scroll-proportion="0.9082569">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="59" column="13" selection-start="2089" selection-end="2089" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,12 +158,80 @@
       <file leaf-file-name="UserDetailsService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/security/UserDetailsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="36" selection-start="4509" selection-end="4509" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1541#1547#0" expanded="true" />
-                <element signature="e#1616#1624#0" expanded="true" />
-              </folding>
+            <state line="70" column="0" selection-start="2771" selection-end="2771" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Item.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="10" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Seller.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Seller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="0" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryUserFormController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/QueryUserFormController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="57" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SellerService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/SellerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SellerServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/SellerServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="0" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SellerRepository.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/SellerRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="0" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.55070204">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkOrderResultForm.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/checkOrderResultForm.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="0" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SellerCheckOrderFormController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/SellerCheckOrderFormController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="97" selection-start="4554" selection-end="4554" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -216,7 +333,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/user/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/template/menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/hibernate-cfg/hibernate.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/database.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/log4j.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/model/UserType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/model/GenericEnumUserType.java" />
@@ -360,8 +476,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/main.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/resource-placeholder.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/SignUpFormController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/mail.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/spring-mail.config.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/modifySellerFormPageConfirm.jsp" />
@@ -378,10 +492,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/hibernate/hibernate.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/logback-test.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/ItemRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/util/MailService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/ModifyInfoFormController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/ModifyInfoFormController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/security-config.xml" />
@@ -398,7 +510,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/ItemServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/BuyerController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSignUpDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSearchResultDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSearchDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserModifyDto.java" />
@@ -406,20 +517,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/AddressSearchDto.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/web-application-context.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/webmvc-context.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/template/layout.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/placeOrderFormPageOne.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/placeOrderFormPageConfirm.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/PlaceOrderDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/sql/create user table.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/ItemOrderRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/ItemOrderSearchDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/ItemOrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/ItemOrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/ItemOrder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/CheckOrderDto.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/common.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/checkOrderFormResult.jsp" />
@@ -471,15 +577,27 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/QueryItemFormController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/CheckOrderDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/BuyerCheckOrderFormController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/SellerCheckOrderFormController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/checkOrderResultForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/checkOrderResultForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/itemSearchResultForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/ItemSearchResultDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/CommonController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/signUpFormPageOne.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Level.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/userinfobar.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/ItemOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/database.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/logback.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/util/MailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSignUpDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/SignUpFormController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/signUpFormPageOne.jsp" />
+        <option value="$PROJECT_DIR$/src/main/sql/create user table.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/placeOrderFormPageOne.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/ItemOrderRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/SellerCheckOrderFormController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/security/UserDetailsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigsale/service/security/AuthenticationProcessingFilter.java" />
       </list>
@@ -531,6 +649,8 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="$USER_HOME$/.m2/repository" />
+        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
+        <option name="workOffline" value="true" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -551,10 +671,6 @@
           <option name="myItemId" value="bigsale" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
-        </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
@@ -573,7 +689,6 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="774" />
@@ -586,58 +701,10 @@
             <id />
           </State>
           <State>
-            <id>Application Server Specific Inspections</id>
+            <id>Maven</id>
           </State>
           <State>
-            <id>Error handling</id>
-          </State>
-          <State>
-            <id>Faces Model</id>
-          </State>
-          <State>
-            <id>Google Web Toolkit issues</id>
-          </State>
-          <State>
-            <id>JSP Inspections</id>
-          </State>
-          <State>
-            <id>Java EE issues</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>JavaScript validity issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Performance issues</id>
-          </State>
-          <State>
-            <id>Portability issues</id>
-          </State>
-          <State>
-            <id>Resource management issues</id>
-          </State>
-          <State>
-            <id>Security issues</id>
-          </State>
-          <State>
-            <id>Serialization issues</id>
-          </State>
-          <State>
-            <id>Spring Integration</id>
-          </State>
-          <State>
-            <id>Spring Model</id>
-          </State>
-          <State>
-            <id>Spring Web Services</id>
-          </State>
-          <State>
-            <id>Threading issues</id>
-          </State>
-          <State>
-            <id>Web Services Inspections</id>
+            <id>OSGi</id>
           </State>
         </expanded-state>
       </profile-state>
@@ -655,12 +722,6 @@
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
-  </component>
-  <component name="ProjectStructureProblems">
-    <ignored-problems>
-      <problem id="library-missing-from-artifact(artifact:bigsale:war exploded,WEB-INF/classes/module-output)" />
-      <problem id="library-missing-from-artifact(artifact:bigsale:war,WEB-INF/classes/module-output)" />
-    </ignored-problems>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -699,7 +760,7 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-        <subPane subId="Production">
+        <subPane subId="Tests">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
               <option name="myItemId" value="" />
@@ -707,7 +768,7 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-        <subPane subId="Tests">
+        <subPane subId="Production">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
               <option name="myItemId" value="" />
@@ -718,10 +779,6 @@
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="bigsale">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -754,6 +811,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="bigsale" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -799,6 +860,274 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="buyer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="properties" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -868,6 +1197,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -877,6 +1228,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -949,6 +1304,82 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigsale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1142,20 +1573,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bigsale" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bigsale" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -1177,10 +1594,10 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="options.lastSelected" value="Errors" />
+    <property name="options.lastSelected" value="MavenSettings" />
     <property name="project.structure.side.proportion" value="0.106243156" />
     <property name="JdbcConsole.Extract.ClosingQuote" value="'" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -1207,14 +1624,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="true" />
     <property name="JdbcConsole.Extract.OpeningQuote" value="'" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="true" />
     <property name="JdbcConsole.Extract.IncludeHeader" value="false" />
     <property name="JdbcConsole.ResultPageSize" value="1000" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="bigsale" serverId="9852cc3a-6f2b-4c80-acbe-a3dbdfd898d9">
     <servers>
@@ -1236,11 +1653,11 @@
       <recent name="com.bigsale.controller.buyer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/java/com/bigsale/util" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.bigsale.controller.buyer" />
@@ -1249,17 +1666,17 @@
       <recent name="com.bigsale.controller.seller" />
       <recent name="com.bigsale.spikes" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+    <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/doc" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/template" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring" />
     </key>
-    <key name="ImportMappingsDialog.RecentPackages">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
@@ -1421,24 +1838,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1465,6 +1864,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -1503,6 +1920,17 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1529,14 +1957,14 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -1545,17 +1973,6 @@
       <server-settings />
       <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -1703,8 +2120,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.062297735" sideWeight="0.7407932" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32719547" sideWeight="0.49676377" order="7" side_tool="false" content_ui="tabs" />
@@ -1712,29 +2129,28 @@
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28721684" sideWeight="0.29036826" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.674221" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902184" sideWeight="0.6855524" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13349515" sideWeight="0.44334278" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33569404" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2917847" sideWeight="0.30582523" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21388102" sideWeight="0.31391585" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.49676377" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34985834" sideWeight="0.49676377" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Notes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27346277" sideWeight="0.90509915" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31444758" sideWeight="0.46763754" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3106796" sideWeight="0.22946176" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29809222" sideWeight="0.42492917" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.49676377" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24676375" sideWeight="0.36911765" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29830235" sideWeight="0.41784704" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967638" sideWeight="0.6643059" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.674221" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40695792" sideWeight="0.6713881" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286119" sideWeight="0.6885113" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.052588996" sideWeight="0.57932013" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31957927" sideWeight="0.44334278" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5566572" sideWeight="0.6804207" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="100" width="1080" height="600" />
       <window_info id="ASM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TestDox" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Log4jMonitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35410765" sideWeight="0.4684466" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67058825" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2733711" sideWeight="0.47734627" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1742,6 +2158,7 @@
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3611898" sideWeight="0.4935275" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31444758" sideWeight="0.46763754" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.4935275" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243626" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1961,11 +2378,6 @@
         <state line="5" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="-1.92" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bigsale.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/3.1.2.RELEASE/spring-core-3.1.2.RELEASE.jar!/org/springframework/core/env/AbstractEnvironment.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="68" column="0" selection-start="3799" selection-end="3799" vertical-scroll-proportion="0.49044585" />
@@ -2079,8 +2491,8 @@
             <node x="" y="">org.springframework:spring-web:jar:3.1.2.RELEASE/org.springframework:spring-context:jar:3.1.2.RELEASE/org.springframework:spring-aop:jar:3.1.2.RELEASE/org.springframework:spring-asm:jar:3.1.2.RELEASE</node>
             <node x="" y="">javax.servlet:jstl:jar:1.1.2</node>
             <node x="" y="">org.easytesting:fest-assert:jar:1.4/org.easytesting:fest-util:jar:1.1.6</node>
-            <node x="" y="">junit:junit-dep:jar:4.8.1/org.hamcrest:hamcrest-core:jar:1.1</node>
             <node x="" y="">org.hibernate:hibernate-cglib-repack:jar:2.1_3</node>
+            <node x="" y="">junit:junit-dep:jar:4.8.1/org.hamcrest:hamcrest-core:jar:1.1</node>
             <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.5.6-Final/org.slf4j:slf4j-api:jar:1.5.8</node>
             <node x="" y="">org.springframework:spring-orm:jar:3.1.2.RELEASE</node>
             <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.5.6-Final/cglib:cglib:jar:2.2/asm:asm:jar:3.1</node>
@@ -2173,31 +2585,31 @@
             <node x="" y="">junit:junit-dep:jar:4.8.1</node>
             <node x="" y="">org.springframework.security:spring-security-taglibs:jar:3.0.5.RELEASE</node>
             <node x="" y="">org.slf4j:jcl-over-slf4j:jar:1.6.1</node>
-            <node x="" y="">org.easytesting:fest-assert:jar:1.4</node>
             <node x="" y="">org.springframework:spring-orm:jar:3.1.2.RELEASE/org.springframework:spring-tx:jar:3.1.2.RELEASE</node>
-            <node x="" y="">org.mockito:mockito-core:jar:1.8.5</node>
+            <node x="" y="">org.easytesting:fest-assert:jar:1.4</node>
             <node x="" y="">org.slf4j:slf4j-api:jar:1.6.1</node>
-            <node x="" y="">org.apache.tiles:tiles-jsp:jar:2.2.2</node>
+            <node x="" y="">org.mockito:mockito-core:jar:1.8.5</node>
             <node x="" y="">ch.qos.logback:logback-access:jar:0.9.26/ch.qos.logback:logback-core:jar:0.9.26</node>
-            <node x="" y="">hsqldb:hsqldb:jar:1.8.0.7</node>
-            <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.5.6-Final/cglib:cglib:jar:2.2</node>
+            <node x="" y="">org.apache.tiles:tiles-jsp:jar:2.2.2</node>
             <node x="" y="">org.springframework.security:spring-security-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.5.6-Final/cglib:cglib:jar:2.2</node>
+            <node x="" y="">hsqldb:hsqldb:jar:1.8.0.7</node>
             <node x="" y="">org.springframework:spring-orm:jar:3.1.2.RELEASE/org.springframework:spring-core:jar:3.1.2.RELEASE</node>
             <node x="" y="">c3p0:c3p0:jar:0.9.1.2</node>
             <node x="" y="">org.springframework:spring-webmvc:jar:3.1.2.RELEASE/org.springframework:spring-context-support:jar:3.1.2.RELEASE/org.springframework:spring-core:jar:3.1.2.RELEASE</node>
-            <node x="" y="">org.hibernate:hibernate-validator:jar:4.0.2.GA/javax.xml.bind:jaxb-api:jar:2.1/javax.activation:activation:jar:1.1</node>
             <node x="" y="">org.springframework:spring-jdbc:jar:3.1.2.RELEASE/org.springframework:spring-tx:jar:3.1.2.RELEASE/org.springframework:spring-aop:jar:3.1.2.RELEASE</node>
+            <node x="" y="">org.hibernate:hibernate-validator:jar:4.0.2.GA/javax.xml.bind:jaxb-api:jar:2.1/javax.activation:activation:jar:1.1</node>
             <node x="" y="">org.mockito:mockito-core:jar:1.8.5/org.hamcrest:hamcrest-core:jar:1.1</node>
-            <node x="" y="">org.apache.tiles:tiles-core:jar:2.2.2</node>
             <node x="" y="">ch.qos.logback:logback-access:jar:0.9.26</node>
-            <node x="" y="">javax.validation:validation-api:jar:1.0.0.GA</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:3.5.6-Final/dom4j:dom4j:jar:1.6.1/xml-apis:xml-apis:jar:1.0.b2</node>
+            <node x="" y="">org.apache.tiles:tiles-core:jar:2.2.2</node>
             <node x="" y="">org.springframework:spring-web:jar:3.1.2.RELEASE/org.springframework:spring-context:jar:3.1.2.RELEASE/org.springframework:spring-expression:jar:3.1.2.RELEASE</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.5.6-Final/dom4j:dom4j:jar:1.6.1/xml-apis:xml-apis:jar:1.0.b2</node>
+            <node x="" y="">javax.validation:validation-api:jar:1.0.0.GA</node>
             <node x="" y="">org.springframework:spring-webmvc:jar:3.1.2.RELEASE/org.springframework:spring-context-support:jar:3.1.2.RELEASE</node>
             <node x="" y="">org.hibernate:hibernate-validator:jar:4.0.2.GA/com.sun.xml.bind:jaxb-impl:jar:2.1.3/javax.xml.bind:jaxb-api:jar:2.1</node>
-            <node x="" y="">taglibs:standard:jar:1.1.2</node>
-            <node x="" y="">org.springframework:spring-web:jar:3.1.2.RELEASE/org.springframework:spring-context:jar:3.1.2.RELEASE/org.springframework:spring-core:jar:3.1.2.RELEASE</node>
             <node x="" y="">org.springframework:spring-web:jar:3.1.2.RELEASE/org.springframework:spring-beans:jar:3.1.2.RELEASE/org.springframework:spring-core:jar:3.1.2.RELEASE</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.1.2.RELEASE/org.springframework:spring-context:jar:3.1.2.RELEASE/org.springframework:spring-core:jar:3.1.2.RELEASE</node>
+            <node x="" y="">taglibs:standard:jar:1.1.2</node>
             <node x="" y="">org.springframework:spring-web:jar:3.1.2.RELEASE/org.springframework:spring-context:jar:3.1.2.RELEASE/org.springframework:spring-aop:jar:3.1.2.RELEASE/aopalliance:aopalliance:jar:1.0</node>
           </nodes>
           <notes />
@@ -2208,21 +2620,6 @@
           <SCOPE>All</SCOPE>
           <VISIBILITY>All</VISIBILITY>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="238" selection-end="238" vertical-scroll-proportion="0.18181819" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/cookie.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="87" selection-end="87" vertical-scroll-proportion="0.04308797" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-security-web-3.0.7.RELEASE.jar!/org/springframework/security/web/authentication/logout/LogoutFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="72" selection-start="1370" selection-end="1388" vertical-scroll-proportion="0.68456376" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/controller/SellerControllerTest.java">
@@ -2280,11 +2677,6 @@
         <state line="558" column="22" selection-start="19419" selection-end="19419" vertical-scroll-proportion="0.06695464" />
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-security-core-3.1.0.RELEASE.jar!/org/springframework/security/crypto/codec/Base64.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="615" selection-end="615" vertical-scroll-proportion="0.31058824" />
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-orm/3.1.2.RELEASE/spring-orm-3.1.2.RELEASE-sources.jar!/org/springframework/orm/hibernate3/HibernateTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="525" column="28" selection-start="20339" selection-end="20339" vertical-scroll-proportion="0.0" />
@@ -2298,11 +2690,6 @@
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/3.1.2.RELEASE/spring-core-3.1.2.RELEASE-sources.jar!/org/springframework/core/io/support/PropertiesLoaderSupport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="16" selection-start="2539" selection-end="2539" vertical-scroll-proportion="0.33146068" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-security-core-3.0.7.RELEASE.jar!/org/springframework/security/core/userdetails/User.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="183" selection-end="183" vertical-scroll-proportion="0.12612613" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/template/AbstractSpringTest.java">
@@ -2366,11 +2753,6 @@
         <state line="29" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-security-web-3.0.7.RELEASE.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="31" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.40336135" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/util/CipherUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="25" selection-start="469" selection-end="469" vertical-scroll-proportion="0.32684824" />
@@ -2379,11 +2761,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/OrderRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="37" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.4011142" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-security-taglibs-3.0.7.RELEASE.jar!/META-INF/security.tld">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="4" selection-start="3645" selection-end="3645" vertical-scroll-proportion="0.8829517" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/addItemForm.jsp">
@@ -2401,16 +2778,6 @@
         <state line="30" column="0" selection-start="991" selection-end="991" vertical-scroll-proportion="-17.142857" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/mail.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="38" selection-end="38" vertical-scroll-proportion="0.02764977" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="44" selection-start="897" selection-end="897" vertical-scroll-proportion="0.5529954" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/navigation.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="46" selection-start="206" selection-end="206" vertical-scroll-proportion="-4.0" />
@@ -2426,54 +2793,6 @@
         <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="-1.1428572" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/resource-placeholder.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="54" selection-start="647" selection-end="647" vertical-scroll-proportion="-6.3157897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/security-beans.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="1123" selection-end="1123" vertical-scroll-proportion="-6.3157897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/security-config.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-16.421053" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/spring-mail.config.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="33" selection-start="712" selection-end="712" vertical-scroll-proportion="-12.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/spring-tiles2-conf.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="7" selection-start="967" selection-end="967" vertical-scroll-proportion="-17.052631" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/utils.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="8" selection-start="1053" selection-end="1053" vertical-scroll-proportion="-11.368421" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/AdminRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="0" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.44946235" />
@@ -2482,16 +2801,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/AddressRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="0" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="912" selection-end="912" vertical-scroll-proportion="0.2882883" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/SignUpFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/modifyInfoFormPageConfirm.jsp">
@@ -2512,15 +2821,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/template/menu.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="17" selection-start="43" selection-end="43" vertical-scroll-proportion="0.045028143" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSignUpDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/AddressSearchDto.java">
@@ -2546,14 +2846,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/template/hello.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="-1.1428572" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="726" selection-end="726" vertical-scroll-proportion="-6.3157897" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/web-application-context.xml">
@@ -2587,11 +2879,6 @@
         <state line="13" column="49" selection-start="526" selection-end="526" vertical-scroll-proportion="-7.428571" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/placeOrderFormPageOne.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="56" selection-start="1076" selection-end="1076" vertical-scroll-proportion="-5.285714" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="14" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" />
@@ -2600,11 +2887,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/ItemRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.045627378" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/sql/create user table.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="39" selection-start="2275" selection-end="2275" vertical-scroll-proportion="0.54372627" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/hibernate/hibernate.xml">
@@ -2625,14 +2907,6 @@
         <state line="34" column="4" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/web-application-context.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/ItemOrderSearchDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="13" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" />
@@ -2641,11 +2915,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/PlaceOrderDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="27" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/SellerRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Role.java">
@@ -2666,11 +2935,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/ItemService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="0" selection-start="619" selection-end="619" vertical-scroll-proportion="0.53097343" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/queryItemFormPageOne.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="506" selection-end="506" vertical-scroll-proportion="-6.857143" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSearchResultDto.java">
@@ -2733,21 +2997,6 @@
         <state line="59" column="32" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="11" selection-start="1714" selection-end="1714" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="29" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/util/MailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="34" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/src.zip!/java/io/ByteArrayOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="13" selection-start="769" selection-end="769" vertical-scroll-proportion="0.38124055" />
@@ -2758,20 +3007,6 @@
         <state line="250" column="16" selection-start="9332" selection-end="9332" vertical-scroll-proportion="0.050925925" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="4" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/util/AdminPdfReportView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0" />
@@ -2779,9 +3014,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/AdminReportController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.6123348">
-          <folding />
-        </state>
+        <state line="39" column="0" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.6123348" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/util/PdfReportView.java">
@@ -2794,62 +3027,14 @@
         <state line="24" column="0" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/SellerSignUpDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="44" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/SellerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="32" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="5" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/SellerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="2543" selection-end="2543" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/addSellerFormPageOne.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="52" selection-start="1505" selection-end="1505" vertical-scroll-proportion="-21.142857">
-          <folding />
-        </state>
+        <state line="77" column="5" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSearchDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/QueryUserFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="2223" selection-end="2223" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/ModifyBuyerInfoFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="35" selection-start="2995" selection-end="2995" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="14" column="0" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/tiles/common.xml">
@@ -2862,46 +3047,19 @@
         <state line="25" column="0" selection-start="922" selection-end="922" vertical-scroll-proportion="-14.285714" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/PlaceOrderFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="25" selection-start="3278" selection-end="3278" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="33" selection-start="584" selection-end="584" vertical-scroll-proportion="-10.285714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/AddSellerFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="4" selection-start="4417" selection-end="4417" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="18" column="33" selection-start="584" selection-end="584" vertical-scroll-proportion="-10.285714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/BuyerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="28" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/itemSearchResult.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="46" selection-start="250" selection-end="250" vertical-scroll-proportion="-2.857143">
-          <folding />
-        </state>
+        <state line="45" column="28" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
@@ -2931,9 +3089,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/denied.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="48" selection-start="458" selection-end="458" vertical-scroll-proportion="-8.0">
-          <folding />
-        </state>
+        <state line="14" column="48" selection-start="458" selection-end="458" vertical-scroll-proportion="-8.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/index.jsp">
@@ -2943,9 +3099,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/signUpFormPageConfirm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="11" selection-start="785" selection-end="785" vertical-scroll-proportion="0.29885057">
-          <folding />
-        </state>
+        <state line="28" column="11" selection-start="785" selection-end="785" vertical-scroll-proportion="0.29885057" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/menu.jsp">
@@ -2953,289 +3107,430 @@
         <state line="4" column="38" selection-start="239" selection-end="239" vertical-scroll-proportion="-2.2857144" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Seller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="10" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="9" selection-start="664" selection-end="664" vertical-scroll-proportion="0.6233766">
-          <folding />
-        </state>
+        <state line="31" column="9" selection-start="664" selection-end="664" vertical-scroll-proportion="0.6233766" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/DeliveryStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="25" selection-start="938" selection-end="938" vertical-scroll-proportion="0.8689548">
-          <folding />
-        </state>
+        <state line="47" column="25" selection-start="938" selection-end="938" vertical-scroll-proportion="0.8689548" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/AddItemFormController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="94" selection-start="3100" selection-end="3100" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="94" column="94" selection-start="3100" selection-end="3100" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/QueryItemFormController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="82" selection-start="1512" selection-end="1512" vertical-scroll-proportion="0.31808278">
-          <folding />
-        </state>
+        <state line="38" column="82" selection-start="1512" selection-end="1512" vertical-scroll-proportion="0.31808278" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/ModifySellerInfoFormController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="40" selection-start="3200" selection-end="3200" vertical-scroll-proportion="0.41830066">
-          <folding />
-        </state>
+        <state line="90" column="40" selection-start="3200" selection-end="3200" vertical-scroll-proportion="0.41830066" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/ModifyItemFormController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="8" selection-start="2964" selection-end="2964" vertical-scroll-proportion="0.23529412">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/ItemOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="16" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="90" column="8" selection-start="2964" selection-end="2964" vertical-scroll-proportion="0.23529412" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/CheckOrderDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="16" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/BuyerCheckOrderFormController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="55" selection-start="2273" selection-end="2273" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="60" column="55" selection-start="2273" selection-end="2273" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/ItemSearchDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="311" selection-end="311" vertical-scroll-proportion="0.28857717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/ItemOrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="25" selection-start="483" selection-end="483" vertical-scroll-proportion="0.26086956">
-          <folding />
-        </state>
+        <state line="14" column="13" selection-start="311" selection-end="311" vertical-scroll-proportion="0.28857717" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/checkOrderResultForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="42" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.32941177">
-          <folding />
-        </state>
+        <state line="40" column="42" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.32941177" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/ItemOrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="799" selection-end="799" vertical-scroll-proportion="0.6678201">
-          <folding />
-        </state>
+        <state line="30" column="0" selection-start="799" selection-end="799" vertical-scroll-proportion="0.6678201" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/ItemSearchResultDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="982" selection-end="982" vertical-scroll-proportion="0.7669903" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/itemSearchResultForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="27" selection-start="391" selection-end="391" vertical-scroll-proportion="0.077922076" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/CommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="0" selection-start="2600" selection-end="2600" vertical-scroll-proportion="0.07594936" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="16" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/security/LogoutFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="43" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/security/RememberMeServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="4" selection-start="2113" selection-end="2113" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/modifyInfoFormPageConfirm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="423" selection-end="423" vertical-scroll-proportion="-5.3809524" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/navigation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="42" selection-start="372" selection-end="372" vertical-scroll-proportion="-8.571428" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="78" selection-start="533" selection-end="592" vertical-scroll-proportion="0.26550868" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/signUpSuccess.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="12" selection-start="485" selection-end="485" vertical-scroll-proportion="-5.5238094" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/userinfobar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="46" selection-start="315" selection-end="315" vertical-scroll-proportion="0.25074628" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/navigation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="0.7164179" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="35" selection-start="236" selection-end="236" vertical-scroll-proportion="0.17910448" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="9" selection-start="189" selection-end="189" vertical-scroll-proportion="0.10746269" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="11" selection-start="191" selection-end="191" vertical-scroll-proportion="0.10746269" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="20" selection-start="600" selection-end="600" vertical-scroll-proportion="0.5070422" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/menuLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="10" selection-start="190" selection-end="190" vertical-scroll-proportion="0.10140845" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/menuHome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.23661971" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="19" selection-start="201" selection-end="201" vertical-scroll-proportion="0.13521127" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/makeReportForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="6" selection-start="255" selection-end="255" vertical-scroll-proportion="-6.285714" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive_projects/bigsale.jarprj">
+      <provider selected="true" editor-type-id="jarprj">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/3.1.2.RELEASE/spring-webmvc-3.1.2.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="13" selection-start="8394" selection-end="8394" vertical-scroll-proportion="0.027210884" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="0" selection-start="1693" selection-end="1693" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/ModifyBuyerInfoFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="0" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="24" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.0" />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="35" selection-start="959" selection-end="959" vertical-scroll-proportion="-9.473684" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/resource-placeholder.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="54" selection-start="647" selection-end="647" vertical-scroll-proportion="0.23391813" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/security-beans.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.046783626" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/security-config.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.60818714" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/spring-mail.config.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="33" selection-start="712" selection-end="712" vertical-scroll-proportion="0.39212006" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/spring-tiles2-conf.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="7" selection-start="967" selection-end="967" vertical-scroll-proportion="0.60787994" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/utils.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="7" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.4052533" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring/web-application-context.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="7" selection-start="709" selection-end="709" vertical-scroll-proportion="0.20769231" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/cookie.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="27" selection-start="87" selection-end="87" vertical-scroll-proportion="0.04347826" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/mail.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="29" selection-start="176" selection-end="176" vertical-scroll-proportion="0.1521739" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bigsale.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="50" selection-start="5980" selection-end="5980" vertical-scroll-proportion="0.73758864" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.mymetadata">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="14" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="25" selection-start="1690" selection-end="1690" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/util/MailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="35" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/AddSellerFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="36" selection-start="4170" selection-end="4170" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/SellerSignUpDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="34" selection-start="3394" selection-end="3394" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/UserSignUpDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="32" selection-start="2278" selection-end="2278" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/SignUpFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="42" selection-start="4368" selection-end="4368" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/addSellerFormPageOne.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="13" selection-start="1466" selection-end="1466" vertical-scroll-proportion="-21.142857" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/signUpFormPageOne.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1534" selection-end="1534" vertical-scroll-proportion="-5.095238" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/properties/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/sql/create user table.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="30" selection-start="0" selection-end="15541" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/placeOrderFormPageOne.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1329" selection-end="1329" vertical-scroll-proportion="-9.142858" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/ItemOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/buyer/PlaceOrderFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="14" selection-start="4467" selection-end="4467" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/ItemOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="10" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/ItemOrderRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.08304498">
+        <state line="38" column="31" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/queryItemFormPageOne.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="16" selection-start="505" selection-end="505" vertical-scroll-proportion="-6.857143" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="18" selection-start="636" selection-end="636" vertical-scroll-proportion="0.058981232" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/security/AuthenticationProcessingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="13" selection-start="2089" selection-end="2089" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/security/UserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="0" selection-start="2771" selection-end="2771" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="10" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Seller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="0" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/admin/QueryUserFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="57" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/SellerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/SellerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/checkOrderResultForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/seller/SellerCheckOrderFormController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="0" selection-start="4140" selection-end="4140" vertical-scroll-proportion="0.08108108">
+        <state line="120" column="97" selection-start="4554" selection-end="4554" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/dao/SellerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.55070204">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/seller/checkOrderResultForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="40" selection-start="2016" selection-end="2016" vertical-scroll-proportion="0.6981818">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/dto/ItemSearchResultDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="982" selection-end="982" vertical-scroll-proportion="0.7669903">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/itemSearchResultForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="391" selection-end="391" vertical-scroll-proportion="0.077922076">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/controller/common/CommonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="0" selection-start="2600" selection-end="2600" vertical-scroll-proportion="0.07594936">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/orm/model/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="16" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/security/LogoutFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="43" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/security/RememberMeServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="4" selection-start="2113" selection-end="2113" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/modifyInfoFormPageConfirm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="423" selection-end="423" vertical-scroll-proportion="-5.3809524">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/navigation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="42" selection-start="372" selection-end="372" vertical-scroll-proportion="-8.571428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="78" selection-start="533" selection-end="592" vertical-scroll-proportion="0.26550868">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/signUpFormPageOne.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="11" selection-start="2102" selection-end="2102" vertical-scroll-proportion="0.8820513">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/signUpSuccess.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="485" selection-end="485" vertical-scroll-proportion="-5.5238094">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/userinfobar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="46" selection-start="315" selection-end="315" vertical-scroll-proportion="0.25074628">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/navigation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="0.7164179">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="35" selection-start="236" selection-end="236" vertical-scroll-proportion="0.17910448">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/buyer/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="9" selection-start="189" selection-end="189" vertical-scroll-proportion="0.10746269">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="11" selection-start="191" selection-end="191" vertical-scroll-proportion="0.10746269">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="600" selection-end="600" vertical-scroll-proportion="0.5070422">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/menuLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="10" selection-start="190" selection-end="190" vertical-scroll-proportion="0.10140845">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/menuHome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.23661971">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="201" selection-end="201" vertical-scroll-proportion="0.13521127">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/admin/makeReportForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="255" selection-end="255" vertical-scroll-proportion="-6.285714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/security/UserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="36" selection-start="4509" selection-end="4509" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1541#1547#0" expanded="true" />
-            <element signature="e#1616#1624#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigsale/service/security/AuthenticationProcessingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="16" selection-start="2773" selection-end="2773" vertical-scroll-proportion="0.9082569">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3249,7 +3544,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.41098902" />
+                <option value="0.26593408" />
                 <option value="0.5" />
               </list>
             </option>
@@ -3258,11 +3553,11 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Hibernate (bigsale)|Hibernate</last-edited>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.41098902" />
+                <option value="0.3251462" />
               </list>
             </option>
           </splitter-proportions>
@@ -3274,7 +3569,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.41098902" />
+                <option value="0.43026316" />
               </list>
             </option>
           </splitter-proportions>
@@ -3286,7 +3581,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.41098902" />
+                <option value="0.43026316" />
               </list>
             </option>
           </splitter-proportions>
@@ -3299,7 +3594,6 @@
             <option name="proportions">
               <list>
                 <option value="0.106243156" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -3319,7 +3613,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>spring-security-acl-3.0.7.RELEASE</last-edited>
+          <last-edited>Maven: org.slf4j:jcl-over-slf4j:1.5.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -3332,7 +3626,7 @@
     </states>
   </component>
   <component name="se.expertsystem.intellij.aop.aspectj.AspectJProjectComponent">
-    <setting name="isActivated" value="false" />
+    <setting name="isActivated" value="true" />
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>

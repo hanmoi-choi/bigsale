@@ -73,6 +73,18 @@ public class UserSignUpDto {
         }
     }
 
+    public void isEmailDuplicated(){
+        boolean result = sellerService.checkEmailDuplication(email)
+                ||userService.checkEmailDuplication(email);
+
+        if(result == true){
+            isEmailDuplicated = -1; //duplicated
+        }
+        else{
+            isEmailDuplicated = 0; //not duplicated
+        }
+    }
+
     @Setter
     @Getter
     @NotBlank(message = "Please enter your ID.")
@@ -137,4 +149,9 @@ public class UserSignUpDto {
     @NotBlank(message = "Please enter your ID.")
     @Length(min = 4, max = 4, message = "Please enter {1} characters.")
     private String zipcode;
+
+    @Setter
+    @Getter
+    @Min(value = 0, message = "Email Duplicated ")
+    private int isEmailDuplicated;
 }

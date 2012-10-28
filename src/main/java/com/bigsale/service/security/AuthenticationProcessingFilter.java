@@ -46,7 +46,6 @@ public class AuthenticationProcessingFilter extends UsernamePasswordAuthenticati
                                 HttpServletResponse response,
                                 Authentication authResult) throws ServletException, IOException
     {
-        logger.debug("successful authentication");
         User user = userDetailsService.getCurrentUser();
 
         String password = userDetailsService.getPassword();
@@ -55,9 +54,9 @@ public class AuthenticationProcessingFilter extends UsernamePasswordAuthenticati
 
         response.addCookie(sso);
 
-        request.getSession(false).removeAttribute("userLevel");
         request.getSession(false).setAttribute("userLevel",userDetailsService.getCurrentUserLevel());
         request.getSession(false).setAttribute(cookieName, currentCookie);
+
         super.successfulAuthentication(request, response, authResult);
     }
 

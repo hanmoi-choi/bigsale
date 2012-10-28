@@ -6,7 +6,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/webapp/WEB-INF/resources/properties">
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/webapp/WEB-INF/config/properties">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -14,6 +14,11 @@
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -25,9 +30,26 @@
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/tiles-core-2.2.2.jar"/>
-	<classpathentry kind="lib" path="lib/tiles-jsp-2.2.2.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/itext-pdfa-5.3.3.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/itext-xtra-5.3.3.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/itextpdf-5.3.3.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/javax.faces-2.1.13.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/logback-classic-1.0.1.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/logback-core-1.0.1.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/mail.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/spring-modules-validation-0.8.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/spring-security-acl-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/spring-security-config-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/spring-security-core-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/spring-security-core-3.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/spring-security-taglibs-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/spring-security-web-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/spring-support-2.0.8.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

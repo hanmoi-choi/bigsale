@@ -27,6 +27,7 @@ import static com.bigsale.orm.model.Level.BRONZE;
 @Controller
 @RequestMapping("/admin/addSellerForm")
 @SessionAttributes({"sellerSignUpDto"})
+
 public class AddSellerFormController {
     private static final String FORM_PAGE_ONE = "/admin/addSellerFormPageOne";
     private static final String FORM_PAGE_CONFIRM = "/admin/addSellerFormPageConfirm";

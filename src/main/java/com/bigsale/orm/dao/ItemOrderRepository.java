@@ -36,7 +36,7 @@ public class ItemOrderRepository extends AbstractRepository<ItemOrder, Integer> 
     @Override
     public void add(ItemOrder instance)
     {
-        hibernateTemplate.save(instance);
+        hibernateTemplate.merge(instance);
 
     }
 

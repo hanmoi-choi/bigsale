@@ -110,7 +110,10 @@ public class UserDetailsService implements org.springframework.security.core.use
 
         if(userId == null) throw new UsernameNotFoundException("Invalid User ID");
 
-        if (userId.equals("admin")) return loginAsAdmin();
+        if (userId.equals("admin")){
+            currentUserLevel = Level.PLATINUM;
+            return loginAsAdmin();
+        }
 
         //User
         com.bigsale.orm.model.User user = userService.getUserById(userId);

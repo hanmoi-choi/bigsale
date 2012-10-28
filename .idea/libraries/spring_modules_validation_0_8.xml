@@ -2,6 +2,13 @@
   <library name="spring-modules-validation-0.8">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-modules-validation-0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-security-acl-3.0.7.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-security-config-3.0.7.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-security-core-3.0.7.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-security-core-3.1.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-security-taglibs-3.0.7.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-security-web-3.0.7.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-support-2.0.8.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
